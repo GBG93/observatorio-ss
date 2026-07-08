@@ -156,5 +156,5 @@ Abre un [Issue](https://github.com/GBG93/observatorio-ss/issues) si planeas:
 
 ## Notas
 
-- Este proyecto es informativo; no sustituye asesoramiento financiero ni legal.
+- Este proyecto visualiza los informes públicos **ResSISTEMA** de la Seguridad Social española: una lectura gráfica de los datos que publica la administración.
 - Por favor, mantén un tono respetuoso en issues y PRs.
