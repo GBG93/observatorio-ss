@@ -48,3 +48,5 @@ Publicado desde `main` → `/docs`. Tras cada `git push`, el sitio se actualiza 
 
 Código: [MIT](LICENSE).  
 Datos agregados: informes públicos de la Tesorería General de la Seguridad Social / Seguridad Social.
+
+¿Quieres contribuir? Lee [CONTRIBUTING.md](CONTRIBUTING.md).
