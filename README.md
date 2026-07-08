@@ -4,9 +4,9 @@ Visualización interactiva de ingresos, gastos y transferencias del sistema de l
 
 ## Sitio web
 
-Tras publicar en GitHub Pages: `https://<usuario>.github.io/<repo>/`
+**https://gbg93.github.io/observatorio-ss/**
 
-El sitio estático vive en [`docs/index.html`](docs/index.html).
+El HTML se genera en [`docs/index.html`](docs/index.html) y GitHub Pages lo publica desde la carpeta `/docs`.
 
 ## Datos en el repositorio
 
@@ -42,7 +42,7 @@ git push
 
 ## GitHub Pages
 
-En el repo: **Settings → Pages → Build and deployment → Deploy from branch `main` → folder `/docs`**.
+Publicado desde `main` → `/docs`. Tras cada `git push`, el sitio se actualiza en unos minutos.
 
 ## Licencia
 
