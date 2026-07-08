@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Observatorio: Seguridad Social</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<style>
+  :root {
+    --bg: #f4f4f5; --card: #fff; --border: #e4e4e7; --text: #18181b;
+    --muted: #71717a; --caption: #a1a1aa;
+    --info: #3685bf; --danger: #cf2d56; --warning: #c08532;
+    --success: #2d8a5c; --purple: #7c5cbf; --teal: #1a9e8f; --gray: #94a3b8;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg); color: var(--text); }
+  .topbar { background: var(--card); border-bottom: 1px solid var(--border); padding: 14px 24px;
+    position: sticky; top: 0; z-index: 20; }
+  .topbar-inner { max-width: 1140px; margin: 0 auto; display: flex; justify-content: space-between;
+    align-items: center; gap: 12px; flex-wrap: wrap; }
+  .brand { font-weight: 600; color: var(--info); font-size: 15px; }
+  .meta { font-size: 12px; color: var(--caption); }
+  .wrap { max-width: 1140px; margin: 0 auto; padding: 20px 24px 48px; }
+  .tabs { display: flex; gap: 4px; flex-wrap: wrap; margin-bottom: 20px; background: var(--card);
+    border: 1px solid var(--border); border-radius: 10px; padding: 6px; }
+  .tab-btn { border: none; background: transparent; padding: 10px 16px; border-radius: 8px;
+    font-size: 13px; font-weight: 500; color: var(--muted); cursor: pointer; transition: .15s; }
+  .tab-btn:hover { background: #f4f4f5; color: var(--text); }
+  .tab-btn.active { background: var(--info); color: #fff; }
+  .panel { display: none; flex-direction: column; gap: 20px; }
+  .panel.active { display: flex; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; overflow: visible; }
+  .card-h { padding: 14px 18px 0; font-size: 15px; font-weight: 600; }
+  .card-b { padding: 14px 18px 18px; }
+  .caption { font-size: 12px; color: var(--caption); line-height: 1.5; margin: 0; }
+  .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .stat { display: flex; flex-direction: column; gap: 4px; }
+  .stat-v { font-size: 22px; font-weight: 600; }
+  .stat-l { font-size: 11px; color: var(--muted); line-height: 1.35; }
+  .callout { background: #fbf3e6; border: 1px solid #e8d4b0; border-radius: 10px; padding: 14px 18px; }
+  .callout-t { font-weight: 600; color: var(--warning); font-size: 14px; margin-bottom: 6px; }
+  .callout-b { font-size: 14px; color: var(--muted); line-height: 1.55; margin: 0; }
+  .lectura-pan { background: #eef5fb; border-color: #c5d9ed; margin-bottom: 16px; }
+  .lectura-pan .callout-t { color: var(--info); margin-bottom: 10px; }
+  .lectura-pan p { margin: 0 0 10px; font-size: 15px; line-height: 1.6; color: var(--text); }
+  .lectura-pan p:last-child { margin-bottom: 0; color: var(--muted); font-size: 13px; }
+  .lectura-pan .lectura-hint { font-size: 12px; color: var(--caption); }
+  .lectura-pan strong { font-weight: 600; color: var(--text); }
+  .chart-box { position: relative; width: 100%; }
+  .chart-box.tall { height: 360px; }
+  .chart-box.mid { height: 300px; }
+  .chart-box.short { height: 260px; }
+  .year-row { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; flex-wrap: wrap; }
+  .year-nav { display: inline-flex; align-items: center; gap: 6px; }
+  .year-nav button {
+    width: 32px; height: 32px; border: 1px solid var(--border); border-radius: 8px;
+    background: var(--card); cursor: pointer; font-size: 18px; line-height: 1; color: var(--muted);
+  }
+  .year-nav button:hover { background: #f4f4f5; color: var(--text); }
+  .year-nav input[type=number] {
+    width: 72px; padding: 6px 8px; border: 1px solid var(--border); border-radius: 8px;
+    font-size: 14px; font-weight: 600; text-align: center;
+  }
+  .year-nav input[type=number]::-webkit-inner-spin-button { opacity: 1; }
+  .ejercicio-tag {
+    display: inline-block; font-size: 11px; font-weight: 600; color: var(--info);
+    background: rgba(54,133,191,.1); padding: 3px 8px; border-radius: 6px; margin-left: 8px;
+  }
+  .stat-pct .stat-v { font-size: 26px; }
+  .stat-pct .stat-unit { font-size: 14px; font-weight: 500; color: var(--text); }
+  .tone-info { color: var(--info); } .tone-warn { color: var(--warning); }
+  .tone-danger { color: var(--danger); } .tone-ok { color: var(--success); }
+  .tone-estado { color: #464c89; }
+  .tone-muted { color: var(--muted); font-weight: 500; }
+  .tr-pct-stat { background: #f8fafc; border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
+  .tr-pct-stat .stat-v { font-size: 24px; }
+  @media (max-width: 800px) {
+    .grid-3, .grid-4 { grid-template-columns: 1fr; }
+    .grid-2 { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <span class="brand">Observatorio: Seguridad Social</span>
+    <span class="meta">ResSISTEMA · mil M€ · Cierre 2025 (DiciembreProvisional) · Actualizado 2026-07-08</span>
+  </div>
+</header>
+<div class="wrap">
+  <nav class="tabs" role="tablist">
+    <button class="tab-btn active" data-tab="panorama">Panorama</button>
+    <button class="tab-btn" data-tab="ingresos">Ingresos</button>
+    <button class="tab-btn" data-tab="gastos">Gastos</button>
+    <button class="tab-btn" data-tab="transferencias">Transferencias</button>
+    <button class="tab-btn" data-tab="historico">Histórico</button>
+  </nav>
+
+  <!-- PANORAMA = EJERCICIO ACTUAL -->
+  <section id="panel-panorama" class="panel active">
+    <div class="callout lectura-pan">
+      <div class="callout-t" id="lectura-panorama-title">Lectura rápida</div>
+      <div id="lectura-panorama"></div>
+    </div>
+    <p class="caption" id="panorama-period-note" style="margin:-8px 0 12px"></p>
+    <div class="grid-4" id="kpi-panorama"></div>
+    <div class="card">
+      <div class="card-h" id="pan-main-title">Ingresos vs gastos — desglose de ingresos</div>
+      <div class="card-b">
+        <p class="caption">Ingresos: paleta Datawrapper ordenada por peso (base oscura = mayor segmento, arriba claro = menor). Gastos en gris-azulado neutro.</p>
+        <div class="chart-box tall"><canvas id="chart-pan-ing-vs-gast"></canvas></div>
+      </div>
+    </div>
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-h">Transferencias del Estado (PGE)</div>
+        <div class="card-b">
+          <p class="caption">Evolución acumulada · mil M€.</p>
+          <div class="chart-box mid"><canvas id="chart-pan-transf-est"></canvas></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-h">Déficit sin aportaciones del Estado (PGE)</div>
+        <div class="card-b">
+          <p class="caption">Ingresos sin transferencias PGE − gastos totales · mil M€. Por debajo de cero = déficit estructural.</p>
+          <div class="chart-box mid"><canvas id="chart-pan-gast-sin-est"></canvas></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INGRESOS -->
+  <section id="panel-ingresos" class="panel">
+    <div class="callout">
+      <div class="callout-t">De dónde entra el dinero</div>
+      <p class="callout-b">Los ingresos del sistema combinan cotizaciones sociales (principal fuente), transferencias corrientes (Estado, movimientos internos SS, CCAA…) y otros conceptos menores. Las cifras son recaudación neta acumulada a cierre de ejercicio.</p>
+    </div>
+    <div class="card">
+      <div class="card-h">Evolución desglosada de ingresos</div>
+      <div class="card-b">
+        <div class="chart-box tall"><canvas id="chart-ing-stack"></canvas></div>
+        <p class="caption">Eje Y: mil M€ · Apila cotizaciones, transferencias del Estado, transferencias internas SS, tasas y otros.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-h">Evolución cotizaciones por régimen</div>
+      <div class="card-b">
+        <div class="chart-box tall"><canvas id="chart-ing-cot-stack"></canvas></div>
+        <p class="caption">Eje Y: mil M€ · Desglose anual de cotizaciones por régimen de la Seguridad Social.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GASTOS -->
+  <section id="panel-gastos" class="panel">
+    <div class="callout">
+      <div class="callout-t">A dónde va el dinero</div>
+      <p class="callout-b">La mayor parte del gasto son prestaciones: pensiones contributivas, subsidios (IT, desempleo…) y el bloque no contributivo (IMV, complementos a mínimos). La gestión (personal + bienes y servicios) es una fracción pequeña del total.</p>
+    </div>
+    <div class="card">
+      <div class="card-h">Evolución desglosada de gastos</div>
+      <div class="card-b">
+        <div class="chart-box tall"><canvas id="chart-gast-stack"></canvas></div>
+        <p class="caption">Eje Y: mil M€ · Pensiones, subsidios, no contributivo, gestión, inversiones y otras transferencias de salida.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-h">Evolución del gasto en prestaciones</div>
+      <div class="card-b">
+        <div class="chart-box tall"><canvas id="chart-gast-prest-stack"></canvas></div>
+        <p class="caption">Eje Y: mil M€ · Pensiones por tipo, IT, desempleo, IMV, complementos a mínimos y otras prestaciones.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRANSFERENCIAS -->
+  <section id="panel-transferencias" class="panel">
+    <div class="callout">
+      <div class="callout-t">Dos cosas distintas bajo «transferencias»</div>
+      <div class="callout-b">
+        <p><strong>Lo que entra en el sistema</strong><br>
+        Es dinero que llega desde fuera: del Estado, de las Comunidades Autónomas o de otras entidades de la Seguridad Social. Es financiación — ayuda a pagar pensiones y prestaciones.</p>
+        <p style="margin-top:10px"><strong>Lo que sale del sistema</strong><br>
+        Son las prestaciones que se pagan a la gente: pensiones, subsidios, ayudas por incapacidad, etc. Es gasto social — dinero que va a los ciudadanos.</p>
+        <p style="margin-top:10px;font-size:13px;color:var(--caption)">Arriba: lo que entra. Abajo: lo que sale. No son el mismo concepto ni se comparan entre sí.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-h">Lo que entra en el sistema</div>
+      <div class="card-b">
+        <div class="chart-box tall"><canvas id="chart-tr-ing-stack"></canvas></div>
+        <p class="caption">Eje Y: mil M€ · Estado (PGE), movimientos internos SS, CCAA y otros aportes.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-h">Lo que sale del sistema</div>
+      <div class="card-b">
+        <div class="chart-box tall"><canvas id="chart-tr-gast-stack"></canvas></div>
+        <p class="caption">Eje Y: mil M€ · Pensiones, subsidios, ayudas no contributivas y otras salidas a terceros.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-h">Transferencias del Estado / cotizaciones (%)</div>
+      <div class="card-b">
+        <div class="grid-3" id="tr-pct-kpi" style="margin-bottom:12px"></div>
+        <div class="chart-box mid"><canvas id="chart-tr-pct-est-cot"></canvas></div>
+        <p class="caption">Evolución anual: aportación del Estado (PGE) como % de las cotizaciones. Cierres 2014–2025; tramo discontinuo hasta 2026 (provisional) con el último ResSISTEMA disponible.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HISTÓRICO -->
+  <section id="panel-historico" class="panel">
+    <div class="card">
+      <div class="card-h">Ingresos vs gastos — cierres anuales</div>
+      <div class="card-b">
+        <p class="caption">Eje Y: mil M€ · Misma segmentación que Panorama: ingresos por color (mayor abajo), gastos en gris. Cierres 2014–2025; barra 2026 provisional si hay ResSISTEMA mensual.</p>
+        <div class="chart-box tall"><canvas id="chart-hist-cot-gast"></canvas></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-h">Cobertura cotiz./gastos (%)</div>
+      <div class="card-b">
+        <div class="chart-box mid"><canvas id="chart-hist-cobertura"></canvas></div>
+        <p class="caption">Cierres anuales 2014–2025; tramo discontinuo hasta 2026 (provisional). El dato provisional ene–may (~84%) no es comparable: las pagas extras de pensiones (julio+) aún no están en el acumulado y el cierre anual ronda ~72%.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-h">Peso del Estado en los ingresos totales (%)</div>
+      <div class="card-b">
+        <div class="chart-box mid"><canvas id="chart-hist-pct-estado"></canvas></div>
+        <p class="caption">Transferencias del Estado (PGE) ÷ ingresos totales del sistema · cierres 2014–2025; tramo discontinuo 2026 (provisional).</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-h">Crecimiento interanual por bloque</div>
+      <div class="card-b">
+        <div class="chart-box tall"><canvas id="chart-hist-yoy"></canvas></div>
+        <p class="caption">Variación % respecto al año anterior · cotizaciones, transferencias Estado y gastos totales.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script>
+const DATA = [{"cotizaciones": 97763.1, "tasas_otros": 689.4, "transferencias_corrientes": 15751.2, "ingresos_patrimoniales": 2630.6, "ingresos_totales": 130637.4, "cot_regimen_general": 73022.6, "cot_autonomos": 10355.4, "cot_at_ep": 5951.8, "cot_desempleo": null, "cot_mei": null, "cotizaciones_cap4": 97763.1, "transf_estado": 13094.6, "transf_ss_internas": 2621.4, "transf_ccaa": null, "transf_privados": null, "transferencias_corrientes_cap4": 15751.2, "gasto_personal": 2240.1, "gasto_bienes_servicios": 1352.5, "gasto_transferencias": 128633.8, "gasto_inversiones": 140.5, "gastos_totales": 133753.2, "pensiones": 104678.3, "pension_jubilacion": 73551.3, "pension_viudedad": 17750.1, "pension_incap_permanente": null, "subsidios_prestaciones": 8034.8, "prest_it": 5462.7, "prest_desempleo": null, "gasto_transf_ss": 2848.4, "gasto_transf_ccaa": 242.9, "gasto_transf_estado": 5.7, "pensiones_no_contributivas": 9722.2, "complementos_minimos": 7481.2, "imv": null, "prest_no_cont_otras": 1826.8, "gastos_no_contributivos": 12770.1, "cot_otros_regimenes": 8433.4, "deficit_cotizaciones": 35990.1, "cobertura_cotizaciones_pct": 73.1, "pct_estado_en_ingresos": 10.0, "transf_estado_neta_aparente": 13088.9, "year": 2014, "source_month": "DiciembreDefinitivo"}, {"cotizaciones": 99363.6, "tasas_otros": 622.4, "transferencias_corrientes": 15956.9, "ingresos_patrimoniales": 2270.5, "ingresos_totales": 136338.2, "cot_regimen_general": 75196.9, "cot_autonomos": 10579.4, "cot_at_ep": 6256.1, "cot_desempleo": null, "cot_mei": null, "cotizaciones_cap4": 99363.6, "transf_estado": 13086.3, "transf_ss_internas": 2826.6, "transf_ccaa": 741.5, "transf_privados": 15672.5, "transferencias_corrientes_cap4": 15956.9, "gasto_personal": 2262.1, "gasto_bienes_servicios": 1310.8, "gasto_transferencias": 132553.4, "gasto_inversiones": 127.5, "gastos_totales": 140353.7, "pensiones": 108204.7, "pension_jubilacion": 76519.3, "pension_viudedad": 18085.4, "pension_incap_permanente": null, "subsidios_prestaciones": 8737.7, "prest_it": 6138.0, "prest_desempleo": null, "gasto_transf_ss": 2963.6, "gasto_transf_ccaa": 246.0, "gasto_transf_estado": 5.7, "pensiones_no_contributivas": 9558.1, "complementos_minimos": 7300.6, "imv": null, "prest_no_cont_otras": 1542.5, "gastos_no_contributivos": 12341.9, "cot_otros_regimenes": 7331.2, "deficit_cotizaciones": 40990.1, "cobertura_cotizaciones_pct": 70.8, "pct_estado_en_ingresos": 9.6, "transf_estado_neta_aparente": 13080.6, "year": 2015, "source_month": "DiciembreDefinitivo"}, {"cotizaciones": 102599.7, "tasas_otros": 537.1, "transferencias_corrientes": 16026.4, "ingresos_patrimoniales": 1722.4, "ingresos_totales": 141132.6, "cot_regimen_general": 78320.5, "cot_autonomos": 10824.9, "cot_at_ep": 6620.8, "cot_desempleo": null, "cot_mei": null, "cotizaciones_cap4": 102599.7, "transf_estado": 12935.8, "transf_ss_internas": 3049.8, "transf_ccaa": 812.0, "transf_privados": null, "transferencias_corrientes_cap4": 16026.4, "gasto_personal": 2270.9, "gasto_bienes_servicios": 1255.0, "gasto_transferencias": 137123.7, "gasto_inversiones": 140.3, "gastos_totales": 141883.2, "pensiones": 111900.4, "pension_jubilacion": 79643.7, "pension_viudedad": 18439.8, "pension_incap_permanente": null, "subsidios_prestaciones": 9462.8, "prest_it": 6871.2, "prest_desempleo": null, "gasto_transf_ss": 3064.8, "gasto_transf_ccaa": 291.2, "gasto_transf_estado": 5.5, "pensiones_no_contributivas": 9428.6, "complementos_minimos": 7152.0, "imv": null, "prest_no_cont_otras": 1577.4, "gastos_no_contributivos": 12367.4, "cot_otros_regimenes": 6833.5, "deficit_cotizaciones": 39283.5, "cobertura_cotizaciones_pct": 72.3, "pct_estado_en_ingresos": 9.2, "transf_estado_neta_aparente": 12930.3, "year": 2016, "source_month": "Diciembre"}, {"cotizaciones": 108181.8, "tasas_otros": 543.9, "transferencias_corrientes": 16260.7, "ingresos_patrimoniales": 736.3, "ingresos_totales": 143537.3, "cot_regimen_general": 83225.1, "cot_autonomos": 11240.1, "cot_at_ep": 7085.3, "cot_desempleo": null, "cot_mei": null, "cotizaciones_cap4": 108181.8, "transf_estado": 12902.7, "transf_ss_internas": 3318.8, "transf_ccaa": 513.9, "transf_privados": null, "transferencias_corrientes_cap4": 16260.7, "gasto_personal": 2235.3, "gasto_bienes_servicios": 1283.5, "gasto_transferencias": 141990.7, "gasto_inversiones": 130.7, "gastos_totales": 146353.8, "pensiones": 115711.9, "pension_jubilacion": 82834.8, "pension_viudedad": 18812.5, "pension_incap_permanente": null, "subsidios_prestaciones": 10326.6, "prest_it": 7566.9, "prest_desempleo": 6549.2, "gasto_transf_ss": 3322.9, "gasto_transf_ccaa": 255.1, "gasto_transf_estado": 5.6, "pensiones_no_contributivas": 9271.2, "complementos_minimos": 6982.7, "imv": null, "prest_no_cont_otras": 1609.6, "gastos_no_contributivos": 12272.0, "cot_otros_regimenes": 6631.3, "deficit_cotizaciones": 38172.0, "cobertura_cotizaciones_pct": 73.9, "pct_estado_en_ingresos": 9.0, "transf_estado_neta_aparente": 12897.1, "year": 2017, "source_month": "Diciembre"}, {"cotizaciones": 113851.8, "tasas_otros": 541.3, "transferencias_corrientes": 18054.9, "ingresos_patrimoniales": 273.0, "ingresos_totales": 150457.5, "cot_regimen_general": 88057.2, "cot_autonomos": 11459.3, "cot_at_ep": 7537.9, "cot_desempleo": null, "cot_mei": null, "cotizaciones_cap4": 113851.8, "transf_estado": 14650.0, "transf_ss_internas": 3366.8, "transf_ccaa": null, "transf_privados": null, "transferencias_corrientes_cap4": 18054.9, "gasto_personal": 2256.8, "gasto_bienes_servicios": 1331.0, "gasto_transferencias": 147488.3, "gasto_inversiones": 134.8, "gastos_totales": 151823.9, "pensiones": 121276.7, "pension_jubilacion": 87264.6, "pension_viudedad": 19613.6, "pension_incap_permanente": null, "subsidios_prestaciones": 10224.8, "prest_it": 7466.2, "prest_desempleo": 6527.5, "gasto_transf_ss": 3036.0, "gasto_transf_ccaa": 239.7, "gasto_transf_estado": 3.0, "pensiones_no_contributivas": 9465.2, "complementos_minimos": 7117.6, "imv": null, "prest_no_cont_otras": 1644.5, "gastos_no_contributivos": 12615.1, "cot_otros_regimenes": 6797.4, "deficit_cotizaciones": 37972.1, "cobertura_cotizaciones_pct": 75.0, "pct_estado_en_ingresos": 9.7, "transf_estado_neta_aparente": 14647.0, "year": 2018, "source_month": "Diciembre"}, {"cotizaciones": 122998.9, "tasas_otros": 748.6, "transferencias_corrientes": 19582.4, "ingresos_patrimoniales": 122.2, "ingresos_totales": 160847.9, "cot_regimen_general": 95235.0, "cot_autonomos": 11070.1, "cot_at_ep": 8768.7, "cot_desempleo": null, "cot_mei": null, "cotizaciones_cap4": 122998.9, "transf_estado": 15645.2, "transf_ss_internas": 3895.2, "transf_ccaa": null, "transf_privados": null, "transferencias_corrientes_cap4": 19582.4, "gasto_personal": 2255.4, "gasto_bienes_servicios": 1360.6, "gasto_transferencias": 157956.5, "gasto_inversiones": 115.4, "gastos_totales": 162028.1, "pensiones": 128128.7, "pension_jubilacion": 92035.1, "pension_viudedad": 21231.1, "pension_incap_permanente": null, "subsidios_prestaciones": 12670.2, "prest_it": 9515.5, "prest_desempleo": 8368.5, "gasto_transf_ss": 3841.6, "gasto_transf_ccaa": 249.2, "gasto_transf_estado": 2.2, "pensiones_no_contributivas": 9584.5, "complementos_minimos": 7130.4, "imv": null, "prest_no_cont_otras": 1884.2, "gastos_no_contributivos": 13035.2, "cot_otros_regimenes": 7925.1, "deficit_cotizaciones": 39029.2, "cobertura_cotizaciones_pct": 75.9, "pct_estado_en_ingresos": 9.7, "transf_estado_neta_aparente": 15643.0, "year": 2019, "source_month": "DiciembreDefinitivo"}, {"cotizaciones": 118728.9, "tasas_otros": 544.7, "transferencias_corrientes": 45545.2, "ingresos_patrimoniales": 75.1, "ingresos_totales": 198042.6, "cot_regimen_general": 91105.2, "cot_autonomos": 8975.0, "cot_at_ep": 8442.1, "cot_desempleo": null, "cot_mei": null, "cotizaciones_cap4": 118728.9, "transf_estado": 35795.2, "transf_ss_internas": 9697.9, "transf_ccaa": null, "transf_privados": null, "transferencias_corrientes_cap4": 45545.2, "gasto_personal": 2357.3, "gasto_bienes_servicios": 1263.2, "gasto_transferencias": 175826.8, "gasto_inversiones": 133.7, "gastos_totales": 181871.6, "pensiones": 131904.9, "pension_jubilacion": 95203.3, "pension_viudedad": 21752.3, "pension_incap_permanente": 12942.0, "subsidios_prestaciones": 20412.0, "prest_it": 11880.8, "prest_desempleo": 9589.1, "gasto_transf_ss": 9710.8, "gasto_transf_ccaa": 245.3, "gasto_transf_estado": 2.0, "pensiones_no_contributivas": 9488.1, "complementos_minimos": 7004.4, "imv": 2265.9, "prest_no_cont_otras": 2536.0, "gastos_no_contributivos": 13595.4, "cot_otros_regimenes": 10206.7, "deficit_cotizaciones": 63142.7, "cobertura_cotizaciones_pct": 65.3, "pct_estado_en_ingresos": 18.1, "transf_estado_neta_aparente": 35793.2, "year": 2020, "source_month": "DiciembreDefinitivo"}, {"cotizaciones": 130912.8, "tasas_otros": 617.8, "transferencias_corrientes": 47978.5, "ingresos_patrimoniales": 19.6, "ingresos_totales": 191469.8, "cot_regimen_general": 98794.7, "cot_autonomos": 10827.5, "cot_at_ep": 9316.6, "cot_desempleo": null, "cot_mei": null, "cotizaciones_cap4": 130912.8, "transf_estado": 36112.4, "transf_ss_internas": 11819.7, "transf_ccaa": null, "transf_privados": null, "transferencias_corrientes_cap4": 47978.5, "gasto_personal": 2411.1, "gasto_bienes_servicios": 1315.1, "gasto_transferencias": 185777.5, "gasto_inversiones": 197.6, "gastos_totales": 189850.6, "pensiones": 136400.0, "pension_jubilacion": 98897.6, "pension_viudedad": 22314.6, "pension_incap_permanente": 13113.7, "subsidios_prestaciones": 22084.5, "prest_it": 12463.6, "prest_desempleo": 9615.5, "gasto_transf_ss": 11797.5, "gasto_transf_ccaa": 323.8, "gasto_transf_estado": 1.6, "pensiones_no_contributivas": 9520.3, "complementos_minimos": 6947.9, "imv": 3622.3, "prest_no_cont_otras": 3969.2, "gastos_no_contributivos": 13675.9, "cot_otros_regimenes": 11973.9, "deficit_cotizaciones": 58937.8, "cobertura_cotizaciones_pct": 69.0, "pct_estado_en_ingresos": 18.9, "transf_estado_neta_aparente": 36110.8, "year": 2021, "source_month": "DiciembreDefinitivo"}, {"cotizaciones": 139209.6, "tasas_otros": 683.3, "transferencias_corrientes": 42659.5, "ingresos_patrimoniales": 47.5, "ingresos_totales": 192163.5, "cot_regimen_general": 108592.5, "cot_autonomos": 11192.5, "cot_at_ep": 10149.5, "cot_desempleo": null, "cot_mei": null, "cotizaciones_cap4": 139209.6, "transf_estado": 36537.4, "transf_ss_internas": 6078.4, "transf_ccaa": null, "transf_privados": null, "transferencias_corrientes_cap4": 42659.5, "gasto_personal": 2430.4, "gasto_bienes_servicios": 1431.9, "gasto_transferencias": 187052.5, "gasto_inversiones": 243.2, "gastos_totales": 193961.4, "pensiones": 145267.8, "pension_jubilacion": 105911.4, "pension_viudedad": 23511.8, "pension_incap_permanente": 13654.4, "subsidios_prestaciones": 18425.9, "prest_it": 13583.9, "prest_desempleo": 10874.7, "gasto_transf_ss": 6053.4, "gasto_transf_ccaa": 322.9, "gasto_transf_estado": 1.6, "pensiones_no_contributivas": 9793.5, "complementos_minimos": 6995.0, "imv": 4217.0, "prest_no_cont_otras": 4537.1, "gastos_no_contributivos": 17297.9, "cot_otros_regimenes": 9275.1, "deficit_cotizaciones": 54751.8, "cobertura_cotizaciones_pct": 71.8, "pct_estado_en_ingresos": 19.0, "transf_estado_neta_aparente": 36535.8, "year": 2022, "source_month": "DiciembreDefinitivo"}, {"cotizaciones": 153292.6, "tasas_otros": 737.1, "transferencias_corrientes": 43896.6, "ingresos_patrimoniales": 237.3, "ingresos_totales": 209850.0, "cot_regimen_general": 118123.0, "cot_autonomos": 11604.3, "cot_at_ep": 11017.7, "cot_desempleo": 8988.3, "cot_mei": 2728.6, "cotizaciones_cap4": 153292.6, "transf_estado": 39298.5, "transf_ss_internas": 4551.7, "transf_ccaa": null, "transf_privados": null, "transferencias_corrientes_cap4": 43896.6, "gasto_personal": 2642.5, "gasto_bienes_servicios": 1533.2, "gasto_transferencias": 204039.0, "gasto_inversiones": 265.8, "gastos_totales": 213227.0, "pensiones": 161066.9, "pension_jubilacion": 118244.1, "pension_viudedad": 25715.6, "pension_incap_permanente": 14711.1, "subsidios_prestaciones": 18930.0, "prest_it": 14088.8, "prest_desempleo": 12633.0, "gasto_transf_ss": 4523.3, "gasto_transf_ccaa": 320.9, "gasto_transf_estado": 1.7, "pensiones_no_contributivas": 10362.3, "complementos_minimos": 7345.1, "imv": 4968.7, "prest_no_cont_otras": 5325.2, "gastos_no_contributivos": 19348.7, "cot_otros_regimenes": 830.5, "deficit_cotizaciones": 59934.4, "cobertura_cotizaciones_pct": 71.9, "pct_estado_en_ingresos": 18.7, "transf_estado_neta_aparente": 39296.8, "year": 2023, "source_month": "DiciembreDefinitivo"}, {"cotizaciones": 164438.0, "tasas_otros": 936.0, "transferencias_corrientes": 48014.6, "ingresos_patrimoniales": 385.0, "ingresos_totales": 226742.0, "cot_regimen_general": 127013.8, "cot_autonomos": 11819.3, "cot_at_ep": 11761.1, "cot_desempleo": 9302.8, "cot_mei": 3689.6, "cotizaciones_cap4": 164438.0, "transf_estado": 43084.3, "transf_ss_internas": 4880.3, "transf_ccaa": null, "transf_privados": null, "transferencias_corrientes_cap4": 48014.6, "gasto_personal": 2793.0, "gasto_bienes_servicios": 1611.9, "gasto_transferencias": 220357.4, "gasto_inversiones": 336.2, "gastos_totales": 231690.2, "pensiones": 172614.0, "pension_jubilacion": 127327.4, "pension_viudedad": 27121.2, "pension_incap_permanente": 15646.2, "subsidios_prestaciones": 21487.9, "prest_it": 16456.8, "prest_desempleo": 15001.4, "gasto_transf_ss": 5004.5, "gasto_transf_ccaa": 324.1, "gasto_transf_estado": 5.1, "pensiones_no_contributivas": 11165.2, "complementos_minimos": 7916.4, "imv": 5611.7, "prest_no_cont_otras": 6020.4, "gastos_no_contributivos": 21081.3, "cot_otros_regimenes": 851.4, "deficit_cotizaciones": 67252.2, "cobertura_cotizaciones_pct": 71.0, "pct_estado_en_ingresos": 19.0, "transf_estado_neta_aparente": 43079.2, "year": 2024, "source_month": "DiciembreDefinitivo"}, {"cotizaciones": 175676.5, "tasas_otros": 1597.1, "transferencias_corrientes": 52937.5, "ingresos_patrimoniales": 429.2, "ingresos_totales": 241124.3, "cot_regimen_general": 135747.3, "cot_autonomos": 11731.2, "cot_at_ep": 12540.5, "cot_desempleo": 9876.0, "cot_mei": 4906.1, "cotizaciones_cap4": 175676.5, "transf_estado": 47815.4, "transf_ss_internas": 5078.9, "transf_ccaa": null, "transf_privados": null, "transferencias_corrientes_cap4": 52937.5, "gasto_personal": 2794.9, "gasto_bienes_servicios": 1702.0, "gasto_transferencias": 234994.7, "gasto_inversiones": 352.0, "gastos_totales": 244780.4, "pensiones": 182525.9, "pension_jubilacion": 134549.2, "pension_viudedad": 28171.6, "pension_incap_permanente": 17194.8, "subsidios_prestaciones": 23807.0, "prest_it": 18407.0, "prest_desempleo": 16839.1, "gasto_transf_ss": 5121.5, "gasto_transf_ccaa": 323.0, "gasto_transf_estado": 4.6, "pensiones_no_contributivas": 12314.5, "complementos_minimos": 8739.2, "imv": 6291.2, "prest_no_cont_otras": 6767.4, "gastos_no_contributivos": 23342.1, "cot_otros_regimenes": 875.3, "deficit_cotizaciones": 69103.9, "cobertura_cotizaciones_pct": 71.8, "pct_estado_en_ingresos": 19.8, "transf_estado_neta_aparente": 47810.8, "year": 2025, "source_month": "DiciembreProvisional"}];
+const YTD = {"cotizaciones": 77295.4, "tasas_otros": 351.2, "transferencias_corrientes": 16637.3, "ingresos_patrimoniales": 204.4, "ingresos_totales": 94515.0, "cot_regimen_general": 59362.0, "cot_autonomos": 5223.0, "cot_at_ep": 5502.7, "cot_desempleo": 4403.7, "cot_mei": 2435.0, "cotizaciones_cap4": 77295.4, "transf_estado": 14624.0, "transf_ss_internas": 1993.5, "transf_ccaa": null, "transf_privados": null, "transferencias_corrientes_cap4": 16637.3, "gasto_personal": 1136.0, "gasto_bienes_servicios": 639.3, "gasto_transferencias": 90222.7, "gasto_inversiones": 75.2, "gastos_totales": 92084.5, "pensiones": 68647.7, "pension_jubilacion": 50566.4, "pension_viudedad": 10417.4, "pension_incap_permanente": 6700.5, "subsidios_prestaciones": 10281.4, "prest_it": 7816.4, "prest_desempleo": 7176.9, "gasto_transf_ss": 1895.5, "gasto_transf_ccaa": 4.5, "gasto_transf_estado": 0.1, "pensiones_no_contributivas": 10055.2, "complementos_minimos": 7250.0, "imv": 4123.7, "prest_no_cont_otras": 4458.9, "gastos_no_contributivos": 18200.2, "cot_otros_regimenes": 368.9, "deficit_cotizaciones": 14789.1, "cobertura_cotizaciones_pct": 83.9, "pct_estado_en_ingresos": 15.5, "transf_estado_neta_aparente": 14623.9, "year": 2026, "month": "Mayo", "source_file": "ResSISTEMA_Mayo_2026.xlsx", "period": "ene–may 2026", "prev_period": "ene–may 2025", "through_month": "Mayo", "prev": {"cotizaciones": 71700.7, "tasas_otros": 188.1, "transferencias_corrientes": 15360.0, "ingresos_patrimoniales": 134.3, "ingresos_totales": 87422.6, "cot_regimen_general": 55380.2, "cot_autonomos": 4722.3, "cot_at_ep": 5116.4, "cot_desempleo": 4200.5, "cot_mei": 1935.4, "cotizaciones_cap4": 71700.7, "transf_estado": 13359.2, "transf_ss_internas": 1981.8, "transf_ccaa": null, "transf_privados": null, "transferencias_corrientes_cap4": 15360.0, "gasto_personal": 1092.1, "gasto_bienes_servicios": 635.3, "gasto_transferencias": 84290.0, "gasto_inversiones": 75.5, "gastos_totales": 86100.8, "pensiones": 64798.7, "pension_jubilacion": 47713.4, "pension_viudedad": 10051.9, "pension_incap_permanente": 6097.2, "subsidios_prestaciones": 9254.5, "prest_it": 7139.3, "prest_desempleo": 6504.5, "gasto_transf_ss": 1910.9, "gasto_transf_ccaa": 4.1, "gasto_transf_estado": null, "pensiones_no_contributivas": 10056.1, "complementos_minimos": 7250.0, "imv": 4129.7, "prest_no_cont_otras": 4461.4, "gastos_no_contributivos": 18201.3, "cot_otros_regimenes": 345.9, "deficit_cotizaciones": 14400.1, "cobertura_cotizaciones_pct": 83.3, "pct_estado_en_ingresos": 15.3, "transf_estado_neta_aparente": 13359.2, "year": 2025, "month": "Mayo", "source_file": "ResSISTEMA_Mayo_2025.xlsx"}, "yoy": {"cotizaciones": 7.8, "gastos_totales": 6.9, "transf_estado": 9.5}, "pct_estado_sobre_cotizaciones": 18.9, "pct_estado_sobre_cotizaciones_prev": 18.6, "pct_estado_sobre_cotizaciones_delta": 0.3, "cobertura_cierre_ref": 71.8, "cobertura_cierre_year": 2025};
+const EXERCISE = {"year": 2026, "months": [{"cotizaciones": 15174.7, "tasas_otros": 4.1, "transferencias_corrientes": 5149.5, "ingresos_patrimoniales": 6.7, "ingresos_totales": 20336.5, "cot_regimen_general": 11709.3, "cot_autonomos": 1001.8, "cot_at_ep": 1087.4, "cot_desempleo": 859.1, "cot_mei": 2793.2, "cotizaciones_cap4": 15174.7, "transf_estado": 4790.0, "transf_ss_internas": 4727.8, "transf_ccaa": null, "transf_privados": null, "transferencias_corrientes_cap4": 5149.5, "gasto_personal": 216.5, "gasto_bienes_servicios": 56.1, "gasto_transferencias": 17144.8, "gasto_inversiones": 1.0, "gastos_totales": 17419.4, "pensiones": 13352.1, "pension_jubilacion": 9843.2, "pension_viudedad": 2036.8, "pension_incap_permanente": 1283.6, "subsidios_prestaciones": 1745.3, "prest_it": 1281.3, "prest_desempleo": 1185.4, "gasto_transf_ss": 201.4, "gasto_transf_ccaa": 0.1, "gasto_transf_estado": null, "pensiones_no_contributivas": 10056.0, "complementos_minimos": 7250.0, "imv": 4123.7, "prest_no_cont_otras": 4452.6, "gastos_no_contributivos": 18193.2, "deficit_cotizaciones": 2244.7, "cobertura_cotizaciones_pct": 87.1, "pct_estado_en_ingresos": 23.6, "transf_estado_neta_aparente": 4790.0, "year": 2026, "month": "Enero", "source_file": "ResSISTEMA_Enero_2026.xlsx", "month_short": "Ene"}, {"cotizaciones": 30599.6, "tasas_otros": 31.5, "transferencias_corrientes": 7946.2, "ingresos_patrimoniales": 44.5, "ingresos_totales": 38625.2, "cot_regimen_general": 23359.8, "cot_autonomos": 2220.9, "cot_at_ep": 2189.2, "cot_desempleo": 1772.5, "cot_mei": 915.3, "cotizaciones_cap4": 30599.6, "transf_estado": 7178.5, "transf_ss_internas": 760.6, "transf_ccaa": null, "transf_privados": null, "transferencias_corrientes_cap4": 7946.2, "gasto_personal": 430.9, "gasto_bienes_servicios": 182.5, "gasto_transferencias": 35448.2, "gasto_inversiones": 7.6, "gastos_totales": 36071.4, "pensiones": 27088.0, "pension_jubilacion": 19960.7, "pension_viudedad": 4131.0, "pension_incap_permanente": 2613.5, "subsidios_prestaciones": 4007.5, "prest_it": 3032.2, "prest_desempleo": 2782.0, "gasto_transf_ss": 650.0, "gasto_transf_ccaa": 0.4, "gasto_transf_estado": 0.1, "pensiones_no_contributivas": 10055.2, "complementos_minimos": 7250.0, "imv": 4123.7, "prest_no_cont_otras": 4452.6, "gastos_no_contributivos": 18192.4, "cot_otros_regimenes": 141.9, "deficit_cotizaciones": 5471.8, "cobertura_cotizaciones_pct": 84.8, "pct_estado_en_ingresos": 18.6, "transf_estado_neta_aparente": 7178.4, "year": 2026, "month": "Febrero", "source_file": "ResSISTEMA_Febrero_2026.xlsx", "month_short": "Feb"}, {"cotizaciones": 46049.3, "tasas_otros": 147.4, "transferencias_corrientes": 10809.6, "ingresos_patrimoniales": 50.0, "ingresos_totales": 57066.3, "cot_regimen_general": 35251.2, "cot_autonomos": 3222.8, "cot_at_ep": 3293.2, "cot_desempleo": 2668.9, "cot_mei": 1400.7, "cotizaciones_cap4": 46049.3, "transf_estado": 9675.7, "transf_ss_internas": 1123.3, "transf_ccaa": null, "transf_privados": null, "transferencias_corrientes_cap4": 10809.6, "gasto_personal": 674.5, "gasto_bienes_servicios": 331.2, "gasto_transferencias": 53619.4, "gasto_inversiones": 36.0, "gastos_totales": 54664.6, "pensiones": 40902.9, "pension_jubilacion": 30130.2, "pension_viudedad": 6223.4, "pension_incap_permanente": 3971.8, "subsidios_prestaciones": 6134.2, "prest_it": 4630.5, "prest_desempleo": 4251.4, "gasto_transf_ss": 1012.2, "gasto_transf_ccaa": 0.7, "gasto_transf_estado": 0.1, "pensiones_no_contributivas": 10055.2, "complementos_minimos": 7250.0, "imv": 4123.7, "prest_no_cont_otras": 4458.9, "gastos_no_contributivos": 18200.2, "cot_otros_regimenes": 212.4, "deficit_cotizaciones": 8615.3, "cobertura_cotizaciones_pct": 84.2, "pct_estado_en_ingresos": 17.0, "transf_estado_neta_aparente": 9675.6, "year": 2026, "month": "Marzo", "source_file": "ResSISTEMA_Marzo_2026.xlsx", "month_short": "Mar"}, {"cotizaciones": 61601.5, "tasas_otros": 342.2, "transferencias_corrientes": 14093.7, "ingresos_patrimoniales": 56.5, "ingresos_totales": 76116.2, "cot_regimen_general": 47350.0, "cot_autonomos": 4094.9, "cot_at_ep": 4394.1, "cot_desempleo": 3549.8, "cot_mei": 1921.5, "cotizaciones_cap4": 61601.5, "transf_estado": 12543.8, "transf_ss_internas": 1534.2, "transf_ccaa": null, "transf_privados": null, "transferencias_corrientes_cap4": 14093.7, "gasto_personal": 890.9, "gasto_bienes_servicios": 479.7, "gasto_transferencias": 71789.8, "gasto_inversiones": 54.8, "gastos_totales": 73219.5, "pensiones": 54734.9, "pension_jubilacion": 40317.6, "pension_viudedad": 8318.4, "pension_incap_permanente": 5328.4, "subsidios_prestaciones": 8150.7, "prest_it": 6163.1, "prest_desempleo": 5664.4, "gasto_transf_ss": 1402.9, "gasto_transf_ccaa": 0.9, "gasto_transf_estado": 0.1, "pensiones_no_contributivas": 10055.2, "complementos_minimos": 7250.0, "imv": 4123.7, "prest_no_cont_otras": 4458.9, "gastos_no_contributivos": 18200.2, "cot_otros_regimenes": 291.1, "deficit_cotizaciones": 11618.0, "cobertura_cotizaciones_pct": 84.1, "pct_estado_en_ingresos": 16.5, "transf_estado_neta_aparente": 12543.7, "year": 2026, "month": "Abril", "source_file": "ResSISTEMA_Abril_2026.xlsx", "month_short": "Abr"}, {"cotizaciones": 77295.4, "tasas_otros": 351.2, "transferencias_corrientes": 16637.3, "ingresos_patrimoniales": 204.4, "ingresos_totales": 94515.0, "cot_regimen_general": 59362.0, "cot_autonomos": 5223.0, "cot_at_ep": 5502.7, "cot_desempleo": 4403.7, "cot_mei": 2435.0, "cotizaciones_cap4": 77295.4, "transf_estado": 14624.0, "transf_ss_internas": 1993.5, "transf_ccaa": null, "transf_privados": null, "transferencias_corrientes_cap4": 16637.3, "gasto_personal": 1136.0, "gasto_bienes_servicios": 639.3, "gasto_transferencias": 90222.7, "gasto_inversiones": 75.2, "gastos_totales": 92084.5, "pensiones": 68647.7, "pension_jubilacion": 50566.4, "pension_viudedad": 10417.4, "pension_incap_permanente": 6700.5, "subsidios_prestaciones": 10281.4, "prest_it": 7816.4, "prest_desempleo": 7176.9, "gasto_transf_ss": 1895.5, "gasto_transf_ccaa": 4.5, "gasto_transf_estado": 0.1, "pensiones_no_contributivas": 10055.2, "complementos_minimos": 7250.0, "imv": 4123.7, "prest_no_cont_otras": 4458.9, "gastos_no_contributivos": 18200.2, "cot_otros_regimenes": 368.9, "deficit_cotizaciones": 14789.1, "cobertura_cotizaciones_pct": 83.9, "pct_estado_en_ingresos": 15.5, "transf_estado_neta_aparente": 14623.9, "year": 2026, "month": "Mayo", "source_file": "ResSISTEMA_Mayo_2026.xlsx", "month_short": "May"}], "through": "Mayo"};
+// Paleta Panorama (Datawrapper por peso, base oscura) · gastos gris-azulado neutro
+const PAN_ING_PALETTE = ['#ffa600', '#ff6b59', '#dd4d88', '#954e9b', '#464c89', '#003f5c'];
+const PAN_BAR = { gastos: '#8fa0b3', gastosHover: '#758799' };
+const HIST_LINE = { blue: '#0c2d41', red: '#f03351', light: '#bfbdb2' };
+// Misma asignación que «Crecimiento interanual por bloque»
+const YOY_LINE = {
+  cotizaciones: HIST_LINE.light,
+  transferencias: HIST_LINE.red,
+  gastos: HIST_LINE.blue,
+};
+const PAN_ING_SEGMENTS = [
+  { key: 'cot', label: 'Cotizaciones', color: PAN_ING_PALETTE[5] },
+  { key: 'est', label: 'Transferencias Estado (PGE)', color: PAN_ING_PALETTE[4] },
+  { key: 'ss', label: 'SS internas', color: PAN_ING_PALETTE[3] },
+  { key: 'tasas', label: 'Tasas y otros', color: PAN_ING_PALETTE[0] },
+];
+const COLORS = {
+  cot: PAN_ING_PALETTE[5], estado: PAN_ING_PALETTE[4], ssInt: PAN_ING_PALETTE[3],
+  tasas: PAN_ING_PALETTE[0], patrim: PAN_ING_PALETTE[1],
+  pensiones: PAN_ING_PALETTE[5], subsidios: PAN_ING_PALETTE[2], noCont: PAN_ING_PALETTE[4],
+  gestion: PAN_ING_PALETTE[1], inv: PAN_ING_PALETTE[0], transfOut: PAN_ING_PALETTE[3],
+  gastos: PAN_BAR.gastos,
+  jub: PAN_ING_PALETTE[5], viud: PAN_ING_PALETTE[4], it: PAN_ING_PALETTE[2],
+  imv: PAN_ING_PALETTE[1], gray: PAN_ING_PALETTE[0],
+  aut: PAN_ING_PALETTE[4], atep: PAN_ING_PALETTE[3], des: PAN_ING_PALETTE[2], mei: PAN_ING_PALETTE[1],
+};
+const charts = {};
+
+const stackSum = ds => ds.data.reduce((s, v) => s + (v == null ? 0 : Math.abs(v)), 0);
+/** Apila de mayor (base) a menor (cima), por suma acumulada de la serie. */
+function sortStackDatasets(datasets) {
+  const groups = new Map();
+  const stackOrder = [];
+  datasets.forEach(ds => {
+    const key = ds.stack || '__single__';
+    if (!groups.has(key)) {
+      groups.set(key, []);
+      stackOrder.push(key);
+    }
+    groups.get(key).push(ds);
+  });
+  return stackOrder.flatMap(key =>
+    [...groups.get(key)].sort((a, b) => stackSum(b) - stackSum(a))
+  );
+}
+
+const mil = v => Math.round(v / 1000 * 10) / 10;
+const fmt = v => mil(v).toLocaleString('es-ES', {minimumFractionDigits:1, maximumFractionDigits:1}) + ' mil M€';
+const pct = (a, b) => b ? Math.round(a / b * 1000) / 10 : 0;
+const years = DATA.map(d => d.year);
+const last = DATA[DATA.length - 1];
+
+const chartOpts = (extra = {}) => {
+  const valueUnit = extra.valueUnit || 'milM';
+  const { valueUnit: _drop, ...restExtra } = extra;
+  return {
+  responsive: true,
+  maintainAspectRatio: false,
+  valueUnit,
+  interaction: { mode: 'index', intersect: false },
+  plugins: {
+    legend: { position: 'top', align: 'start', labels: { boxWidth: 12, font: { size: 11 }, padding: 14 } },
+    tooltip: {
+      callbacks: {
+        label: ctx => {
+          const v = ctx.parsed.y ?? ctx.parsed;
+          if (v == null || v === '') return null;
+          if (ctx.chart.config.type === 'doughnut' || ctx.chart.config.type === 'pie') {
+            const total = ctx.dataset.data.reduce((a,b)=>a+b,0);
+            const p = total ? Math.round(ctx.parsed/total*1000)/10 : 0;
+            return `${ctx.label}: ${ctx.parsed.toLocaleString('es-ES')} mil M€ (${p}%)`;
+          }
+          const unit = ctx.chart.options.valueUnit || 'milM';
+          const formatted = typeof v === 'number' ? v.toLocaleString('es-ES') : v;
+          const name = ctx.dataset.label || ctx.chart.options.seriesLabel || '';
+          if (unit === 'pct') return `${name}: ${formatted}%`;
+          return `${name}: ${formatted} mil M€`;
+        }
+      }
+    }
+  },
+  scales: {
+    x: { grid: { display: false }, ticks: { font: { size: 11 }, color: '#a1a1aa' } },
+    y: { grid: { color: '#e4e4e7' }, border: { display: false },
+      ticks: { font: { size: 11 }, color: '#a1a1aa' } }
+  },
+  ...restExtra
+};
+};
+
+function transfIngStack(d) {
+  return {
+    est: mil(d.transf_estado || 0),
+    ss: mil(d.transf_ss_internas || 0),
+    ccaa: mil(d.transf_ccaa || 0),
+    priv: mil(d.transf_privados || 0),
+  };
+}
+
+function transfGastStack(d) {
+  const pen = d.pensiones || 0, sub = d.subsidios_prestaciones || 0, nc = d.gastos_no_contributivos || 0;
+  const out = Math.max(0, (d.gasto_transf_ss||0) + (d.gasto_transf_ccaa||0) + (d.gasto_transf_estado||0));
+  return { pensiones: mil(pen), subsidios: mil(sub), noCont: mil(nc), salidas: mil(out) };
+}
+
+function pctEstadoCot(d) {
+  return d.transf_estado && d.cotizaciones ? Math.round(d.transf_estado / d.cotizaciones * 1000) / 10 : null;
+}
+
+function ingresoStack(d) {
+  const cot = d.cotizaciones || 0;
+  const est = d.transf_estado || 0;
+  const ss = d.transf_ss_internas || 0;
+  const tas = d.tasas_otros || 0;
+  const pat = d.ingresos_patrimoniales || 0;
+  const ing = d.ingresos_totales || 0;
+  const otros = Math.max(0, ing - cot - est - ss - tas - pat);
+  return { cot: mil(cot), est: mil(est), ss: mil(ss), tas: mil(tas), otros: mil(otros + pat) };
+}
+
+function panIngresoStack(d) {
+  const cot = d.cotizaciones || 0;
+  const ss = d.transf_ss_internas || 0;
+  const est = d.transf_estado || 0;
+  const ing = d.ingresos_totales || 0;
+  const tasasOtros = Math.max(0, ing - cot - ss - est);
+  return { cot: mil(cot), ss: mil(ss), tasas: mil(tasasOtros), est: mil(est) };
+}
+
+function ingresoSinPge(d) {
+  return (d.ingresos_totales || 0) - (d.transf_estado || 0);
+}
+
+function deficitSinPge(d) {
+  return mil(ingresoSinPge(d) - (d.gastos_totales || 0));
+}
+
+function plainMoney(v) {
+  return fmtMilMillones(v, true);
+}
+
+function fmtMilMillones(v, withEuros = true) {
+  if (v == null || Number.isNaN(v)) return '—';
+  const neg = v < 0;
+  const n = (Math.abs(v) / 1000).toLocaleString('es-ES', {
+    maximumFractionDigits: 1,
+    minimumFractionDigits: 1,
+  });
+  const body = withEuros ? `${n} mil millones de euros` : `${n} mil millones`;
+  return neg ? `−${body}` : body;
+}
+
+function lecturaPeriodo(isYtd, d) {
+  if (!isYtd) return `En ${d.year}`;
+  const year = EXERCISE?.year || 2026;
+  if (EXERCISE?.through) {
+    return `Entre enero y ${EXERCISE.through.toLowerCase()} de ${year}`;
+  }
+  const p = YTD?.period || 'ene–may 2026';
+  if (/ene/i.test(p)) return `Entre enero y mayo de ${year}`;
+  return p.charAt(0).toUpperCase() + p.slice(1);
+}
+
+function buildLecturaPanorama(d, isYtd) {
+  const cot = d.cotizaciones || 0;
+  const gast = d.gastos_totales || 0;
+  const est = d.transf_estado || 0;
+  const ing = d.ingresos_totales || 0;
+  const saldo = ing - gast;
+  const sinEstado = ing - est - gast;
+  const cob = d.cobertura_cotizaciones_pct;
+  const intro = lecturaPeriodo(isYtd, d);
+  const refYear = last.year;
+  const refCob = last.cobertura_cotizaciones_pct;
+  const cobStr = cob != null
+    ? Number(cob).toLocaleString('es-ES', { maximumFractionDigits: 1 })
+    : null;
+
+  if (isYtd) {
+    const mes = EXERCISE?.through?.toLowerCase() || 'mayo';
+    const saldoLine = saldo >= 0
+      ? `Las cuentas cuadran con ${fmtMilMillones(saldo, false)} de margen`
+      : `Hay un déficit de ${fmtMilMillones(Math.abs(saldo), false)}`;
+    const parts = [
+      `<p><strong>${intro}</strong> · datos provisionales. Entran <strong>${fmtMilMillones(cot, false)}</strong> en cotizaciones y salen <strong>${fmtMilMillones(gast, false)}</strong> en gastos — sin pagas extra de verano ni Navidad.</p>`,
+      est > 0
+        ? `<p>${saldoLine}; el Estado aporta <strong>${fmtMilMillones(est, false)}</strong> del PGE. <strong>Sin esa ayuda: ${fmtMilMillones(sinEstado, false)}.</strong></p>`
+        : `<p>${saldoLine}.</p>`,
+      cobStr != null && refCob != null
+        ? `<p>Cobertura <strong>${cobStr}%</strong> hasta ${mes} (sube antes de las pagas extra; cierre ${refYear}: <strong>${refCob}%</strong>).</p>`
+        : cobStr != null
+          ? `<p>Las cotizaciones cubren el <strong>${cobStr}%</strong> del gasto acumulado.</p>`
+          : '',
+      `<p class="lectura-hint">Gráfico: colores = ingresos (mayor abajo) · gris = gasto.</p>`,
+    ];
+    return parts.filter(Boolean).join('');
+  }
+
+  const saldoLine = saldo >= 0
+    ? `Cierre con margen de <strong>${fmtMilMillones(saldo, false)}</strong>`
+    : `Déficit de <strong>${fmtMilMillones(Math.abs(saldo), false)}</strong>`;
+  const parts = [
+    `<p><strong>${intro}</strong>, cotizaciones <strong>${fmtMilMillones(cot, false)}</strong> y gastos <strong>${fmtMilMillones(gast, false)}</strong>.</p>`,
+    est > 0
+      ? `<p>${saldoLine}. El Estado aportó <strong>${fmtMilMillones(est, false)}</strong>; sin PGE, <strong>${fmtMilMillones(sinEstado, false)}</strong>.</p>`
+      : `<p>${saldoLine}.</p>`,
+    cobStr != null
+      ? `<p>Cobertura anual: cotizaciones = <strong>${cobStr}%</strong> del gasto.</p>`
+      : '',
+    `<p class="lectura-hint">Gráfico: colores = ingresos · gris = gasto.</p>`,
+  ];
+  return parts.filter(Boolean).join('');
+}
+
+function gastoStack(d) {
+  const pen = d.pensiones || 0;
+  const sub = d.subsidios_prestaciones || 0;
+  const nc = d.gastos_no_contributivos || 0;
+  const ges = (d.gasto_personal || 0) + (d.gasto_bienes_servicios || 0);
+  const inv = d.gasto_inversiones || 0;
+  const gt = d.gasto_transferencias || 0;
+  const transfResto = Math.max(0, gt - pen - sub);
+  const total = d.gastos_totales || 0;
+  const otros = Math.max(0, total - pen - sub - nc - ges - inv - transfResto);
+  return {
+    pensiones: mil(pen), subsidios: mil(sub), noCont: mil(nc),
+    gestion: mil(ges), inv: mil(inv), transfOut: mil(transfResto), otros: mil(otros)
+  };
+}
+
+function cotRegimenStack(d) {
+  return {
+    rg: mil(d.cot_regimen_general || 0),
+    aut: mil(d.cot_autonomos || 0),
+    atep: mil(d.cot_at_ep || 0),
+    des: mil(d.cot_desempleo || 0),
+    mei: mil(d.cot_mei || 0),
+    otros: mil(d.cot_otros_regimenes || 0),
+  };
+}
+
+function prestacionStack(d) {
+  const otrasPrest = Math.max(0,
+    (d.subsidios_prestaciones || 0) - (d.prest_it || 0) - (d.prest_desempleo || 0) +
+    (d.gastos_no_contributivos || 0) - (d.imv || 0) - (d.complementos_minimos || 0) -
+    (d.pensiones_no_contributivas || 0)
+  );
+  return {
+    jub: mil(d.pension_jubilacion || 0),
+    viud: mil(d.pension_viudedad || 0),
+    incap: mil(d.pension_incap_permanente || 0),
+    it: mil(d.prest_it || 0),
+    des: mil(d.prest_desempleo || 0),
+    imv: mil(d.imv || 0),
+    min: mil(d.complementos_minimos || 0),
+    otras: mil(otrasPrest),
+  };
+}
+
+function destroy(id) { if (charts[id]) { charts[id].destroy(); delete charts[id]; } }
+
+const LINE_STYLE = {
+  tension: 0.4,
+  borderWidth: 1.5,
+  pointRadius: 0,
+  pointHoverRadius: 4,
+  pointHitRadius: 14,
+};
+
+function styleLineDataset(ds) {
+  return {
+    tension: LINE_STYLE.tension,
+    borderWidth: LINE_STYLE.borderWidth,
+    pointRadius: LINE_STYLE.pointRadius,
+    pointHoverRadius: LINE_STYLE.pointHoverRadius,
+    pointHitRadius: LINE_STYLE.pointHitRadius,
+    ...ds,
+  };
+}
+
+function makeLine(id, labels, datasets, extraOpts = {}) {
+  destroy(id);
+  charts[id] = new Chart(document.getElementById(id), {
+    type: 'line',
+    data: { labels, datasets: datasets.map(styleLineDataset) },
+    options: chartOpts(extraOpts),
+  });
+}
+
+function makeLineProvisional(id, {
+  labels, values, provisional, label, borderColor, backgroundColor,
+  fill = true, provisionalLabel = '2026 (provisional)', yScalePct = true,
+}) {
+  const lineData = [...values];
+  const lbls = [...labels];
+  const hasProv = provisional != null;
+  if (hasProv) {
+    lbls.push(provisionalLabel);
+    lineData.push(provisional);
+  }
+  const lastIdx = lineData.length - 1;
+  makeLine(id, lbls, [{
+    label,
+    data: lineData,
+    borderColor,
+    backgroundColor,
+    fill,
+    segment: {
+      borderDash: ctx => hasProv && ctx.p1DataIndex === lastIdx ? [6, 4] : undefined,
+    },
+  }], yScalePct ? {
+    valueUnit: 'pct',
+    scales: { y: { ticks: { callback: v => v + '%' } } },
+    plugins: { legend: { display: false } },
+  } : { plugins: { legend: { display: false } } });
+}
+
+function makeBar(id, labels, datasets, stacked=false) {
+  destroy(id);
+  const el = document.getElementById(id);
+  const data = stacked ? sortStackDatasets(datasets) : datasets;
+  charts[id] = new Chart(el, {
+    type: 'bar',
+    data: { labels, datasets: data },
+    options: chartOpts({
+      scales: {
+        x: { stacked, grid: { display: false }, ticks: { font: { size: 11 }, color: '#a1a1aa' } },
+        y: { stacked, grid: { color: '#e4e4e7' }, border: { display: false },
+          ticks: { font: { size: 11 }, color: '#a1a1aa' } }
+      },
+      datasets: { bar: { categoryPercentage: stacked ? 0.72 : 0.65, barPercentage: 0.88 } }
+    })
+  });
+}
+
+function ingresoVsGastosDatasets(rows) {
+  const ing = rows.map(panIngresoStack);
+  const segDatasets = sortStackDatasets(PAN_ING_SEGMENTS.map(seg => ({
+    label: seg.label,
+    data: ing.map(s => s[seg.key]),
+    backgroundColor: seg.color,
+    stack: 'ingresos',
+    borderWidth: 0,
+  })));
+  return [
+    ...segDatasets,
+    { label: 'Gastos totales', data: rows.map(r => mil(r.gastos_totales)),
+       backgroundColor: PAN_BAR.gastos, stack: 'gastos', borderWidth: 0, hoverBackgroundColor: PAN_BAR.gastosHover },
+  ];
+}
+
+const panIngGastBarOpts = {
+  scales: {
+    x: {
+      stacked: true,
+      offset: true,
+      grid: { display: false },
+      ticks: { font: { size: 11 }, color: '#a1a1aa' },
+    },
+    y: {
+      stacked: true,
+      grid: { color: '#e4e4e7' },
+      border: { display: false },
+      ticks: { font: { size: 11 }, color: '#a1a1aa' },
+    },
+  },
+  datasets: { bar: { categoryPercentage: 0.72, barPercentage: 0.92 } },
+};
+
+function makeIngVsGast(id, labels, rows) {
+  destroy(id);
+  charts[id] = new Chart(document.getElementById(id), {
+    type: 'bar',
+    data: { labels, datasets: ingresoVsGastosDatasets(rows) },
+    options: chartOpts(panIngGastBarOpts),
+  });
+}
+
+function makeIngVsGastSnapshot(id, row) {
+  const ing = panIngresoStack(row);
+  const gast = mil(row.gastos_totales);
+  destroy(id);
+  charts[id] = new Chart(document.getElementById(id), {
+    type: 'bar',
+    data: {
+      labels: ['Ingresos', 'Gastos'],
+      datasets: sortStackDatasets([
+        ...PAN_ING_SEGMENTS.map(seg => ({
+          label: seg.label,
+          data: [ing[seg.key], null],
+          backgroundColor: seg.color,
+          stack: 'ingresos',
+          borderWidth: 0,
+        })),
+        { label: 'Gastos totales', data: [null, gast], backgroundColor: PAN_BAR.gastos, stack: 'gastos', borderWidth: 0,
+           hoverBackgroundColor: PAN_BAR.gastosHover },
+      ]),
+    },
+    options: chartOpts({
+      ...panIngGastBarOpts,
+      datasets: { bar: { categoryPercentage: 0.45, barPercentage: 0.92 } },
+    }),
+  });
+}
+
+function makeDoughnut(id, labels, values, colors) {
+  destroy(id);
+  charts[id] = new Chart(document.getElementById(id), {
+    type: 'doughnut',
+    data: { labels, datasets: [{ data: values, backgroundColor: colors, borderWidth: 2, borderColor: '#fff' }] },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { position: 'right', labels: { boxWidth: 12, font: { size: 11 }, padding: 10 } },
+        tooltip: {
+          callbacks: {
+            label: ctx => {
+              const total = ctx.dataset.data.reduce((a,b)=>a+b,0);
+              const p = total ? Math.round(ctx.parsed/total*1000)/10 : 0;
+              return `${ctx.label}: ${ctx.parsed.toLocaleString('es-ES')} mil M€ (${p}%)`;
+            }
+          }
+        }
+      },
+      scales: { x: { display: false }, y: { display: false } },
+      cutout: '55%',
+    }
+  });
+}
+
+function renderKPIs() {
+  const el = document.getElementById('kpi-panorama');
+  const note = document.getElementById('panorama-period-note');
+  const lectura = document.getElementById('lectura-panorama');
+  const lecturaTitle = document.getElementById('lectura-panorama-title');
+  const sign = v => v == null ? '' : (v > 0 ? `+${v}%` : `${v}%`);
+  const useYtd = YTD && YTD.cotizaciones;
+
+  if (useYtd) {
+    const through = EXERCISE.through ? `hasta ${EXERCISE.through.toLowerCase()}` : YTD.period;
+    if (lecturaTitle) lecturaTitle.textContent = `Lectura rápida · ${YTD.period || '2026'}`;
+    note.textContent = `Cifras acumuladas (${through}). Unidad: miles de millones de euros (mil M€), salvo cobertura (%).`;
+    const cob = YTD.cobertura_cotizaciones_pct;
+    const cobStr = cob != null ? cob.toLocaleString('es-ES', { minimumFractionDigits: 1, maximumFractionDigits: 1 }) : '—';
+    const y = YTD.yoy || {};
+    const kpis = [
+      [fmt(YTD.cotizaciones), `Cotizaciones acum. · ${sign(y.cotizaciones)} vs ${YTD.prev_period}`, false],
+      [fmt(YTD.gastos_totales), `Gastos acum. · ${sign(y.gastos_totales)} vs ${YTD.prev_period}`, false],
+      [fmt(YTD.transf_estado), `Transferencias Estado · ${sign(y.transf_estado)} vs ${YTD.prev_period}`, false],
+      [cobStr, `Cobertura acumulada · ${YTD.period}`, true],
+    ];
+    el.innerHTML = kpis.map(([v, l, isPct]) =>
+      `<div class="stat${isPct ? ' stat-pct' : ''}"><div class="stat-v">${v}${isPct ? '<span class="stat-unit"> % cotiz. ÷ gastos</span>' : ''}</div><div class="stat-l">${l}</div></div>`
+    ).join('');
+    if (lectura) lectura.innerHTML = buildLecturaPanorama(YTD, true);
+    return;
+  }
+
+  if (lecturaTitle) lecturaTitle.textContent = `Lectura rápida · ${last.year}`;
+  note.textContent = `Cierre anual ${last.year} (${last.source_month || 'cierre'}). Unidad: mil M€; cobertura en %.`;
+  const cob = last.cobertura_cotizaciones_pct;
+  const kpis = [
+    [fmt(last.cotizaciones), 'Cotizaciones ' + last.year, false],
+    [fmt(last.gastos_totales), 'Gastos ' + last.year, false],
+    [fmt(last.transf_estado), 'Transferencias Estado (PGE)', false],
+    [last.cobertura_cotizaciones_pct.toLocaleString('es-ES', { minimumFractionDigits: 1, maximumFractionDigits: 1 }),
+      'Cobertura anual cotiz. ÷ gastos', true],
+  ];
+  el.innerHTML = kpis.map(([v, l, isPct]) =>
+    `<div class="stat${isPct ? ' stat-pct' : ''}"><div class="stat-v">${v}${isPct ? '<span class="stat-unit"> % cotiz. ÷ gastos</span>' : ''}</div><div class="stat-l">${l}</div></div>`
+  ).join('');
+  if (lectura) lectura.innerHTML = buildLecturaPanorama(last, false);
+}
+
+function transfEstLineDataset(data) {
+  return {
+    label: 'Transferencias Estado (PGE)',
+    data,
+    borderColor: YOY_LINE.gastos,
+    backgroundColor: 'rgba(12,45,65,.12)',
+    fill: true,
+  };
+}
+
+function deficitSinEstLineDataset(data) {
+  return {
+    label: 'Ingresos sin PGE − gastos',
+    data,
+    borderColor: YOY_LINE.transferencias,
+    backgroundColor: 'rgba(240,51,81,.12)',
+    fill: true,
+    segment: {
+      borderColor: ctx => (ctx.p1.parsed.y < 0 ? YOY_LINE.transferencias : YOY_LINE.gastos),
+      backgroundColor: ctx => (ctx.p1.parsed.y < 0 ? 'rgba(240,51,81,.12)' : 'rgba(12,45,65,.12)'),
+    },
+  };
+}
+
+function renderPanorama() {
+  const src = (YTD && YTD.cotizaciones) ? YTD : last;
+  const period = (YTD && YTD.period) ? YTD.period : String(last.year);
+
+  if (EXERCISE.months && EXERCISE.months.length) {
+    const labels = EXERCISE.months.map(m => m.month_short);
+    makeIngVsGast('chart-pan-ing-vs-gast', labels, EXERCISE.months);
+    makeLine('chart-pan-transf-est', labels, [transfEstLineDataset(
+      EXERCISE.months.map(m => mil(m.transf_estado))
+    )], { plugins: { legend: { display: false } } });
+    makeLine('chart-pan-gast-sin-est', labels, [deficitSinEstLineDataset(
+      EXERCISE.months.map(deficitSinPge)
+    )], { plugins: { legend: { display: false } } });
+    const titleEl = document.getElementById('pan-main-title');
+    if (titleEl) titleEl.textContent = `Ingresos vs gastos — ejercicio ${EXERCISE.year} (acumulado mensual)`;
+  } else {
+    makeIngVsGastSnapshot('chart-pan-ing-vs-gast', src);
+    makeLine('chart-pan-transf-est', [period], [transfEstLineDataset([mil(src.transf_estado)])],
+      { plugins: { legend: { display: false } } });
+    makeLine('chart-pan-gast-sin-est', [period], [deficitSinEstLineDataset([deficitSinPge(src)])],
+      { plugins: { legend: { display: false } } });
+  }
+}
+
+function renderIngresos() {
+  const stacks = DATA.map(ingresoStack);
+  makeBar('chart-ing-stack', years.map(String), [
+    { label: 'Cotizaciones', data: stacks.map(s => s.cot), backgroundColor: COLORS.cot, stack: 'i' },
+    { label: 'Transferencias Estado', data: stacks.map(s => s.est), backgroundColor: COLORS.estado, stack: 'i' },
+    { label: 'Transferencias SS internas', data: stacks.map(s => s.ss), backgroundColor: COLORS.ssInt, stack: 'i' },
+    { label: 'Tasas y otros', data: stacks.map(s => s.tas + s.otros), backgroundColor: COLORS.tasas, stack: 'i' },
+  ], true);
+  const cr = DATA.map(cotRegimenStack);
+  makeBar('chart-ing-cot-stack', years.map(String), [
+    { label: 'Régimen General', data: cr.map(s => s.rg), backgroundColor: COLORS.cot, stack: 'c' },
+    { label: 'Autónomos', data: cr.map(s => s.aut), backgroundColor: COLORS.aut, stack: 'c' },
+    { label: 'AT/EP', data: cr.map(s => s.atep), backgroundColor: COLORS.atep, stack: 'c' },
+    { label: 'Desempleo/ERTE', data: cr.map(s => s.des), backgroundColor: COLORS.des, stack: 'c' },
+    { label: 'MEI', data: cr.map(s => s.mei), backgroundColor: COLORS.mei, stack: 'c' },
+    { label: 'Otros regímenes', data: cr.map(s => s.otros), backgroundColor: COLORS.gray, stack: 'c' },
+  ], true);
+}
+
+function renderGastos() {
+  const stacks = DATA.map(gastoStack);
+  makeBar('chart-gast-stack', years.map(String), [
+    { label: 'Pensiones', data: stacks.map(s => s.pensiones), backgroundColor: COLORS.pensiones, stack: 'g' },
+    { label: 'Subsidios y prestaciones', data: stacks.map(s => s.subsidios), backgroundColor: COLORS.subsidios, stack: 'g' },
+    { label: 'No contributivo (IMV…)', data: stacks.map(s => s.noCont), backgroundColor: COLORS.noCont, stack: 'g' },
+    { label: 'Gestión', data: stacks.map(s => s.gestion), backgroundColor: COLORS.gestion, stack: 'g' },
+    { label: 'Inversiones y resto', data: stacks.map(s => s.inv + s.transfOut + s.otros), backgroundColor: COLORS.inv, stack: 'g' },
+  ], true);
+  const pr = DATA.map(prestacionStack);
+  makeBar('chart-gast-prest-stack', years.map(String), [
+    { label: 'Jubilación', data: pr.map(s => s.jub), backgroundColor: COLORS.jub, stack: 'p' },
+    { label: 'Viudedad', data: pr.map(s => s.viud), backgroundColor: COLORS.viud, stack: 'p' },
+    { label: 'Incap. permanente', data: pr.map(s => s.incap), backgroundColor: COLORS.ssInt, stack: 'p' },
+    { label: 'Incap. temporal', data: pr.map(s => s.it), backgroundColor: COLORS.it, stack: 'p' },
+    { label: 'Desempleo', data: pr.map(s => s.des), backgroundColor: COLORS.subsidios, stack: 'p' },
+    { label: 'IMV', data: pr.map(s => s.imv), backgroundColor: COLORS.imv, stack: 'p' },
+    { label: 'Compl. mínimos', data: pr.map(s => s.min), backgroundColor: COLORS.noCont, stack: 'p' },
+    { label: 'Otras prest.', data: pr.map(s => s.otras), backgroundColor: COLORS.gray, stack: 'p' },
+  ], true);
+}
+
+function renderTransferencias() {
+  const ti = DATA.map(transfIngStack);
+  makeBar('chart-tr-ing-stack', years.map(String), [
+    { label: 'Estado (PGE)', data: ti.map(s => s.est), backgroundColor: COLORS.estado, stack: 't' },
+    { label: 'SS internas', data: ti.map(s => s.ss), backgroundColor: COLORS.ssInt, stack: 't' },
+    { label: 'CCAA', data: ti.map(s => s.ccaa), backgroundColor: COLORS.tasas, stack: 't' },
+    { label: 'Privados/otros', data: ti.map(s => s.priv), backgroundColor: COLORS.gray, stack: 't' },
+  ], true);
+  const tg = DATA.map(transfGastStack);
+  makeBar('chart-tr-gast-stack', years.map(String), [
+    { label: 'Pensiones', data: tg.map(s => s.pensiones), backgroundColor: COLORS.pensiones, stack: 'g' },
+    { label: 'Subsidios', data: tg.map(s => s.subsidios), backgroundColor: COLORS.subsidios, stack: 'g' },
+    { label: 'No contributivo', data: tg.map(s => s.noCont), backgroundColor: COLORS.noCont, stack: 'g' },
+    { label: 'Salidas a terceros', data: tg.map(s => s.salidas), backgroundColor: COLORS.transfOut, stack: 'g' },
+  ], true);
+  renderTrPctActual();
+  renderTrPctEstCot();
+}
+
+function renderTrPctActual() {
+  const el = document.getElementById('tr-pct-kpi');
+  if (!el) return;
+  const p = YTD?.pct_estado_sobre_cotizaciones;
+  if (p == null) {
+    el.innerHTML = '';
+    return;
+  }
+  const prev = YTD.pct_estado_sobre_cotizaciones_prev;
+  const delta = YTD.pct_estado_sobre_cotizaciones_delta;
+  const deltaTxt = delta != null
+    ? `<span class="tone-muted">${delta >= 0 ? '+' : ''}${delta} pp vs ${YTD.prev_period || 'ene–may 2025'}</span>`
+    : '';
+  const lastClose = pctEstadoCot(DATA[DATA.length - 1]);
+  const stat = (v, label, highlight = false) => {
+    const display = v == null || v === '—' ? '—' : `${v}%`;
+    return `
+    <div class="stat tr-pct-stat">
+      <div class="stat-v ${highlight ? 'tone-estado' : ''}">${display}</div>
+      <div class="stat-l">${label}</div>
+    </div>`;
+  };
+  el.innerHTML = [
+    stat(p, `Provisional 2026 · ${YTD.period} · Transferencias Estado / cotizaciones`, true),
+    stat(lastClose ?? '—', `Cierre ${years[years.length - 1]} (referencia anual)`),
+    stat(prev ?? '—', `Mismo periodo 2025${deltaTxt ? ' · ' + deltaTxt : ''}`),
+  ].join('');
+}
+
+function renderTrPctEstCot() {
+  makeLineProvisional('chart-tr-pct-est-cot', {
+    labels: years.map(String),
+    values: DATA.map(pctEstadoCot),
+    provisional: YTD?.pct_estado_sobre_cotizaciones ?? null,
+    label: 'Estado / cotizaciones (%)',
+    borderColor: COLORS.estado,
+    backgroundColor: 'rgba(70,76,137,.12)',
+  });
+}
+
+function renderHistorico() {
+  const histLabels = years.map(String);
+  const histRows = [...DATA];
+  if (YTD?.cotizaciones) {
+    histLabels.push('2026 (prov.)');
+    histRows.push(YTD);
+  }
+  makeIngVsGast('chart-hist-cot-gast', histLabels, histRows);
+  makeLineProvisional('chart-hist-cobertura', {
+    labels: years.map(String),
+    values: DATA.map(d => d.cobertura_cotizaciones_pct),
+    provisional: YTD?.cobertura_cotizaciones_pct ?? null,
+    label: 'Cobertura cotiz./gastos',
+    borderColor: COLORS.cot,
+    backgroundColor: 'rgba(0,63,92,.12)',
+  });
+  makeLineProvisional('chart-hist-pct-estado', {
+    labels: years.map(String),
+    values: DATA.map(d => d.pct_estado_en_ingresos),
+    provisional: YTD?.pct_estado_en_ingresos ?? null,
+    label: 'Estado / ingresos totales (%)',
+    borderColor: COLORS.estado,
+    backgroundColor: 'rgba(70,76,137,.12)',
+  });
+  const yoy = (key) => DATA.map((d,i) => i === 0 ? null : Math.round((d[key]-DATA[i-1][key])/DATA[i-1][key]*1000)/10);
+  const yoyLabels = years.slice(1).map(String);
+  makeLine('chart-hist-yoy', yoyLabels, [
+    { label: 'Cotizaciones', data: yoy('cotizaciones').slice(1), borderColor: YOY_LINE.cotizaciones },
+    { label: 'Transferencias Estado', data: yoy('transf_estado').slice(1), borderColor: YOY_LINE.transferencias },
+    { label: 'Gastos totales', data: yoy('gastos_totales').slice(1), borderColor: YOY_LINE.gastos },
+  ], {
+    valueUnit: 'pct',
+    scales: { y: { ticks: { callback: v => v + '%' } } },
+    plugins: {
+      legend: {
+        position: 'top',
+        align: 'start',
+        labels: {
+          usePointStyle: true,
+          pointStyle: 'line',
+          boxWidth: 28,
+          boxHeight: 2,
+          padding: 14,
+        },
+      },
+    },
+  });
+}
+
+// Tabs
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('panel-' + btn.dataset.tab).classList.add('active');
+    setTimeout(() => Object.values(charts).forEach(c => c.resize()), 50);
+  });
+});
+
+renderKPIs();
+renderPanorama();
+renderIngresos();
+renderGastos();
+renderTransferencias();
+renderHistorico();
+</script>
+</body>
+</html>

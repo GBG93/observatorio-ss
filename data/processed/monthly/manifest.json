@@ -1,0 +1,732 @@
+{
+  "source": "ResSISTEMA xlsx → JSON (extract_breakdown.py)",
+  "updated_at": "2026-07-08T13:38:26Z",
+  "count": 142,
+  "latest_by_year": {
+    "2015": "DiciembreDefinitivo",
+    "2016": "Diciembre",
+    "2017": "Diciembre",
+    "2018": "Diciembre",
+    "2019": "DiciembreDefinitivo",
+    "2020": "DiciembreDefinitivo",
+    "2021": "DiciembreDefinitivo",
+    "2022": "DiciembreDefinitivo",
+    "2023": "DiciembreDefinitivo",
+    "2024": "DiciembreDefinitivo",
+    "2025": "DiciembreProvisional",
+    "2026": "Mayo",
+    "2014": "DiciembreDefinitivo"
+  },
+  "entries": [
+    {
+      "year": 2015,
+      "month": "Abril",
+      "file": "2015/Abril.json"
+    },
+    {
+      "year": 2016,
+      "month": "Abril",
+      "file": "2016/Abril.json"
+    },
+    {
+      "year": 2017,
+      "month": "Abril",
+      "file": "2017/Abril.json"
+    },
+    {
+      "year": 2018,
+      "month": "Abril",
+      "file": "2018/Abril.json"
+    },
+    {
+      "year": 2019,
+      "month": "Abril",
+      "file": "2019/Abril.json"
+    },
+    {
+      "year": 2020,
+      "month": "Abril",
+      "file": "2020/Abril.json"
+    },
+    {
+      "year": 2021,
+      "month": "Abril",
+      "file": "2021/Abril.json"
+    },
+    {
+      "year": 2022,
+      "month": "Abril",
+      "file": "2022/Abril.json"
+    },
+    {
+      "year": 2023,
+      "month": "Abril",
+      "file": "2023/Abril.json"
+    },
+    {
+      "year": 2024,
+      "month": "Abril",
+      "file": "2024/Abril.json"
+    },
+    {
+      "year": 2025,
+      "month": "Abril",
+      "file": "2025/Abril.json"
+    },
+    {
+      "year": 2026,
+      "month": "Abril",
+      "file": "2026/Abril.json"
+    },
+    {
+      "year": 2015,
+      "month": "Agosto",
+      "file": "2015/Agosto.json"
+    },
+    {
+      "year": 2016,
+      "month": "Agosto",
+      "file": "2016/Agosto.json"
+    },
+    {
+      "year": 2017,
+      "month": "Agosto",
+      "file": "2017/Agosto.json"
+    },
+    {
+      "year": 2018,
+      "month": "Agosto",
+      "file": "2018/Agosto.json"
+    },
+    {
+      "year": 2019,
+      "month": "Agosto",
+      "file": "2019/Agosto.json"
+    },
+    {
+      "year": 2020,
+      "month": "Agosto",
+      "file": "2020/Agosto.json"
+    },
+    {
+      "year": 2021,
+      "month": "Agosto",
+      "file": "2021/Agosto.json"
+    },
+    {
+      "year": 2022,
+      "month": "Agosto",
+      "file": "2022/Agosto.json"
+    },
+    {
+      "year": 2023,
+      "month": "Agosto",
+      "file": "2023/Agosto.json"
+    },
+    {
+      "year": 2024,
+      "month": "Agosto",
+      "file": "2024/Agosto.json"
+    },
+    {
+      "year": 2025,
+      "month": "Agosto",
+      "file": "2025/Agosto.json"
+    },
+    {
+      "year": 2014,
+      "month": "DiciembreDefinitivo",
+      "file": "2014/DiciembreDefinitivo.json"
+    },
+    {
+      "year": 2015,
+      "month": "DiciembreDefinitivo",
+      "file": "2015/DiciembreDefinitivo.json"
+    },
+    {
+      "year": 2019,
+      "month": "DiciembreDefinitivo",
+      "file": "2019/DiciembreDefinitivo.json"
+    },
+    {
+      "year": 2020,
+      "month": "DiciembreDefinitivo",
+      "file": "2020/DiciembreDefinitivo.json"
+    },
+    {
+      "year": 2021,
+      "month": "DiciembreDefinitivo",
+      "file": "2021/DiciembreDefinitivo.json"
+    },
+    {
+      "year": 2022,
+      "month": "DiciembreDefinitivo",
+      "file": "2022/DiciembreDefinitivo.json"
+    },
+    {
+      "year": 2023,
+      "month": "DiciembreDefinitivo",
+      "file": "2023/DiciembreDefinitivo.json"
+    },
+    {
+      "year": 2024,
+      "month": "DiciembreDefinitivo",
+      "file": "2024/DiciembreDefinitivo.json"
+    },
+    {
+      "year": 2022,
+      "month": "DiciembreProvisional",
+      "file": "2022/DiciembreProvisional.json"
+    },
+    {
+      "year": 2023,
+      "month": "DiciembreProvisional",
+      "file": "2023/DiciembreProvisional.json"
+    },
+    {
+      "year": 2024,
+      "month": "DiciembreProvisional",
+      "file": "2024/DiciembreProvisional.json"
+    },
+    {
+      "year": 2025,
+      "month": "DiciembreProvisional",
+      "file": "2025/DiciembreProvisional.json"
+    },
+    {
+      "year": 2016,
+      "month": "Diciembre",
+      "file": "2016/Diciembre.json"
+    },
+    {
+      "year": 2017,
+      "month": "Diciembre",
+      "file": "2017/Diciembre.json"
+    },
+    {
+      "year": 2018,
+      "month": "Diciembre",
+      "file": "2018/Diciembre.json"
+    },
+    {
+      "year": 2019,
+      "month": "Diciembre",
+      "file": "2019/Diciembre.json"
+    },
+    {
+      "year": 2015,
+      "month": "Enero",
+      "file": "2015/Enero.json"
+    },
+    {
+      "year": 2016,
+      "month": "Enero",
+      "file": "2016/Enero.json"
+    },
+    {
+      "year": 2017,
+      "month": "Enero",
+      "file": "2017/Enero.json"
+    },
+    {
+      "year": 2018,
+      "month": "Enero",
+      "file": "2018/Enero.json"
+    },
+    {
+      "year": 2019,
+      "month": "Enero",
+      "file": "2019/Enero.json"
+    },
+    {
+      "year": 2020,
+      "month": "Enero",
+      "file": "2020/Enero.json"
+    },
+    {
+      "year": 2021,
+      "month": "Enero",
+      "file": "2021/Enero.json"
+    },
+    {
+      "year": 2022,
+      "month": "Enero",
+      "file": "2022/Enero.json"
+    },
+    {
+      "year": 2023,
+      "month": "Enero",
+      "file": "2023/Enero.json"
+    },
+    {
+      "year": 2024,
+      "month": "Enero",
+      "file": "2024/Enero.json"
+    },
+    {
+      "year": 2025,
+      "month": "Enero",
+      "file": "2025/Enero.json"
+    },
+    {
+      "year": 2026,
+      "month": "Enero",
+      "file": "2026/Enero.json"
+    },
+    {
+      "year": 2022,
+      "month": "Febrero",
+      "file": "2022/Febrero.json"
+    },
+    {
+      "year": 2015,
+      "month": "Febrero",
+      "file": "2015/Febrero.json"
+    },
+    {
+      "year": 2016,
+      "month": "Febrero",
+      "file": "2016/Febrero.json"
+    },
+    {
+      "year": 2017,
+      "month": "Febrero",
+      "file": "2017/Febrero.json"
+    },
+    {
+      "year": 2018,
+      "month": "Febrero",
+      "file": "2018/Febrero.json"
+    },
+    {
+      "year": 2019,
+      "month": "Febrero",
+      "file": "2019/Febrero.json"
+    },
+    {
+      "year": 2020,
+      "month": "Febrero",
+      "file": "2020/Febrero.json"
+    },
+    {
+      "year": 2021,
+      "month": "Febrero",
+      "file": "2021/Febrero.json"
+    },
+    {
+      "year": 2023,
+      "month": "Febrero",
+      "file": "2023/Febrero.json"
+    },
+    {
+      "year": 2024,
+      "month": "Febrero",
+      "file": "2024/Febrero.json"
+    },
+    {
+      "year": 2025,
+      "month": "Febrero",
+      "file": "2025/Febrero.json"
+    },
+    {
+      "year": 2026,
+      "month": "Febrero",
+      "file": "2026/Febrero.json"
+    },
+    {
+      "year": 2015,
+      "month": "Julio",
+      "file": "2015/Julio.json"
+    },
+    {
+      "year": 2016,
+      "month": "Julio",
+      "file": "2016/Julio.json"
+    },
+    {
+      "year": 2017,
+      "month": "Julio",
+      "file": "2017/Julio.json"
+    },
+    {
+      "year": 2018,
+      "month": "Julio",
+      "file": "2018/Julio.json"
+    },
+    {
+      "year": 2019,
+      "month": "Julio",
+      "file": "2019/Julio.json"
+    },
+    {
+      "year": 2020,
+      "month": "Julio",
+      "file": "2020/Julio.json"
+    },
+    {
+      "year": 2021,
+      "month": "Julio",
+      "file": "2021/Julio.json"
+    },
+    {
+      "year": 2022,
+      "month": "Julio",
+      "file": "2022/Julio.json"
+    },
+    {
+      "year": 2023,
+      "month": "Julio",
+      "file": "2023/Julio.json"
+    },
+    {
+      "year": 2024,
+      "month": "Julio",
+      "file": "2024/Julio.json"
+    },
+    {
+      "year": 2025,
+      "month": "Julio",
+      "file": "2025/Julio.json"
+    },
+    {
+      "year": 2015,
+      "month": "Junio",
+      "file": "2015/Junio.json"
+    },
+    {
+      "year": 2016,
+      "month": "Junio",
+      "file": "2016/Junio.json"
+    },
+    {
+      "year": 2017,
+      "month": "Junio",
+      "file": "2017/Junio.json"
+    },
+    {
+      "year": 2018,
+      "month": "Junio",
+      "file": "2018/Junio.json"
+    },
+    {
+      "year": 2019,
+      "month": "Junio",
+      "file": "2019/Junio.json"
+    },
+    {
+      "year": 2020,
+      "month": "Junio",
+      "file": "2020/Junio.json"
+    },
+    {
+      "year": 2021,
+      "month": "Junio",
+      "file": "2021/Junio.json"
+    },
+    {
+      "year": 2022,
+      "month": "Junio",
+      "file": "2022/Junio.json"
+    },
+    {
+      "year": 2023,
+      "month": "Junio",
+      "file": "2023/Junio.json"
+    },
+    {
+      "year": 2024,
+      "month": "Junio",
+      "file": "2024/Junio.json"
+    },
+    {
+      "year": 2025,
+      "month": "Junio",
+      "file": "2025/Junio.json"
+    },
+    {
+      "year": 2015,
+      "month": "Marzo",
+      "file": "2015/Marzo.json"
+    },
+    {
+      "year": 2016,
+      "month": "Marzo",
+      "file": "2016/Marzo.json"
+    },
+    {
+      "year": 2017,
+      "month": "Marzo",
+      "file": "2017/Marzo.json"
+    },
+    {
+      "year": 2018,
+      "month": "Marzo",
+      "file": "2018/Marzo.json"
+    },
+    {
+      "year": 2019,
+      "month": "Marzo",
+      "file": "2019/Marzo.json"
+    },
+    {
+      "year": 2020,
+      "month": "Marzo",
+      "file": "2020/Marzo.json"
+    },
+    {
+      "year": 2021,
+      "month": "Marzo",
+      "file": "2021/Marzo.json"
+    },
+    {
+      "year": 2022,
+      "month": "Marzo",
+      "file": "2022/Marzo.json"
+    },
+    {
+      "year": 2023,
+      "month": "Marzo",
+      "file": "2023/Marzo.json"
+    },
+    {
+      "year": 2024,
+      "month": "Marzo",
+      "file": "2024/Marzo.json"
+    },
+    {
+      "year": 2025,
+      "month": "Marzo",
+      "file": "2025/Marzo.json"
+    },
+    {
+      "year": 2026,
+      "month": "Marzo",
+      "file": "2026/Marzo.json"
+    },
+    {
+      "year": 2015,
+      "month": "Mayo",
+      "file": "2015/Mayo.json"
+    },
+    {
+      "year": 2016,
+      "month": "Mayo",
+      "file": "2016/Mayo.json"
+    },
+    {
+      "year": 2017,
+      "month": "Mayo",
+      "file": "2017/Mayo.json"
+    },
+    {
+      "year": 2018,
+      "month": "Mayo",
+      "file": "2018/Mayo.json"
+    },
+    {
+      "year": 2019,
+      "month": "Mayo",
+      "file": "2019/Mayo.json"
+    },
+    {
+      "year": 2020,
+      "month": "Mayo",
+      "file": "2020/Mayo.json"
+    },
+    {
+      "year": 2021,
+      "month": "Mayo",
+      "file": "2021/Mayo.json"
+    },
+    {
+      "year": 2022,
+      "month": "Mayo",
+      "file": "2022/Mayo.json"
+    },
+    {
+      "year": 2023,
+      "month": "Mayo",
+      "file": "2023/Mayo.json"
+    },
+    {
+      "year": 2024,
+      "month": "Mayo",
+      "file": "2024/Mayo.json"
+    },
+    {
+      "year": 2025,
+      "month": "Mayo",
+      "file": "2025/Mayo.json"
+    },
+    {
+      "year": 2026,
+      "month": "Mayo",
+      "file": "2026/Mayo.json"
+    },
+    {
+      "year": 2015,
+      "month": "Noviembre",
+      "file": "2015/Noviembre.json"
+    },
+    {
+      "year": 2016,
+      "month": "Noviembre",
+      "file": "2016/Noviembre.json"
+    },
+    {
+      "year": 2017,
+      "month": "Noviembre",
+      "file": "2017/Noviembre.json"
+    },
+    {
+      "year": 2018,
+      "month": "Noviembre",
+      "file": "2018/Noviembre.json"
+    },
+    {
+      "year": 2019,
+      "month": "Noviembre",
+      "file": "2019/Noviembre.json"
+    },
+    {
+      "year": 2020,
+      "month": "Noviembre",
+      "file": "2020/Noviembre.json"
+    },
+    {
+      "year": 2021,
+      "month": "Noviembre",
+      "file": "2021/Noviembre.json"
+    },
+    {
+      "year": 2022,
+      "month": "Noviembre",
+      "file": "2022/Noviembre.json"
+    },
+    {
+      "year": 2023,
+      "month": "Noviembre",
+      "file": "2023/Noviembre.json"
+    },
+    {
+      "year": 2024,
+      "month": "Noviembre",
+      "file": "2024/Noviembre.json"
+    },
+    {
+      "year": 2025,
+      "month": "Noviembre",
+      "file": "2025/Noviembre.json"
+    },
+    {
+      "year": 2015,
+      "month": "Octubre",
+      "file": "2015/Octubre.json"
+    },
+    {
+      "year": 2016,
+      "month": "Octubre",
+      "file": "2016/Octubre.json"
+    },
+    {
+      "year": 2017,
+      "month": "Octubre",
+      "file": "2017/Octubre.json"
+    },
+    {
+      "year": 2018,
+      "month": "Octubre",
+      "file": "2018/Octubre.json"
+    },
+    {
+      "year": 2019,
+      "month": "Octubre",
+      "file": "2019/Octubre.json"
+    },
+    {
+      "year": 2020,
+      "month": "Octubre",
+      "file": "2020/Octubre.json"
+    },
+    {
+      "year": 2021,
+      "month": "Octubre",
+      "file": "2021/Octubre.json"
+    },
+    {
+      "year": 2022,
+      "month": "Octubre",
+      "file": "2022/Octubre.json"
+    },
+    {
+      "year": 2023,
+      "month": "Octubre",
+      "file": "2023/Octubre.json"
+    },
+    {
+      "year": 2024,
+      "month": "Octubre",
+      "file": "2024/Octubre.json"
+    },
+    {
+      "year": 2025,
+      "month": "Octubre",
+      "file": "2025/Octubre.json"
+    },
+    {
+      "year": 2015,
+      "month": "Septiembre",
+      "file": "2015/Septiembre.json"
+    },
+    {
+      "year": 2016,
+      "month": "Septiembre",
+      "file": "2016/Septiembre.json"
+    },
+    {
+      "year": 2017,
+      "month": "Septiembre",
+      "file": "2017/Septiembre.json"
+    },
+    {
+      "year": 2018,
+      "month": "Septiembre",
+      "file": "2018/Septiembre.json"
+    },
+    {
+      "year": 2019,
+      "month": "Septiembre",
+      "file": "2019/Septiembre.json"
+    },
+    {
+      "year": 2020,
+      "month": "Septiembre",
+      "file": "2020/Septiembre.json"
+    },
+    {
+      "year": 2021,
+      "month": "Septiembre",
+      "file": "2021/Septiembre.json"
+    },
+    {
+      "year": 2022,
+      "month": "Septiembre",
+      "file": "2022/Septiembre.json"
+    },
+    {
+      "year": 2023,
+      "month": "Septiembre",
+      "file": "2023/Septiembre.json"
+    },
+    {
+      "year": 2024,
+      "month": "Septiembre",
+      "file": "2024/Septiembre.json"
+    },
+    {
+      "year": 2025,
+      "month": "Septiembre",
+      "file": "2025/Septiembre.json"
+    }
+  ]
+}

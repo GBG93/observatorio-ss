@@ -1,0 +1,4870 @@
+{
+  "source": "https://www.seg-social.es/wps/portal/wss/internet/InformacionEconomicoFinanciera/393/394",
+  "year_urls": {
+    "2005": "https://www.seg-social.es/wps/portal/wss/internet/InformacionEconomicoFinanciera/393/394/401",
+    "2006": "https://www.seg-social.es/wps/portal/wss/internet/InformacionEconomicoFinanciera/393/394/402",
+    "2007": "https://www.seg-social.es/wps/portal/wss/internet/InformacionEconomicoFinanciera/393/394/403",
+    "2008": "https://www.seg-social.es/wps/portal/wss/internet/InformacionEconomicoFinanciera/393/394/404",
+    "2009": "https://www.seg-social.es/wps/portal/wss/internet/InformacionEconomicoFinanciera/393/394/1345",
+    "2010": "https://www.seg-social.es/wps/portal/wss/internet/InformacionEconomicoFinanciera/393/394/1788",
+    "2011": "https://www.seg-social.es/wps/portal/wss/internet/InformacionEconomicoFinanciera/393/394/1806",
+    "2012": "https://www.seg-social.es/wps/portal/wss/internet/InformacionEconomicoFinanciera/393/394/2246",
+    "2013": "https://www.seg-social.es/wps/portal/wss/internet/InformacionEconomicoFinanciera/393/394/2458",
+    "2014": "https://www.seg-social.es/wps/portal/wss/internet/InformacionEconomicoFinanciera/393/394/2694",
+    "2015": "https://www.seg-social.es/wps/portal/wss/internet/InformacionEconomicoFinanciera/393/394/2931",
+    "2016": "https://www.seg-social.es/wps/portal/wss/internet/InformacionEconomicoFinanciera/393/394/3205",
+    "2017": "https://www.seg-social.es/wps/portal/wss/internet/InformacionEconomicoFinanciera/393/394/3510",
+    "2018": "https://www.seg-social.es/wps/portal/wss/internet/InformacionEconomicoFinanciera/393/394/3778",
+    "2019": "https://www.seg-social.es/wps/portal/wss/internet/InformacionEconomicoFinanciera/393/394/19fc1557-ef85-47d9-b694-d1b4f089c9a2",
+    "2020": "https://www.seg-social.es/wps/portal/wss/internet/InformacionEconomicoFinanciera/393/394/5463ce49-c410-402b-a85f-25302ac98551",
+    "2021": "https://www.seg-social.es/wps/portal/wss/internet/InformacionEconomicoFinanciera/393/394/0a640a9b-6825-4de6-9d90-54c9e018e4b3",
+    "2022": "https://www.seg-social.es/wps/portal/wss/internet/InformacionEconomicoFinanciera/393/394/f0226d1b-4634-4122-9841-18c0fba239a4",
+    "2023": "https://www.seg-social.es/wps/portal/wss/internet/InformacionEconomicoFinanciera/393/394/e74cd1d7-d9e8-4e06-84e0-33699cabc829",
+    "2024": "https://www.seg-social.es/wps/portal/wss/internet/InformacionEconomicoFinanciera/393/394/243c53c5-b944-462d-9874-6272e32ad29d",
+    "2025": "https://www.seg-social.es/wps/portal/wss/internet/InformacionEconomicoFinanciera/393/394/bfe1d970-2455-4344-a550-035771dbbf49",
+    "2026": "https://www.seg-social.es/wps/portal/wss/internet/InformacionEconomicoFinanciera/393/394/7176e17a-7290-405f-b877-8d71a8d4d018"
+  },
+  "downloaded_at": "2026-07-08T09:24:24",
+  "stats": {
+    "skipped": 214,
+    "ok": 40
+  },
+  "catalog_count": 254,
+  "xlsx_on_disk": 142,
+  "pdf_on_disk": 117,
+  "catalog": [
+    {
+      "year": 2005,
+      "month": "Marzo",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Marzo_2005.pdf",
+      "source_id": "115807",
+      "url": "https://www.seg-social.es/descarga/es/115807"
+    },
+    {
+      "year": 2005,
+      "month": "Abril",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Abril_2005.pdf",
+      "source_id": "117674",
+      "url": "https://www.seg-social.es/descarga/es/117674"
+    },
+    {
+      "year": 2005,
+      "month": "Mayo",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Mayo_2005.pdf",
+      "source_id": "117677",
+      "url": "https://www.seg-social.es/descarga/es/117677"
+    },
+    {
+      "year": 2005,
+      "month": "Junio",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Junio_2005.pdf",
+      "source_id": "117680",
+      "url": "https://www.seg-social.es/descarga/es/117680"
+    },
+    {
+      "year": 2005,
+      "month": "Julio",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Julio_2005.pdf",
+      "source_id": "117683",
+      "url": "https://www.seg-social.es/descarga/es/117683"
+    },
+    {
+      "year": 2005,
+      "month": "Septiembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Septiembre_2005.pdf",
+      "source_id": "117691",
+      "url": "https://www.seg-social.es/descarga/es/117691"
+    },
+    {
+      "year": 2005,
+      "month": "Octubre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Octubre_2005.pdf",
+      "source_id": "117694",
+      "url": "https://www.seg-social.es/descarga/es/117694"
+    },
+    {
+      "year": 2005,
+      "month": "Noviembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Noviembre_2005.pdf",
+      "source_id": "117697",
+      "url": "https://www.seg-social.es/descarga/es/117697"
+    },
+    {
+      "year": 2005,
+      "month": "Diciembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Diciembre_2005.pdf",
+      "source_id": "117700",
+      "url": "https://www.seg-social.es/descarga/es/117700"
+    },
+    {
+      "year": 2005,
+      "month": "Agosto",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Agosto_2005.pdf",
+      "source_id": "117688",
+      "url": "https://www.seg-social.es/descarga/es/117688"
+    },
+    {
+      "year": 2006,
+      "month": "Enero",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Enero_2006.pdf",
+      "source_id": "119537",
+      "url": "https://www.seg-social.es/descarga/es/119537"
+    },
+    {
+      "year": 2006,
+      "month": "Febrero",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Febrero_2006.pdf",
+      "source_id": "119543",
+      "url": "https://www.seg-social.es/descarga/es/119543"
+    },
+    {
+      "year": 2006,
+      "month": "Marzo",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Marzo_2006.pdf",
+      "source_id": "119549",
+      "url": "https://www.seg-social.es/descarga/es/119549"
+    },
+    {
+      "year": 2006,
+      "month": "Abril",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Abril_2006.pdf",
+      "source_id": "119602",
+      "url": "https://www.seg-social.es/descarga/es/119602"
+    },
+    {
+      "year": 2006,
+      "month": "Mayo",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Mayo_2006.pdf",
+      "source_id": "119609",
+      "url": "https://www.seg-social.es/descarga/es/119609"
+    },
+    {
+      "year": 2006,
+      "month": "Junio",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Junio_2006.pdf",
+      "source_id": "119612",
+      "url": "https://www.seg-social.es/descarga/es/119612"
+    },
+    {
+      "year": 2006,
+      "month": "Julio",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Julio_2006.pdf",
+      "source_id": "119615",
+      "url": "https://www.seg-social.es/descarga/es/119615"
+    },
+    {
+      "year": 2006,
+      "month": "Agosto",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Agosto_2006.pdf",
+      "source_id": "119619",
+      "url": "https://www.seg-social.es/descarga/es/119619"
+    },
+    {
+      "year": 2006,
+      "month": "Septiembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Septiembre_2006.pdf",
+      "source_id": "119652",
+      "url": "https://www.seg-social.es/descarga/es/119652"
+    },
+    {
+      "year": 2006,
+      "month": "Octubre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Octubre_2006.pdf",
+      "source_id": "119655",
+      "url": "https://www.seg-social.es/descarga/es/119655"
+    },
+    {
+      "year": 2006,
+      "month": "Noviembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Noviembre_2006.pdf",
+      "source_id": "119658",
+      "url": "https://www.seg-social.es/descarga/es/119658"
+    },
+    {
+      "year": 2006,
+      "month": "Diciembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Diciembre_2006.pdf",
+      "source_id": "119667",
+      "url": "https://www.seg-social.es/descarga/es/119667"
+    },
+    {
+      "year": 2007,
+      "month": "Enero",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Enero_2007.pdf",
+      "source_id": "117570",
+      "url": "https://www.seg-social.es/descarga/es/117570"
+    },
+    {
+      "year": 2007,
+      "month": "Febrero",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Febrero_2007.pdf",
+      "source_id": "117754",
+      "url": "https://www.seg-social.es/descarga/es/117754"
+    },
+    {
+      "year": 2007,
+      "month": "Marzo",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Marzo_2007.pdf",
+      "source_id": "117629",
+      "url": "https://www.seg-social.es/descarga/es/117629"
+    },
+    {
+      "year": 2007,
+      "month": "Abril",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Abril_2007.pdf",
+      "source_id": "117635",
+      "url": "https://www.seg-social.es/descarga/es/117635"
+    },
+    {
+      "year": 2007,
+      "month": "Mayo",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Mayo_2007.pdf",
+      "source_id": "117636",
+      "url": "https://www.seg-social.es/descarga/es/117636"
+    },
+    {
+      "year": 2007,
+      "month": "Junio",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Junio_2007.pdf",
+      "source_id": "117642",
+      "url": "https://www.seg-social.es/descarga/es/117642"
+    },
+    {
+      "year": 2007,
+      "month": "Julio",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Julio_2007.pdf",
+      "source_id": "117644",
+      "url": "https://www.seg-social.es/descarga/es/117644"
+    },
+    {
+      "year": 2007,
+      "month": "Agosto",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Agosto_2007.pdf",
+      "source_id": "117647",
+      "url": "https://www.seg-social.es/descarga/es/117647"
+    },
+    {
+      "year": 2007,
+      "month": "Septiembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Septiembre_2007.pdf",
+      "source_id": "117650",
+      "url": "https://www.seg-social.es/descarga/es/117650"
+    },
+    {
+      "year": 2007,
+      "month": "Octubre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Octubre_2007.pdf",
+      "source_id": "117657",
+      "url": "https://www.seg-social.es/descarga/es/117657"
+    },
+    {
+      "year": 2007,
+      "month": "Noviembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Noviembre_2007.pdf",
+      "source_id": "117661",
+      "url": "https://www.seg-social.es/descarga/es/117661"
+    },
+    {
+      "year": 2007,
+      "month": "Diciembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Diciembre_2007.pdf",
+      "source_id": "117667",
+      "url": "https://www.seg-social.es/descarga/es/117667"
+    },
+    {
+      "year": 2008,
+      "month": "Enero",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Enero_2008.pdf",
+      "source_id": "115870",
+      "url": "https://www.seg-social.es/descarga/es/115870"
+    },
+    {
+      "year": 2008,
+      "month": "Febrero",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Febrero_2008.pdf",
+      "source_id": "117510",
+      "url": "https://www.seg-social.es/descarga/es/117510"
+    },
+    {
+      "year": 2008,
+      "month": "Marzo",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Marzo_2008.pdf",
+      "source_id": "117514",
+      "url": "https://www.seg-social.es/descarga/es/117514"
+    },
+    {
+      "year": 2008,
+      "month": "Abril",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Abril_2008.pdf",
+      "source_id": "117516",
+      "url": "https://www.seg-social.es/descarga/es/117516"
+    },
+    {
+      "year": 2008,
+      "month": "Mayo",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Mayo_2008.pdf",
+      "source_id": "117519",
+      "url": "https://www.seg-social.es/descarga/es/117519"
+    },
+    {
+      "year": 2008,
+      "month": "Junio",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Junio_2008.pdf",
+      "source_id": "117522",
+      "url": "https://www.seg-social.es/descarga/es/117522"
+    },
+    {
+      "year": 2008,
+      "month": "Julio",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Julio_2008.pdf",
+      "source_id": "117525",
+      "url": "https://www.seg-social.es/descarga/es/117525"
+    },
+    {
+      "year": 2008,
+      "month": "Agosto",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Agosto_2008.pdf",
+      "source_id": "117528",
+      "url": "https://www.seg-social.es/descarga/es/117528"
+    },
+    {
+      "year": 2008,
+      "month": "Septiembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Septiembre_2008.pdf",
+      "source_id": "117531",
+      "url": "https://www.seg-social.es/descarga/es/117531"
+    },
+    {
+      "year": 2008,
+      "month": "Octubre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Octubre_2008.pdf",
+      "source_id": "117536",
+      "url": "https://www.seg-social.es/descarga/es/117536"
+    },
+    {
+      "year": 2008,
+      "month": "Noviembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Noviembre_2008.pdf",
+      "source_id": "117541",
+      "url": "https://www.seg-social.es/descarga/es/117541"
+    },
+    {
+      "year": 2008,
+      "month": "Diciembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Diciembre_2008.pdf",
+      "source_id": "117553",
+      "url": "https://www.seg-social.es/descarga/es/117553"
+    },
+    {
+      "year": 2009,
+      "month": "Enero",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Enero_2009.pdf",
+      "source_id": "119245",
+      "url": "https://www.seg-social.es/descarga/es/119245"
+    },
+    {
+      "year": 2009,
+      "month": "Febrero",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Febrero_2009.pdf",
+      "source_id": "119248",
+      "url": "https://www.seg-social.es/descarga/es/119248"
+    },
+    {
+      "year": 2009,
+      "month": "Abril",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Abril_2009.pdf",
+      "source_id": "119254",
+      "url": "https://www.seg-social.es/descarga/es/119254"
+    },
+    {
+      "year": 2009,
+      "month": "Mayo",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Mayo_2009.pdf",
+      "source_id": "120994",
+      "url": "https://www.seg-social.es/descarga/es/120994"
+    },
+    {
+      "year": 2009,
+      "month": "Junio",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Junio_2009.pdf",
+      "source_id": "122217",
+      "url": "https://www.seg-social.es/descarga/es/122217"
+    },
+    {
+      "year": 2009,
+      "month": "Julio",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Julio_2009.pdf",
+      "source_id": "122553",
+      "url": "https://www.seg-social.es/descarga/es/122553"
+    },
+    {
+      "year": 2009,
+      "month": "Agosto",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Agosto_2009.pdf",
+      "source_id": "123128",
+      "url": "https://www.seg-social.es/descarga/es/123128"
+    },
+    {
+      "year": 2009,
+      "month": "Septiembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Septiembre_2009.pdf",
+      "source_id": "123746",
+      "url": "https://www.seg-social.es/descarga/es/123746"
+    },
+    {
+      "year": 2009,
+      "month": "Octubre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Octubre_2009.pdf",
+      "source_id": "124561",
+      "url": "https://www.seg-social.es/descarga/es/124561"
+    },
+    {
+      "year": 2009,
+      "month": "Noviembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Noviembre_2009.pdf",
+      "source_id": "063396",
+      "url": "https://www.seg-social.es/descarga/es/063396"
+    },
+    {
+      "year": 2009,
+      "month": "Marzo",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Marzo_2009.pdf",
+      "source_id": "119251",
+      "url": "https://www.seg-social.es/descarga/es/119251"
+    },
+    {
+      "year": 2009,
+      "month": "Liquidación",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Liquidación_2009.pdf",
+      "source_id": "142936",
+      "url": "https://www.seg-social.es/descarga/es/142936"
+    },
+    {
+      "year": 2010,
+      "month": "Enero",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Enero_2010.pdf",
+      "source_id": "129648",
+      "url": "https://www.seg-social.es/descarga/es/129648"
+    },
+    {
+      "year": 2010,
+      "month": "Febrero",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Febrero_2010.pdf",
+      "source_id": "130369",
+      "url": "https://www.seg-social.es/descarga/es/130369"
+    },
+    {
+      "year": 2010,
+      "month": "Marzo",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Marzo_2010.pdf",
+      "source_id": "131098",
+      "url": "https://www.seg-social.es/descarga/es/131098"
+    },
+    {
+      "year": 2010,
+      "month": "Abril",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Abril_2010.pdf",
+      "source_id": "131600",
+      "url": "https://www.seg-social.es/descarga/es/131600"
+    },
+    {
+      "year": 2010,
+      "month": "Mayo",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Mayo_2010.pdf",
+      "source_id": "138677",
+      "url": "https://www.seg-social.es/descarga/es/138677"
+    },
+    {
+      "year": 2010,
+      "month": "Junio",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Junio_2010.pdf",
+      "source_id": "140418",
+      "url": "https://www.seg-social.es/descarga/es/140418"
+    },
+    {
+      "year": 2010,
+      "month": "Julio",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Julio_2010.pdf",
+      "source_id": "140728",
+      "url": "https://www.seg-social.es/descarga/es/140728"
+    },
+    {
+      "year": 2010,
+      "month": "Agosto",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Agosto_2010.pdf",
+      "source_id": "141094",
+      "url": "https://www.seg-social.es/descarga/es/141094"
+    },
+    {
+      "year": 2010,
+      "month": "Septiembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Septiembre_2010.pdf",
+      "source_id": "141912",
+      "url": "https://www.seg-social.es/descarga/es/141912"
+    },
+    {
+      "year": 2010,
+      "month": "Octubre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Octubre_2010.pdf",
+      "source_id": "142351",
+      "url": "https://www.seg-social.es/descarga/es/142351"
+    },
+    {
+      "year": 2010,
+      "month": "Noviembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Noviembre_2010.pdf",
+      "source_id": "142914",
+      "url": "https://www.seg-social.es/descarga/es/142914"
+    },
+    {
+      "year": 2010,
+      "month": "Diciembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Diciembre_2010.pdf",
+      "source_id": "165003",
+      "url": "https://www.seg-social.es/descarga/es/165003"
+    },
+    {
+      "year": 2011,
+      "month": "Enero",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Enero_2011.pdf",
+      "source_id": "145062",
+      "url": "https://www.seg-social.es/descarga/es/145062"
+    },
+    {
+      "year": 2011,
+      "month": "Febrero",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Febrero_2011.pdf",
+      "source_id": "145710",
+      "url": "https://www.seg-social.es/descarga/es/145710"
+    },
+    {
+      "year": 2011,
+      "month": "Marzo",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Marzo_2011.pdf",
+      "source_id": "146501",
+      "url": "https://www.seg-social.es/descarga/es/146501"
+    },
+    {
+      "year": 2011,
+      "month": "Abril",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Abril_2011.pdf",
+      "source_id": "147080",
+      "url": "https://www.seg-social.es/descarga/es/147080"
+    },
+    {
+      "year": 2011,
+      "month": "Mayo",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Mayo_2011.pdf",
+      "source_id": "148244",
+      "url": "https://www.seg-social.es/descarga/es/148244"
+    },
+    {
+      "year": 2011,
+      "month": "Junio",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Junio_2011.pdf",
+      "source_id": "150122",
+      "url": "https://www.seg-social.es/descarga/es/150122"
+    },
+    {
+      "year": 2011,
+      "month": "Julio",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Julio_2011.pdf",
+      "source_id": "152126",
+      "url": "https://www.seg-social.es/descarga/es/152126"
+    },
+    {
+      "year": 2011,
+      "month": "Agosto",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Agosto_2011.pdf",
+      "source_id": "152485",
+      "url": "https://www.seg-social.es/descarga/es/152485"
+    },
+    {
+      "year": 2011,
+      "month": "Septiembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Septiembre_2011.pdf",
+      "source_id": "153727",
+      "url": "https://www.seg-social.es/descarga/es/153727"
+    },
+    {
+      "year": 2011,
+      "month": "Octubre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Octubre_2011.pdf",
+      "source_id": "159002",
+      "url": "https://www.seg-social.es/descarga/es/159002"
+    },
+    {
+      "year": 2011,
+      "month": "Noviembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Noviembre_2011.pdf",
+      "source_id": "160513",
+      "url": "https://www.seg-social.es/descarga/es/160513"
+    },
+    {
+      "year": 2011,
+      "month": "Diciembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Diciembre_2011.pdf",
+      "source_id": "173719",
+      "url": "https://www.seg-social.es/descarga/es/173719"
+    },
+    {
+      "year": 2012,
+      "month": "Enero",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Enero_2012.pdf",
+      "source_id": "165066",
+      "url": "https://www.seg-social.es/descarga/es/165066"
+    },
+    {
+      "year": 2012,
+      "month": "Febrero",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Febrero_2012.pdf",
+      "source_id": "165549",
+      "url": "https://www.seg-social.es/descarga/es/165549"
+    },
+    {
+      "year": 2012,
+      "month": "Marzo",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Marzo_2012.pdf",
+      "source_id": "166276",
+      "url": "https://www.seg-social.es/descarga/es/166276"
+    },
+    {
+      "year": 2012,
+      "month": "Abril",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Abril_2012.pdf",
+      "source_id": "168217",
+      "url": "https://www.seg-social.es/descarga/es/168217"
+    },
+    {
+      "year": 2012,
+      "month": "Mayo",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Mayo_2012.pdf",
+      "source_id": "169079",
+      "url": "https://www.seg-social.es/descarga/es/169079"
+    },
+    {
+      "year": 2012,
+      "month": "Junio",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Junio_2012.pdf",
+      "source_id": "169371",
+      "url": "https://www.seg-social.es/descarga/es/169371"
+    },
+    {
+      "year": 2012,
+      "month": "Julio",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Julio_2012.pdf",
+      "source_id": "169556",
+      "url": "https://www.seg-social.es/descarga/es/169556"
+    },
+    {
+      "year": 2012,
+      "month": "Agosto",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Agosto_2012.pdf",
+      "source_id": "169746",
+      "url": "https://www.seg-social.es/descarga/es/169746"
+    },
+    {
+      "year": 2012,
+      "month": "Septiembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Septiembre_2012.pdf",
+      "source_id": "169918",
+      "url": "https://www.seg-social.es/descarga/es/169918"
+    },
+    {
+      "year": 2012,
+      "month": "Octubre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Octubre_2012.pdf",
+      "source_id": "171755",
+      "url": "https://www.seg-social.es/descarga/es/171755"
+    },
+    {
+      "year": 2012,
+      "month": "Noviembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Noviembre_2012.pdf",
+      "source_id": "174255",
+      "url": "https://www.seg-social.es/descarga/es/174255"
+    },
+    {
+      "year": 2012,
+      "month": "Diciembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Diciembre_2012.pdf",
+      "source_id": "178132",
+      "url": "https://www.seg-social.es/descarga/es/178132"
+    },
+    {
+      "year": 2013,
+      "month": "Enero",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Enero_2013.pdf",
+      "source_id": "175661",
+      "url": "https://www.seg-social.es/descarga/es/175661"
+    },
+    {
+      "year": 2013,
+      "month": "Febrero",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Febrero_2013.pdf",
+      "source_id": "175829",
+      "url": "https://www.seg-social.es/descarga/es/175829"
+    },
+    {
+      "year": 2013,
+      "month": "Marzo",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Marzo_2013.pdf",
+      "source_id": "176099",
+      "url": "https://www.seg-social.es/descarga/es/176099"
+    },
+    {
+      "year": 2013,
+      "month": "Abril",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Abril_2013.pdf",
+      "source_id": "176253",
+      "url": "https://www.seg-social.es/descarga/es/176253"
+    },
+    {
+      "year": 2013,
+      "month": "Mayo",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Mayo_2013.pdf",
+      "source_id": "176724",
+      "url": "https://www.seg-social.es/descarga/es/176724"
+    },
+    {
+      "year": 2013,
+      "month": "Junio",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Junio_2013.pdf",
+      "source_id": "177291",
+      "url": "https://www.seg-social.es/descarga/es/177291"
+    },
+    {
+      "year": 2013,
+      "month": "Julio",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Julio_2013.pdf",
+      "source_id": "177464",
+      "url": "https://www.seg-social.es/descarga/es/177464"
+    },
+    {
+      "year": 2013,
+      "month": "Agosto",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Agosto_2013.pdf",
+      "source_id": "177658",
+      "url": "https://www.seg-social.es/descarga/es/177658"
+    },
+    {
+      "year": 2013,
+      "month": "Septiembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Septiembre_2013.pdf",
+      "source_id": "177857",
+      "url": "https://www.seg-social.es/descarga/es/177857"
+    },
+    {
+      "year": 2013,
+      "month": "Octubre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Octubre_2013.pdf",
+      "source_id": "178190",
+      "url": "https://www.seg-social.es/descarga/es/178190"
+    },
+    {
+      "year": 2013,
+      "month": "Noviembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Noviembre_2013.pdf",
+      "source_id": "178489",
+      "url": "https://www.seg-social.es/descarga/es/178489"
+    },
+    {
+      "year": 2013,
+      "month": "Diciembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Diciembre_2013.pdf",
+      "source_id": "194892",
+      "url": "https://www.seg-social.es/descarga/es/194892"
+    },
+    {
+      "year": 2014,
+      "month": "Enero",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Enero_2014.pdf",
+      "source_id": "183876",
+      "url": "https://www.seg-social.es/descarga/es/183876"
+    },
+    {
+      "year": 2014,
+      "month": "Febrero",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Febrero_2014.pdf",
+      "source_id": "187084",
+      "url": "https://www.seg-social.es/descarga/es/187084"
+    },
+    {
+      "year": 2014,
+      "month": "Marzo",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Marzo_2014.pdf",
+      "source_id": "187948",
+      "url": "https://www.seg-social.es/descarga/es/187948"
+    },
+    {
+      "year": 2014,
+      "month": "Abril",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Abril_2014.pdf",
+      "source_id": "189526",
+      "url": "https://www.seg-social.es/descarga/es/189526"
+    },
+    {
+      "year": 2014,
+      "month": "Mayo",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Mayo_2014.pdf",
+      "source_id": "190188",
+      "url": "https://www.seg-social.es/descarga/es/190188"
+    },
+    {
+      "year": 2014,
+      "month": "Junio",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Junio_2014.pdf",
+      "source_id": "190654",
+      "url": "https://www.seg-social.es/descarga/es/190654"
+    },
+    {
+      "year": 2014,
+      "month": "Julio",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Julio_2014.pdf",
+      "source_id": "191474",
+      "url": "https://www.seg-social.es/descarga/es/191474"
+    },
+    {
+      "year": 2014,
+      "month": "Agosto",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Agosto_2014.pdf",
+      "source_id": "191878",
+      "url": "https://www.seg-social.es/descarga/es/191878"
+    },
+    {
+      "year": 2014,
+      "month": "Septiembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Septiembre_2014.pdf",
+      "source_id": "193407",
+      "url": "https://www.seg-social.es/descarga/es/193407"
+    },
+    {
+      "year": 2014,
+      "month": "Octubre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Octubre_2014.pdf",
+      "source_id": "193954",
+      "url": "https://www.seg-social.es/descarga/es/193954"
+    },
+    {
+      "year": 2014,
+      "month": "Noviembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Noviembre_2014.pdf",
+      "source_id": "195408",
+      "url": "https://www.seg-social.es/descarga/es/195408"
+    },
+    {
+      "year": 2014,
+      "month": "DiciembreDefinitivo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_DiciembreDefinitivo_2014.xlsx",
+      "source_id": "208944",
+      "url": "https://www.seg-social.es/descarga/es/208944"
+    },
+    {
+      "year": 2015,
+      "month": "Enero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Enero_2015.xlsx",
+      "source_id": "208952",
+      "url": "https://www.seg-social.es/descarga/es/208952"
+    },
+    {
+      "year": 2015,
+      "month": "Febrero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Febrero_2015.xlsx",
+      "source_id": "208958",
+      "url": "https://www.seg-social.es/descarga/es/208958"
+    },
+    {
+      "year": 2015,
+      "month": "Marzo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Marzo_2015.xlsx",
+      "source_id": "208964",
+      "url": "https://www.seg-social.es/descarga/es/208964"
+    },
+    {
+      "year": 2015,
+      "month": "Abril",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Abril_2015.xlsx",
+      "source_id": "208970",
+      "url": "https://www.seg-social.es/descarga/es/208970"
+    },
+    {
+      "year": 2015,
+      "month": "Mayo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Mayo_2015.xlsx",
+      "source_id": "208976",
+      "url": "https://www.seg-social.es/descarga/es/208976"
+    },
+    {
+      "year": 2015,
+      "month": "Junio",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Junio_2015.xlsx",
+      "source_id": "208982",
+      "url": "https://www.seg-social.es/descarga/es/208982"
+    },
+    {
+      "year": 2015,
+      "month": "Julio",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Julio_2015.xlsx",
+      "source_id": "208988",
+      "url": "https://www.seg-social.es/descarga/es/208988"
+    },
+    {
+      "year": 2015,
+      "month": "Agosto",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Agosto_2015.xlsx",
+      "source_id": "208994",
+      "url": "https://www.seg-social.es/descarga/es/208994"
+    },
+    {
+      "year": 2015,
+      "month": "Septiembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Septiembre_2015.xlsx",
+      "source_id": "209000",
+      "url": "https://www.seg-social.es/descarga/es/209000"
+    },
+    {
+      "year": 2015,
+      "month": "Octubre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Octubre_2015.xlsx",
+      "source_id": "209006",
+      "url": "https://www.seg-social.es/descarga/es/209006"
+    },
+    {
+      "year": 2015,
+      "month": "Noviembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Noviembre_2015.xlsx",
+      "source_id": "209731",
+      "url": "https://www.seg-social.es/descarga/es/209731"
+    },
+    {
+      "year": 2015,
+      "month": "DiciembreDefinitivo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_DiciembreDefinitivo_2015.xlsx",
+      "source_id": "219754",
+      "url": "https://www.seg-social.es/descarga/es/219754"
+    },
+    {
+      "year": 2016,
+      "month": "Enero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Enero_2016.xlsx",
+      "source_id": "211944",
+      "url": "https://www.seg-social.es/descarga/es/211944"
+    },
+    {
+      "year": 2016,
+      "month": "Febrero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Febrero_2016.xlsx",
+      "source_id": "212369",
+      "url": "https://www.seg-social.es/descarga/es/212369"
+    },
+    {
+      "year": 2016,
+      "month": "Marzo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Marzo_2016.xlsx",
+      "source_id": "213106",
+      "url": "https://www.seg-social.es/descarga/es/213106"
+    },
+    {
+      "year": 2016,
+      "month": "Abril",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Abril_2016.xlsx",
+      "source_id": "214191",
+      "url": "https://www.seg-social.es/descarga/es/214191"
+    },
+    {
+      "year": 2016,
+      "month": "Mayo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Mayo_2016.xlsx",
+      "source_id": "215028",
+      "url": "https://www.seg-social.es/descarga/es/215028"
+    },
+    {
+      "year": 2016,
+      "month": "Junio",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Junio_2016.xlsx",
+      "source_id": "216455",
+      "url": "https://www.seg-social.es/descarga/es/216455"
+    },
+    {
+      "year": 2016,
+      "month": "Julio",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Julio_2016.xlsx",
+      "source_id": "217916",
+      "url": "https://www.seg-social.es/descarga/es/217916"
+    },
+    {
+      "year": 2016,
+      "month": "Agosto",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Agosto_2016.xlsx",
+      "source_id": "218302",
+      "url": "https://www.seg-social.es/descarga/es/218302"
+    },
+    {
+      "year": 2016,
+      "month": "Septiembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Septiembre_2016.xlsx",
+      "source_id": "219040",
+      "url": "https://www.seg-social.es/descarga/es/219040"
+    },
+    {
+      "year": 2016,
+      "month": "Octubre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Octubre_2016.xlsx",
+      "source_id": "219867",
+      "url": "https://www.seg-social.es/descarga/es/219867"
+    },
+    {
+      "year": 2016,
+      "month": "Noviembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Noviembre_2016.xlsx",
+      "source_id": "220656",
+      "url": "https://www.seg-social.es/descarga/es/220656"
+    },
+    {
+      "year": 2016,
+      "month": "Diciembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Diciembre_2016.xlsx",
+      "source_id": "229146",
+      "url": "https://www.seg-social.es/descarga/es/229146"
+    },
+    {
+      "year": 2017,
+      "month": "Enero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Enero_2017.xlsx",
+      "source_id": "222891",
+      "url": "https://www.seg-social.es/descarga/es/222891"
+    },
+    {
+      "year": 2017,
+      "month": "Febrero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Febrero_2017.xlsx",
+      "source_id": "223533",
+      "url": "https://www.seg-social.es/descarga/es/223533"
+    },
+    {
+      "year": 2017,
+      "month": "Marzo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Marzo_2017.xlsx",
+      "source_id": "224883",
+      "url": "https://www.seg-social.es/descarga/es/224883"
+    },
+    {
+      "year": 2017,
+      "month": "Abril",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Abril_2017.xlsx",
+      "source_id": "225763",
+      "url": "https://www.seg-social.es/descarga/es/225763"
+    },
+    {
+      "year": 2017,
+      "month": "Mayo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Mayo_2017.xlsx",
+      "source_id": "226765",
+      "url": "https://www.seg-social.es/descarga/es/226765"
+    },
+    {
+      "year": 2017,
+      "month": "Junio",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Junio_2017.xlsx",
+      "source_id": "227415",
+      "url": "https://www.seg-social.es/descarga/es/227415"
+    },
+    {
+      "year": 2017,
+      "month": "Julio",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Julio_2017.xlsx",
+      "source_id": "228722",
+      "url": "https://www.seg-social.es/descarga/es/228722"
+    },
+    {
+      "year": 2017,
+      "month": "Agosto",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Agosto_2017.xlsx",
+      "source_id": "228919",
+      "url": "https://www.seg-social.es/descarga/es/228919"
+    },
+    {
+      "year": 2017,
+      "month": "Septiembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Septiembre_2017.xlsx",
+      "source_id": "229212",
+      "url": "https://www.seg-social.es/descarga/es/229212"
+    },
+    {
+      "year": 2017,
+      "month": "Octubre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Octubre_2017.xlsx",
+      "source_id": "229415",
+      "url": "https://www.seg-social.es/descarga/es/229415"
+    },
+    {
+      "year": 2017,
+      "month": "Noviembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Noviembre_2017.xlsx",
+      "source_id": "229625",
+      "url": "https://www.seg-social.es/descarga/es/229625"
+    },
+    {
+      "year": 2017,
+      "month": "Diciembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Diciembre_2017.xlsx",
+      "source_id": "230250",
+      "url": "https://www.seg-social.es/descarga/es/230250"
+    },
+    {
+      "year": 2018,
+      "month": "Enero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Enero_2018.xlsx",
+      "source_id": "230296",
+      "url": "https://www.seg-social.es/descarga/es/230296"
+    },
+    {
+      "year": 2018,
+      "month": "Febrero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Febrero_2018.xlsx",
+      "source_id": "230376",
+      "url": "https://www.seg-social.es/descarga/es/230376"
+    },
+    {
+      "year": 2018,
+      "month": "Marzo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Marzo_2018.xlsx",
+      "source_id": "230616",
+      "url": "https://www.seg-social.es/descarga/es/230616"
+    },
+    {
+      "year": 2018,
+      "month": "Abril",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Abril_2018.xlsx",
+      "source_id": "230823",
+      "url": "https://www.seg-social.es/descarga/es/230823"
+    },
+    {
+      "year": 2018,
+      "month": "Junio",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Junio_2018.xlsx",
+      "source_id": "4220618",
+      "url": "https://www.seg-social.es/descarga/es/4220618"
+    },
+    {
+      "year": 2018,
+      "month": "Mayo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Mayo_2018.xlsx",
+      "source_id": "42205188",
+      "url": "https://www.seg-social.es/descarga/es/42205188"
+    },
+    {
+      "year": 2018,
+      "month": "Julio",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Julio_2018.xlsx",
+      "source_id": "4220718",
+      "url": "https://www.seg-social.es/descarga/es/4220718"
+    },
+    {
+      "year": 2018,
+      "month": "Septiembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Septiembre_2018.xlsx",
+      "source_id": "ResSISTEMA_Septiembre_2018.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Septiembre_2018.xlsx"
+    },
+    {
+      "year": 2018,
+      "month": "Diciembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Diciembre_2018.xlsx",
+      "source_id": "ResSISTEMA_Diciembre_2018.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Diciembre_2018.xlsx"
+    },
+    {
+      "year": 2018,
+      "month": "Octubre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Octubre_2018.xlsx",
+      "source_id": "ResSISTEMA_Octubre_2018.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Octubre_2018.xlsx"
+    },
+    {
+      "year": 2018,
+      "month": "Agosto",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Agosto_2018.xlsx",
+      "source_id": "ResSISTEMA_Agosto_2018.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Agosto_2018.xlsx"
+    },
+    {
+      "year": 2019,
+      "month": "Junio",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Junio_2019.xlsx",
+      "source_id": "ResSISTEMA_Junio_2019.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Junio_2019.xlsx"
+    },
+    {
+      "year": 2019,
+      "month": "Agosto",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Agosto_2019.xlsx",
+      "source_id": "ResSISTEMA_Agosto_2019.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Agosto_2019.xlsx"
+    },
+    {
+      "year": 2019,
+      "month": "Marzo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Marzo_2019.xlsx",
+      "source_id": "ResSISTEMA_Marzo_2019.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Marzo_2019.xlsx"
+    },
+    {
+      "year": 2019,
+      "month": "Noviembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Noviembre_2019.xlsx",
+      "source_id": "ResSISTEMA_Noviembre_2019.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Noviembre_2019.xlsx"
+    },
+    {
+      "year": 2019,
+      "month": "Diciembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_DiciembreDefinitivo_2019.xlsx",
+      "source_id": "ResSISTEMA_DiciembreDefinitivo_2019.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_DiciembreDefinitivo_2019.xlsx"
+    },
+    {
+      "year": 2019,
+      "month": "Septiembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Septiembre_2019.xlsx",
+      "source_id": "ResSISTEMA_Septiembre_2019.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Septiembre_2019.xlsx"
+    },
+    {
+      "year": 2019,
+      "month": "Julio",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Julio_2019.xlsx",
+      "source_id": "ResSISTEMA_Julio_2019.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Julio_2019.xlsx"
+    },
+    {
+      "year": 2019,
+      "month": "Abril",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Abril_2019.xlsx",
+      "source_id": "ResSISTEMA_Abril_2019.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Abril_2019.xlsx"
+    },
+    {
+      "year": 2019,
+      "month": "Mayo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Mayo_2019.xlsx",
+      "source_id": "ResSISTEMA_Mayo_2019.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Mayo_2019.xlsx"
+    },
+    {
+      "year": 2019,
+      "month": "Enero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Enero_2019.xlsx",
+      "source_id": "ResSISTEMA_Enero_2019.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Enero_2019.xlsx"
+    },
+    {
+      "year": 2019,
+      "month": "Febrero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Febrero_2019.xlsx",
+      "source_id": "ResSISTEMA_Febrero_2019.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Febrero_2019.xlsx"
+    },
+    {
+      "year": 2019,
+      "month": "Octubre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Octubre_2019.xlsx",
+      "source_id": "ResSISTEMA_Octubre_2019.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Octubre_2019.xlsx"
+    },
+    {
+      "year": 2020,
+      "month": "Mayo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Mayo_2020.xlsx",
+      "source_id": "ResSISTEMA_Mayo_2020.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Mayo_2020.xlsx"
+    },
+    {
+      "year": 2020,
+      "month": "Octubre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Octubre_2020.xlsx",
+      "source_id": "ResSISTEMA_Octubre_2020.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Octubre_2020.xlsx"
+    },
+    {
+      "year": 2020,
+      "month": "Agosto",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Agosto_2020.xlsx",
+      "source_id": "ResSISTEMA_Agosto_2020.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Agosto_2020.xlsx"
+    },
+    {
+      "year": 2020,
+      "month": "Febrero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Febrero_2020.xlsx",
+      "source_id": "ResSISTEMA_Febrero_2020.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Febrero_2020.xlsx"
+    },
+    {
+      "year": 2020,
+      "month": "Julio",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Julio_2020.xlsx",
+      "source_id": "ResSISTEMA_Julio_2020.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Julio_2020.xlsx"
+    },
+    {
+      "year": 2020,
+      "month": "Diciembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_DiciembreDefinitivo_2020.xlsx",
+      "source_id": "ResSISTEMA_DiciembreDefinitivo_2020.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_DiciembreDefinitivo_2020.xlsx"
+    },
+    {
+      "year": 2020,
+      "month": "Noviembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Noviembre_2020.xlsx",
+      "source_id": "ResSISTEMA_Noviembre_2020.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Noviembre_2020.xlsx"
+    },
+    {
+      "year": 2020,
+      "month": "Marzo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Marzo_2020.xlsx",
+      "source_id": "ResSISTEMA_Marzo_2020.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Marzo_2020.xlsx"
+    },
+    {
+      "year": 2020,
+      "month": "Abril",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Abril_2020.xlsx",
+      "source_id": "ResSISTEMA_Abril_2020.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Abril_2020.xlsx"
+    },
+    {
+      "year": 2020,
+      "month": "Enero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Enero_2020.xlsx",
+      "source_id": "ResSISTEMA_Enero_2020.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Enero_2020.xlsx"
+    },
+    {
+      "year": 2020,
+      "month": "Septiembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Septiembre_2020.xlsx",
+      "source_id": "ResSISTEMA_Septiembre_2020.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Septiembre_2020.xlsx"
+    },
+    {
+      "year": 2020,
+      "month": "Junio",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Junio_2020.xlsx",
+      "source_id": "ResSISTEMA_Junio_2020.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Junio_2020.xlsx"
+    },
+    {
+      "year": 2021,
+      "month": "Enero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Enero_2021.xlsx",
+      "source_id": "ResSISTEMA_Enero_2021.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Enero_2021.xlsx"
+    },
+    {
+      "year": 2021,
+      "month": "Febrero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Febrero_2021.xlsx",
+      "source_id": "ResSISTEMA_Febrero_2021.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Febrero_2021.xlsx"
+    },
+    {
+      "year": 2021,
+      "month": "Abril",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Abril_2021.xlsx",
+      "source_id": "ResSISTEMA_Abril_2021.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Abril_2021.xlsx"
+    },
+    {
+      "year": 2021,
+      "month": "Marzo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Marzo_2021.xlsx",
+      "source_id": "ResSISTEMA_Marzo_2021.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Marzo_2021.xlsx"
+    },
+    {
+      "year": 2021,
+      "month": "Diciembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_DiciembreDefinitivo_2021D.xlsx",
+      "source_id": "ResSISTEMA_DiciembreDefinitivo_2021D.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_DiciembreDefinitivo_2021D.xlsx"
+    },
+    {
+      "year": 2021,
+      "month": "Septiembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Septiembre_2021.xlsx",
+      "source_id": "ResSISTEMA_Septiembre_2021.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Septiembre_2021.xlsx"
+    },
+    {
+      "year": 2021,
+      "month": "Agosto",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Agosto_2021.xlsx",
+      "source_id": "ResSISTEMA_Agosto_2021 .xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Agosto_2021 .xlsx"
+    },
+    {
+      "year": 2021,
+      "month": "Octubre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Octubre_2021.xlsx",
+      "source_id": "ResSISTEMA_Octubre_2021.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Octubre_2021.xlsx"
+    },
+    {
+      "year": 2021,
+      "month": "Noviembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Noviembre_2021.xlsx",
+      "source_id": "ResSISTEMA_Noviembre_2021.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Noviembre_2021.xlsx"
+    },
+    {
+      "year": 2021,
+      "month": "Mayo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Mayo_2021.xlsx",
+      "source_id": "ResSISTEMA_Mayo_2021.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Mayo_2021.xlsx"
+    },
+    {
+      "year": 2021,
+      "month": "Julio",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Julio_2021.xlsx",
+      "source_id": "ResSISTEMA_Julio_2021.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Julio_2021.xlsx"
+    },
+    {
+      "year": 2021,
+      "month": "Junio",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Junio_2021.xlsx",
+      "source_id": "ResSISTEMA_Junio_2021.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Junio_2021.xlsx"
+    },
+    {
+      "year": 2022,
+      "month": "Julio",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Julio_2022.xlsx",
+      "source_id": "ResSISTEMA_Julio_2022.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Julio_2022.xlsx"
+    },
+    {
+      "year": 2022,
+      "month": "Abril",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Abril_2022.xlsx",
+      "source_id": "ResSISTEMA_Abril_2022.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Abril_2022.xlsx"
+    },
+    {
+      "year": 2022,
+      "month": "Agosto",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Agosto_2022.xlsx",
+      "source_id": "ResSISTEMA_Agosto_2022.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Agosto_2022.xlsx"
+    },
+    {
+      "year": 2022,
+      "month": "Diciembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_DiciembreDefinitivo_2022.xlsx",
+      "source_id": "ResSISTEMA_DiciembreDefinitivo_2022.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_DiciembreDefinitivo_2022.xlsx"
+    },
+    {
+      "year": 2022,
+      "month": "Febrero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Febrero2022.xlsx",
+      "source_id": "ResSISTEMA_Febrero2022.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Febrero2022.xlsx"
+    },
+    {
+      "year": 2022,
+      "month": "Octubre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Octubre_2022.xlsx",
+      "source_id": "ResSISTEMA_Octubre_2022.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Octubre_2022.xlsx"
+    },
+    {
+      "year": 2022,
+      "month": "Mayo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Mayo_2022.xlsx",
+      "source_id": "ResSISTEMA_Mayo_2022.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Mayo_2022.xlsx"
+    },
+    {
+      "year": 2022,
+      "month": "Junio",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Junio_2022.xlsx",
+      "source_id": "ResSISTEMA_Junio_2022.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Junio_2022.xlsx"
+    },
+    {
+      "year": 2022,
+      "month": "Enero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Enero_2022.xlsx",
+      "source_id": "ResSISTEMA_Enero_2022.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Enero_2022.xlsx"
+    },
+    {
+      "year": 2022,
+      "month": "Septiembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Septiembre_2022.xlsx",
+      "source_id": "ResSISTEMA_Septiembre_2022.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Septiembre_2022.xlsx"
+    },
+    {
+      "year": 2022,
+      "month": "Marzo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Marzo_2022.xlsx",
+      "source_id": "ResSISTEMA_Marzo_2022.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Marzo_2022.xlsx"
+    },
+    {
+      "year": 2022,
+      "month": "Noviembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Noviembre_2022.xlsx",
+      "source_id": "ResSISTEMA_Noviembre_2022.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Noviembre_2022.xlsx"
+    },
+    {
+      "year": 2023,
+      "month": "Abril",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Abril_2023.xlsx",
+      "source_id": "ResSISTEMA_Abril_2023.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Abril_2023.xlsx"
+    },
+    {
+      "year": 2023,
+      "month": "Febrero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Febrero_2023.xlsx",
+      "source_id": "ResSISTEMA_Febrero_2023.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Febrero_2023.xlsx"
+    },
+    {
+      "year": 2023,
+      "month": "Diciembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_DiciembreDefinitivo_2023.xlsx",
+      "source_id": "ResSISTEMA_DiciembreDefinitivo_2023.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_DiciembreDefinitivo_2023.xlsx"
+    },
+    {
+      "year": 2023,
+      "month": "Octubre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Octubre_2023.xlsx",
+      "source_id": "ResSISTEMA_Octubre_2023.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Octubre_2023.xlsx"
+    },
+    {
+      "year": 2023,
+      "month": "Enero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Enero_2023.xlsx",
+      "source_id": "ResSISTEMA_Enero_2023.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Enero_2023.xlsx"
+    },
+    {
+      "year": 2023,
+      "month": "Mayo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Mayo_2023.xlsx",
+      "source_id": "ResSISTEMA_Mayo_2023.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Mayo_2023.xlsx"
+    },
+    {
+      "year": 2023,
+      "month": "Noviembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Noviembre_2023.xlsx",
+      "source_id": "ResSISTEMA_Noviembre_2023.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Noviembre_2023.xlsx"
+    },
+    {
+      "year": 2023,
+      "month": "Septiembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Septiembre_2023.xlsx",
+      "source_id": "ResSISTEMA_Septiembre_2023.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Septiembre_2023.xlsx"
+    },
+    {
+      "year": 2023,
+      "month": "Marzo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Marzo_2023.xlsx",
+      "source_id": "ResSISTEMA_Marzo_2023.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Marzo_2023.xlsx"
+    },
+    {
+      "year": 2023,
+      "month": "Agosto",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Agosto_2023.xlsx",
+      "source_id": "ResSISTEMA_Agosto_2023.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Agosto_2023.xlsx"
+    },
+    {
+      "year": 2023,
+      "month": "Junio",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Junio_2023.xlsx",
+      "source_id": "ResSISTEMA_Junio_2023.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Junio_2023.xlsx"
+    },
+    {
+      "year": 2023,
+      "month": "Julio",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Julio_2023.xlsx",
+      "source_id": "ResSISTEMA_Julio_2023.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Julio_2023.xlsx"
+    },
+    {
+      "year": 2024,
+      "month": "Abril",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Abril_2024.xlsx",
+      "source_id": "ResSISTEMA_Abril_2024.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Abril_2024.xlsx"
+    },
+    {
+      "year": 2024,
+      "month": "Agosto",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Agosto_2024.xlsx",
+      "source_id": "ResSISTEMA_Agosto_2024.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Agosto_2024.xlsx"
+    },
+    {
+      "year": 2024,
+      "month": "Enero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Enero_2024.xlsx",
+      "source_id": "ResSISTEMA_Enero_2024.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Enero_2024.xlsx"
+    },
+    {
+      "year": 2024,
+      "month": "Mayo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Mayo_2024.xlsx",
+      "source_id": "ResSISTEMA_Mayo_2024.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Mayo_2024.xlsx"
+    },
+    {
+      "year": 2024,
+      "month": "Diciembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_DiciembreDefinitivo_2024.xlsx",
+      "source_id": "ResSISTEMA_DiciembreDefinitivo_2024.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_DiciembreDefinitivo_2024.xlsx"
+    },
+    {
+      "year": 2024,
+      "month": "Junio",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Junio_2024.xlsx",
+      "source_id": "ResSISTEMA_Junio_2024.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Junio_2024.xlsx"
+    },
+    {
+      "year": 2024,
+      "month": "Julio",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Julio_2024.xlsx",
+      "source_id": "ResSISTEMA_Julio_2024.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Julio_2024.xlsx"
+    },
+    {
+      "year": 2024,
+      "month": "Octubre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Octubre_2024.xlsx",
+      "source_id": "ResSISTEMA_Octubre_2024.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Octubre_2024.xlsx"
+    },
+    {
+      "year": 2024,
+      "month": "Marzo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Marzo_2024.xlsx",
+      "source_id": "ResSISTEMA_Marzo_2024.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Marzo_2024.xlsx"
+    },
+    {
+      "year": 2024,
+      "month": "Febrero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Febrero_2024.xlsx",
+      "source_id": "ResSISTEMA_Febrero_2024.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Febrero_2024.xlsx"
+    },
+    {
+      "year": 2024,
+      "month": "Noviembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Noviembre_2024.xlsx",
+      "source_id": "ResSISTEMA_Noviembre_2024.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Noviembre_2024.xlsx"
+    },
+    {
+      "year": 2024,
+      "month": "Septiembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Septiembre_2024.xlsx",
+      "source_id": "ResSISTEMA_Septiembre_2024.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Septiembre_2024.xlsx"
+    },
+    {
+      "year": 2025,
+      "month": "Septiembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Septiembre_2025.xlsx",
+      "source_id": "ResSISTEMA_Septiembre_2025.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Septiembre_2025.xlsx"
+    },
+    {
+      "year": 2025,
+      "month": "Febrero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Febrero_2025.xlsx",
+      "source_id": "ResSISTEMA_Febrero_2025.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Febrero_2025.xlsx"
+    },
+    {
+      "year": 2025,
+      "month": "Abril",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Abril_2025.xlsx",
+      "source_id": "ResSISTEMA_Abril_2025.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Abril_2025.xlsx"
+    },
+    {
+      "year": 2025,
+      "month": "Agosto",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Agosto_2025.xlsx",
+      "source_id": "ResSISTEMA_Agosto_2025.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Agosto_2025.xlsx"
+    },
+    {
+      "year": 2025,
+      "month": "Octubre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Octubre_2025.xlsx",
+      "source_id": "ResSISTEMA_Octubre_2025.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Octubre_2025.xlsx"
+    },
+    {
+      "year": 2025,
+      "month": "Junio",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Junio_2025.xlsx",
+      "source_id": "ResSISTEMA_Junio_2025.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Junio_2025.xlsx"
+    },
+    {
+      "year": 2025,
+      "month": "Noviembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Noviembre_2025.xlsx",
+      "source_id": "ResSISTEMA_Noviembre_2025.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Noviembre_2025.xlsx"
+    },
+    {
+      "year": 2025,
+      "month": "Mayo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Mayo_2025.xlsx",
+      "source_id": "ResSISTEMA_Mayo_2025.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Mayo_2025.xlsx"
+    },
+    {
+      "year": 2025,
+      "month": "Marzo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Marzo_2025.xlsx",
+      "source_id": "ResSISTEMA_Marzo_2025.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Marzo_2025.xlsx"
+    },
+    {
+      "year": 2025,
+      "month": "Julio",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Julio_2025.xlsx",
+      "source_id": "ResSISTEMA_Julio_2025.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Julio_2025.xlsx"
+    },
+    {
+      "year": 2025,
+      "month": "Diciembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_DiciembreProvisional_2025.xlsx",
+      "source_id": "ResSISTEMA_DiciembreProvisional_2025.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_DiciembreProvisional_2025.xlsx"
+    },
+    {
+      "year": 2025,
+      "month": "Enero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Enero_2025.xlsx",
+      "source_id": "ResSISTEMA_Enero_2025.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Enero_2025.xlsx"
+    },
+    {
+      "year": 2026,
+      "month": "Mayo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Mayo_2026.xlsx",
+      "source_id": "ResSISTEMA_Mayo_2026.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Mayo_2026.xlsx"
+    },
+    {
+      "year": 2026,
+      "month": "Enero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Enero_2026.xlsx",
+      "source_id": "ResSISTEMA_Enero_2026.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Enero_2026.xlsx"
+    },
+    {
+      "year": 2026,
+      "month": "Abril",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Abril_2026.xlsx",
+      "source_id": "ResSISTEMA_Abril_2026.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Abril_2026.xlsx"
+    },
+    {
+      "year": 2026,
+      "month": "Marzo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Marzo_2026.xlsx",
+      "source_id": "ResSISTEMA_Marzo_2026.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Marzo_2026.xlsx"
+    },
+    {
+      "year": 2026,
+      "month": "Febrero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Febrero_2026.xlsx",
+      "source_id": "ResSISTEMA_Febrero_2026.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Febrero_2026.xlsx"
+    }
+  ],
+  "results": [
+    {
+      "year": 2005,
+      "month": "Marzo",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Marzo_2005.pdf",
+      "source_id": "115807",
+      "url": "https://www.seg-social.es/descarga/es/115807",
+      "status": "skipped",
+      "bytes": 159559,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Marzo_2005.pdf"
+    },
+    {
+      "year": 2005,
+      "month": "Abril",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Abril_2005.pdf",
+      "source_id": "117674",
+      "url": "https://www.seg-social.es/descarga/es/117674",
+      "status": "skipped",
+      "bytes": 47883,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Abril_2005.pdf"
+    },
+    {
+      "year": 2005,
+      "month": "Mayo",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Mayo_2005.pdf",
+      "source_id": "117677",
+      "url": "https://www.seg-social.es/descarga/es/117677",
+      "status": "skipped",
+      "bytes": 47944,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Mayo_2005.pdf"
+    },
+    {
+      "year": 2005,
+      "month": "Junio",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Junio_2005.pdf",
+      "source_id": "117680",
+      "url": "https://www.seg-social.es/descarga/es/117680",
+      "status": "skipped",
+      "bytes": 59175,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Junio_2005.pdf"
+    },
+    {
+      "year": 2005,
+      "month": "Julio",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Julio_2005.pdf",
+      "source_id": "117683",
+      "url": "https://www.seg-social.es/descarga/es/117683",
+      "status": "skipped",
+      "bytes": 720571,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Julio_2005.pdf"
+    },
+    {
+      "year": 2005,
+      "month": "Septiembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Septiembre_2005.pdf",
+      "source_id": "117691",
+      "url": "https://www.seg-social.es/descarga/es/117691",
+      "status": "skipped",
+      "bytes": 58078,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Septiembre_2005.pdf"
+    },
+    {
+      "year": 2005,
+      "month": "Octubre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Octubre_2005.pdf",
+      "source_id": "117694",
+      "url": "https://www.seg-social.es/descarga/es/117694",
+      "status": "skipped",
+      "bytes": 924965,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Octubre_2005.pdf"
+    },
+    {
+      "year": 2005,
+      "month": "Noviembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Noviembre_2005.pdf",
+      "source_id": "117697",
+      "url": "https://www.seg-social.es/descarga/es/117697",
+      "status": "skipped",
+      "bytes": 928493,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Noviembre_2005.pdf"
+    },
+    {
+      "year": 2005,
+      "month": "Diciembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Diciembre_2005.pdf",
+      "source_id": "117700",
+      "url": "https://www.seg-social.es/descarga/es/117700",
+      "status": "skipped",
+      "bytes": 908495,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Diciembre_2005.pdf"
+    },
+    {
+      "year": 2005,
+      "month": "Agosto",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Agosto_2005.pdf",
+      "source_id": "117688",
+      "url": "https://www.seg-social.es/descarga/es/117688",
+      "status": "skipped",
+      "bytes": 362101,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Agosto_2005.pdf"
+    },
+    {
+      "year": 2006,
+      "month": "Enero",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Enero_2006.pdf",
+      "source_id": "119537",
+      "url": "https://www.seg-social.es/descarga/es/119537",
+      "status": "skipped",
+      "bytes": 858358,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Enero_2006.pdf"
+    },
+    {
+      "year": 2006,
+      "month": "Febrero",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Febrero_2006.pdf",
+      "source_id": "119543",
+      "url": "https://www.seg-social.es/descarga/es/119543",
+      "status": "skipped",
+      "bytes": 861436,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Febrero_2006.pdf"
+    },
+    {
+      "year": 2006,
+      "month": "Marzo",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Marzo_2006.pdf",
+      "source_id": "119549",
+      "url": "https://www.seg-social.es/descarga/es/119549",
+      "status": "skipped",
+      "bytes": 865015,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Marzo_2006.pdf"
+    },
+    {
+      "year": 2006,
+      "month": "Abril",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Abril_2006.pdf",
+      "source_id": "119602",
+      "url": "https://www.seg-social.es/descarga/es/119602",
+      "status": "skipped",
+      "bytes": 878271,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Abril_2006.pdf"
+    },
+    {
+      "year": 2006,
+      "month": "Mayo",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Mayo_2006.pdf",
+      "source_id": "119609",
+      "url": "https://www.seg-social.es/descarga/es/119609",
+      "status": "skipped",
+      "bytes": 1033271,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Mayo_2006.pdf"
+    },
+    {
+      "year": 2006,
+      "month": "Junio",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Junio_2006.pdf",
+      "source_id": "119612",
+      "url": "https://www.seg-social.es/descarga/es/119612",
+      "status": "skipped",
+      "bytes": 1033308,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Junio_2006.pdf"
+    },
+    {
+      "year": 2006,
+      "month": "Julio",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Julio_2006.pdf",
+      "source_id": "119615",
+      "url": "https://www.seg-social.es/descarga/es/119615",
+      "status": "skipped",
+      "bytes": 1033395,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Julio_2006.pdf"
+    },
+    {
+      "year": 2006,
+      "month": "Agosto",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Agosto_2006.pdf",
+      "source_id": "119619",
+      "url": "https://www.seg-social.es/descarga/es/119619",
+      "status": "skipped",
+      "bytes": 278811,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Agosto_2006.pdf"
+    },
+    {
+      "year": 2006,
+      "month": "Septiembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Septiembre_2006.pdf",
+      "source_id": "119652",
+      "url": "https://www.seg-social.es/descarga/es/119652",
+      "status": "skipped",
+      "bytes": 1033681,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Septiembre_2006.pdf"
+    },
+    {
+      "year": 2006,
+      "month": "Octubre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Octubre_2006.pdf",
+      "source_id": "119655",
+      "url": "https://www.seg-social.es/descarga/es/119655",
+      "status": "skipped",
+      "bytes": 1020465,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Octubre_2006.pdf"
+    },
+    {
+      "year": 2006,
+      "month": "Noviembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Noviembre_2006.pdf",
+      "source_id": "119658",
+      "url": "https://www.seg-social.es/descarga/es/119658",
+      "status": "skipped",
+      "bytes": 105632,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Noviembre_2006.pdf"
+    },
+    {
+      "year": 2006,
+      "month": "Diciembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Diciembre_2006.pdf",
+      "source_id": "119667",
+      "url": "https://www.seg-social.es/descarga/es/119667",
+      "status": "skipped",
+      "bytes": 110026,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Diciembre_2006.pdf"
+    },
+    {
+      "year": 2007,
+      "month": "Enero",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Enero_2007.pdf",
+      "source_id": "117570",
+      "url": "https://www.seg-social.es/descarga/es/117570",
+      "status": "skipped",
+      "bytes": 112683,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Enero_2007.pdf"
+    },
+    {
+      "year": 2007,
+      "month": "Febrero",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Febrero_2007.pdf",
+      "source_id": "117754",
+      "url": "https://www.seg-social.es/descarga/es/117754",
+      "status": "skipped",
+      "bytes": 108321,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Febrero_2007.pdf"
+    },
+    {
+      "year": 2007,
+      "month": "Marzo",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Marzo_2007.pdf",
+      "source_id": "117629",
+      "url": "https://www.seg-social.es/descarga/es/117629",
+      "status": "skipped",
+      "bytes": 110159,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Marzo_2007.pdf"
+    },
+    {
+      "year": 2007,
+      "month": "Abril",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Abril_2007.pdf",
+      "source_id": "117635",
+      "url": "https://www.seg-social.es/descarga/es/117635",
+      "status": "skipped",
+      "bytes": 110365,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Abril_2007.pdf"
+    },
+    {
+      "year": 2007,
+      "month": "Mayo",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Mayo_2007.pdf",
+      "source_id": "117636",
+      "url": "https://www.seg-social.es/descarga/es/117636",
+      "status": "skipped",
+      "bytes": 110662,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Mayo_2007.pdf"
+    },
+    {
+      "year": 2007,
+      "month": "Junio",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Junio_2007.pdf",
+      "source_id": "117642",
+      "url": "https://www.seg-social.es/descarga/es/117642",
+      "status": "skipped",
+      "bytes": 180439,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Junio_2007.pdf"
+    },
+    {
+      "year": 2007,
+      "month": "Julio",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Julio_2007.pdf",
+      "source_id": "117644",
+      "url": "https://www.seg-social.es/descarga/es/117644",
+      "status": "skipped",
+      "bytes": 109801,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Julio_2007.pdf"
+    },
+    {
+      "year": 2007,
+      "month": "Agosto",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Agosto_2007.pdf",
+      "source_id": "117647",
+      "url": "https://www.seg-social.es/descarga/es/117647",
+      "status": "skipped",
+      "bytes": 109509,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Agosto_2007.pdf"
+    },
+    {
+      "year": 2007,
+      "month": "Septiembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Septiembre_2007.pdf",
+      "source_id": "117650",
+      "url": "https://www.seg-social.es/descarga/es/117650",
+      "status": "skipped",
+      "bytes": 109764,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Septiembre_2007.pdf"
+    },
+    {
+      "year": 2007,
+      "month": "Octubre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Octubre_2007.pdf",
+      "source_id": "117657",
+      "url": "https://www.seg-social.es/descarga/es/117657",
+      "status": "skipped",
+      "bytes": 109684,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Octubre_2007.pdf"
+    },
+    {
+      "year": 2007,
+      "month": "Noviembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Noviembre_2007.pdf",
+      "source_id": "117661",
+      "url": "https://www.seg-social.es/descarga/es/117661",
+      "status": "skipped",
+      "bytes": 109714,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Noviembre_2007.pdf"
+    },
+    {
+      "year": 2007,
+      "month": "Diciembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Diciembre_2007.pdf",
+      "source_id": "117667",
+      "url": "https://www.seg-social.es/descarga/es/117667",
+      "status": "skipped",
+      "bytes": 113962,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Diciembre_2007.pdf"
+    },
+    {
+      "year": 2008,
+      "month": "Enero",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Enero_2008.pdf",
+      "source_id": "115870",
+      "url": "https://www.seg-social.es/descarga/es/115870",
+      "status": "skipped",
+      "bytes": 108054,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Enero_2008.pdf"
+    },
+    {
+      "year": 2008,
+      "month": "Febrero",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Febrero_2008.pdf",
+      "source_id": "117510",
+      "url": "https://www.seg-social.es/descarga/es/117510",
+      "status": "skipped",
+      "bytes": 108912,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Febrero_2008.pdf"
+    },
+    {
+      "year": 2008,
+      "month": "Marzo",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Marzo_2008.pdf",
+      "source_id": "117514",
+      "url": "https://www.seg-social.es/descarga/es/117514",
+      "status": "skipped",
+      "bytes": 112997,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Marzo_2008.pdf"
+    },
+    {
+      "year": 2008,
+      "month": "Abril",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Abril_2008.pdf",
+      "source_id": "117516",
+      "url": "https://www.seg-social.es/descarga/es/117516",
+      "status": "skipped",
+      "bytes": 109166,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Abril_2008.pdf"
+    },
+    {
+      "year": 2008,
+      "month": "Mayo",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Mayo_2008.pdf",
+      "source_id": "117519",
+      "url": "https://www.seg-social.es/descarga/es/117519",
+      "status": "skipped",
+      "bytes": 109254,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Mayo_2008.pdf"
+    },
+    {
+      "year": 2008,
+      "month": "Junio",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Junio_2008.pdf",
+      "source_id": "117522",
+      "url": "https://www.seg-social.es/descarga/es/117522",
+      "status": "skipped",
+      "bytes": 110760,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Junio_2008.pdf"
+    },
+    {
+      "year": 2008,
+      "month": "Julio",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Julio_2008.pdf",
+      "source_id": "117525",
+      "url": "https://www.seg-social.es/descarga/es/117525",
+      "status": "skipped",
+      "bytes": 110822,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Julio_2008.pdf"
+    },
+    {
+      "year": 2008,
+      "month": "Agosto",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Agosto_2008.pdf",
+      "source_id": "117528",
+      "url": "https://www.seg-social.es/descarga/es/117528",
+      "status": "skipped",
+      "bytes": 110781,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Agosto_2008.pdf"
+    },
+    {
+      "year": 2008,
+      "month": "Septiembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Septiembre_2008.pdf",
+      "source_id": "117531",
+      "url": "https://www.seg-social.es/descarga/es/117531",
+      "status": "skipped",
+      "bytes": 110926,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Septiembre_2008.pdf"
+    },
+    {
+      "year": 2008,
+      "month": "Octubre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Octubre_2008.pdf",
+      "source_id": "117536",
+      "url": "https://www.seg-social.es/descarga/es/117536",
+      "status": "skipped",
+      "bytes": 120365,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Octubre_2008.pdf"
+    },
+    {
+      "year": 2008,
+      "month": "Noviembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Noviembre_2008.pdf",
+      "source_id": "117541",
+      "url": "https://www.seg-social.es/descarga/es/117541",
+      "status": "skipped",
+      "bytes": 114299,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Noviembre_2008.pdf"
+    },
+    {
+      "year": 2008,
+      "month": "Diciembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Diciembre_2008.pdf",
+      "source_id": "117553",
+      "url": "https://www.seg-social.es/descarga/es/117553",
+      "status": "skipped",
+      "bytes": 110959,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Diciembre_2008.pdf"
+    },
+    {
+      "year": 2009,
+      "month": "Enero",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Enero_2009.pdf",
+      "source_id": "119245",
+      "url": "https://www.seg-social.es/descarga/es/119245",
+      "status": "skipped",
+      "bytes": 109196,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Enero_2009.pdf"
+    },
+    {
+      "year": 2009,
+      "month": "Febrero",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Febrero_2009.pdf",
+      "source_id": "119248",
+      "url": "https://www.seg-social.es/descarga/es/119248",
+      "status": "skipped",
+      "bytes": 109896,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Febrero_2009.pdf"
+    },
+    {
+      "year": 2009,
+      "month": "Abril",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Abril_2009.pdf",
+      "source_id": "119254",
+      "url": "https://www.seg-social.es/descarga/es/119254",
+      "status": "skipped",
+      "bytes": 1016385,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Abril_2009.pdf"
+    },
+    {
+      "year": 2009,
+      "month": "Mayo",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Mayo_2009.pdf",
+      "source_id": "120994",
+      "url": "https://www.seg-social.es/descarga/es/120994",
+      "status": "skipped",
+      "bytes": 222949,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Mayo_2009.pdf"
+    },
+    {
+      "year": 2009,
+      "month": "Junio",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Junio_2009.pdf",
+      "source_id": "122217",
+      "url": "https://www.seg-social.es/descarga/es/122217",
+      "status": "skipped",
+      "bytes": 1034794,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Junio_2009.pdf"
+    },
+    {
+      "year": 2009,
+      "month": "Julio",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Julio_2009.pdf",
+      "source_id": "122553",
+      "url": "https://www.seg-social.es/descarga/es/122553",
+      "status": "skipped",
+      "bytes": 185416,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Julio_2009.pdf"
+    },
+    {
+      "year": 2009,
+      "month": "Agosto",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Agosto_2009.pdf",
+      "source_id": "123128",
+      "url": "https://www.seg-social.es/descarga/es/123128",
+      "status": "skipped",
+      "bytes": 185472,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Agosto_2009.pdf"
+    },
+    {
+      "year": 2009,
+      "month": "Septiembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Septiembre_2009.pdf",
+      "source_id": "123746",
+      "url": "https://www.seg-social.es/descarga/es/123746",
+      "status": "skipped",
+      "bytes": 67721,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Septiembre_2009.pdf"
+    },
+    {
+      "year": 2009,
+      "month": "Octubre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Octubre_2009.pdf",
+      "source_id": "124561",
+      "url": "https://www.seg-social.es/descarga/es/124561",
+      "status": "skipped",
+      "bytes": 66177,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Octubre_2009.pdf"
+    },
+    {
+      "year": 2009,
+      "month": "Noviembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Noviembre_2009.pdf",
+      "source_id": "063396",
+      "url": "https://www.seg-social.es/descarga/es/063396",
+      "status": "skipped",
+      "bytes": 259155,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Noviembre_2009.pdf"
+    },
+    {
+      "year": 2009,
+      "month": "Marzo",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Marzo_2009.pdf",
+      "source_id": "119251",
+      "url": "https://www.seg-social.es/descarga/es/119251",
+      "status": "skipped",
+      "bytes": 110623,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Marzo_2009.pdf"
+    },
+    {
+      "year": 2009,
+      "month": "Liquidación",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Liquidación_2009.pdf",
+      "source_id": "142936",
+      "url": "https://www.seg-social.es/descarga/es/142936",
+      "status": "skipped",
+      "bytes": 109361,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Liquidación_2009.pdf"
+    },
+    {
+      "year": 2010,
+      "month": "Enero",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Enero_2010.pdf",
+      "source_id": "129648",
+      "url": "https://www.seg-social.es/descarga/es/129648",
+      "status": "skipped",
+      "bytes": 224742,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Enero_2010.pdf"
+    },
+    {
+      "year": 2010,
+      "month": "Febrero",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Febrero_2010.pdf",
+      "source_id": "130369",
+      "url": "https://www.seg-social.es/descarga/es/130369",
+      "status": "skipped",
+      "bytes": 65562,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Febrero_2010.pdf"
+    },
+    {
+      "year": 2010,
+      "month": "Marzo",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Marzo_2010.pdf",
+      "source_id": "131098",
+      "url": "https://www.seg-social.es/descarga/es/131098",
+      "status": "skipped",
+      "bytes": 65700,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Marzo_2010.pdf"
+    },
+    {
+      "year": 2010,
+      "month": "Abril",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Abril_2010.pdf",
+      "source_id": "131600",
+      "url": "https://www.seg-social.es/descarga/es/131600",
+      "status": "skipped",
+      "bytes": 67000,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Abril_2010.pdf"
+    },
+    {
+      "year": 2010,
+      "month": "Mayo",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Mayo_2010.pdf",
+      "source_id": "138677",
+      "url": "https://www.seg-social.es/descarga/es/138677",
+      "status": "skipped",
+      "bytes": 102031,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Mayo_2010.pdf"
+    },
+    {
+      "year": 2010,
+      "month": "Junio",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Junio_2010.pdf",
+      "source_id": "140418",
+      "url": "https://www.seg-social.es/descarga/es/140418",
+      "status": "skipped",
+      "bytes": 78529,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Junio_2010.pdf"
+    },
+    {
+      "year": 2010,
+      "month": "Julio",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Julio_2010.pdf",
+      "source_id": "140728",
+      "url": "https://www.seg-social.es/descarga/es/140728",
+      "status": "skipped",
+      "bytes": 101241,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Julio_2010.pdf"
+    },
+    {
+      "year": 2010,
+      "month": "Agosto",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Agosto_2010.pdf",
+      "source_id": "141094",
+      "url": "https://www.seg-social.es/descarga/es/141094",
+      "status": "skipped",
+      "bytes": 206006,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Agosto_2010.pdf"
+    },
+    {
+      "year": 2010,
+      "month": "Septiembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Septiembre_2010.pdf",
+      "source_id": "141912",
+      "url": "https://www.seg-social.es/descarga/es/141912",
+      "status": "skipped",
+      "bytes": 109399,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Septiembre_2010.pdf"
+    },
+    {
+      "year": 2010,
+      "month": "Octubre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Octubre_2010.pdf",
+      "source_id": "142351",
+      "url": "https://www.seg-social.es/descarga/es/142351",
+      "status": "skipped",
+      "bytes": 109624,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Octubre_2010.pdf"
+    },
+    {
+      "year": 2010,
+      "month": "Noviembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Noviembre_2010.pdf",
+      "source_id": "142914",
+      "url": "https://www.seg-social.es/descarga/es/142914",
+      "status": "skipped",
+      "bytes": 365468,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Noviembre_2010.pdf"
+    },
+    {
+      "year": 2010,
+      "month": "Diciembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Diciembre_2010.pdf",
+      "source_id": "165003",
+      "url": "https://www.seg-social.es/descarga/es/165003",
+      "status": "skipped",
+      "bytes": 228575,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Diciembre_2010.pdf"
+    },
+    {
+      "year": 2011,
+      "month": "Enero",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Enero_2011.pdf",
+      "source_id": "145062",
+      "url": "https://www.seg-social.es/descarga/es/145062",
+      "status": "skipped",
+      "bytes": 100150,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Enero_2011.pdf"
+    },
+    {
+      "year": 2011,
+      "month": "Febrero",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Febrero_2011.pdf",
+      "source_id": "145710",
+      "url": "https://www.seg-social.es/descarga/es/145710",
+      "status": "skipped",
+      "bytes": 290842,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Febrero_2011.pdf"
+    },
+    {
+      "year": 2011,
+      "month": "Marzo",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Marzo_2011.pdf",
+      "source_id": "146501",
+      "url": "https://www.seg-social.es/descarga/es/146501",
+      "status": "skipped",
+      "bytes": 280390,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Marzo_2011.pdf"
+    },
+    {
+      "year": 2011,
+      "month": "Abril",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Abril_2011.pdf",
+      "source_id": "147080",
+      "url": "https://www.seg-social.es/descarga/es/147080",
+      "status": "skipped",
+      "bytes": 280665,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Abril_2011.pdf"
+    },
+    {
+      "year": 2011,
+      "month": "Mayo",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Mayo_2011.pdf",
+      "source_id": "148244",
+      "url": "https://www.seg-social.es/descarga/es/148244",
+      "status": "skipped",
+      "bytes": 296525,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Mayo_2011.pdf"
+    },
+    {
+      "year": 2011,
+      "month": "Junio",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Junio_2011.pdf",
+      "source_id": "150122",
+      "url": "https://www.seg-social.es/descarga/es/150122",
+      "status": "skipped",
+      "bytes": 246077,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Junio_2011.pdf"
+    },
+    {
+      "year": 2011,
+      "month": "Julio",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Julio_2011.pdf",
+      "source_id": "152126",
+      "url": "https://www.seg-social.es/descarga/es/152126",
+      "status": "skipped",
+      "bytes": 246505,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Julio_2011.pdf"
+    },
+    {
+      "year": 2011,
+      "month": "Agosto",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Agosto_2011.pdf",
+      "source_id": "152485",
+      "url": "https://www.seg-social.es/descarga/es/152485",
+      "status": "skipped",
+      "bytes": 281380,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Agosto_2011.pdf"
+    },
+    {
+      "year": 2011,
+      "month": "Septiembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Septiembre_2011.pdf",
+      "source_id": "153727",
+      "url": "https://www.seg-social.es/descarga/es/153727",
+      "status": "ok",
+      "bytes": 262081,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Septiembre_2011.pdf"
+    },
+    {
+      "year": 2011,
+      "month": "Octubre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Octubre_2011.pdf",
+      "source_id": "159002",
+      "url": "https://www.seg-social.es/descarga/es/159002",
+      "status": "ok",
+      "bytes": 288311,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Octubre_2011.pdf"
+    },
+    {
+      "year": 2011,
+      "month": "Noviembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Noviembre_2011.pdf",
+      "source_id": "160513",
+      "url": "https://www.seg-social.es/descarga/es/160513",
+      "status": "ok",
+      "bytes": 277546,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Noviembre_2011.pdf"
+    },
+    {
+      "year": 2011,
+      "month": "Diciembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Diciembre_2011.pdf",
+      "source_id": "173719",
+      "url": "https://www.seg-social.es/descarga/es/173719",
+      "status": "ok",
+      "bytes": 301332,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Diciembre_2011.pdf"
+    },
+    {
+      "year": 2012,
+      "month": "Enero",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Enero_2012.pdf",
+      "source_id": "165066",
+      "url": "https://www.seg-social.es/descarga/es/165066",
+      "status": "ok",
+      "bytes": 109852,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Enero_2012.pdf"
+    },
+    {
+      "year": 2012,
+      "month": "Febrero",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Febrero_2012.pdf",
+      "source_id": "165549",
+      "url": "https://www.seg-social.es/descarga/es/165549",
+      "status": "ok",
+      "bytes": 227384,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Febrero_2012.pdf"
+    },
+    {
+      "year": 2012,
+      "month": "Marzo",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Marzo_2012.pdf",
+      "source_id": "166276",
+      "url": "https://www.seg-social.es/descarga/es/166276",
+      "status": "ok",
+      "bytes": 227712,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Marzo_2012.pdf"
+    },
+    {
+      "year": 2012,
+      "month": "Abril",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Abril_2012.pdf",
+      "source_id": "168217",
+      "url": "https://www.seg-social.es/descarga/es/168217",
+      "status": "ok",
+      "bytes": 227599,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Abril_2012.pdf"
+    },
+    {
+      "year": 2012,
+      "month": "Mayo",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Mayo_2012.pdf",
+      "source_id": "169079",
+      "url": "https://www.seg-social.es/descarga/es/169079",
+      "status": "ok",
+      "bytes": 227771,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Mayo_2012.pdf"
+    },
+    {
+      "year": 2012,
+      "month": "Junio",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Junio_2012.pdf",
+      "source_id": "169371",
+      "url": "https://www.seg-social.es/descarga/es/169371",
+      "status": "ok",
+      "bytes": 170775,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Junio_2012.pdf"
+    },
+    {
+      "year": 2012,
+      "month": "Julio",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Julio_2012.pdf",
+      "source_id": "169556",
+      "url": "https://www.seg-social.es/descarga/es/169556",
+      "status": "ok",
+      "bytes": 265847,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Julio_2012.pdf"
+    },
+    {
+      "year": 2012,
+      "month": "Agosto",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Agosto_2012.pdf",
+      "source_id": "169746",
+      "url": "https://www.seg-social.es/descarga/es/169746",
+      "status": "ok",
+      "bytes": 264646,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Agosto_2012.pdf"
+    },
+    {
+      "year": 2012,
+      "month": "Septiembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Septiembre_2012.pdf",
+      "source_id": "169918",
+      "url": "https://www.seg-social.es/descarga/es/169918",
+      "status": "ok",
+      "bytes": 496479,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Septiembre_2012.pdf"
+    },
+    {
+      "year": 2012,
+      "month": "Octubre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Octubre_2012.pdf",
+      "source_id": "171755",
+      "url": "https://www.seg-social.es/descarga/es/171755",
+      "status": "ok",
+      "bytes": 246758,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Octubre_2012.pdf"
+    },
+    {
+      "year": 2012,
+      "month": "Noviembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Noviembre_2012.pdf",
+      "source_id": "174255",
+      "url": "https://www.seg-social.es/descarga/es/174255",
+      "status": "ok",
+      "bytes": 287028,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Noviembre_2012.pdf"
+    },
+    {
+      "year": 2012,
+      "month": "Diciembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Diciembre_2012.pdf",
+      "source_id": "178132",
+      "url": "https://www.seg-social.es/descarga/es/178132",
+      "status": "ok",
+      "bytes": 357284,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Diciembre_2012.pdf"
+    },
+    {
+      "year": 2013,
+      "month": "Enero",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Enero_2013.pdf",
+      "source_id": "175661",
+      "url": "https://www.seg-social.es/descarga/es/175661",
+      "status": "ok",
+      "bytes": 288252,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Enero_2013.pdf"
+    },
+    {
+      "year": 2013,
+      "month": "Febrero",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Febrero_2013.pdf",
+      "source_id": "175829",
+      "url": "https://www.seg-social.es/descarga/es/175829",
+      "status": "ok",
+      "bytes": 289887,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Febrero_2013.pdf"
+    },
+    {
+      "year": 2013,
+      "month": "Marzo",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Marzo_2013.pdf",
+      "source_id": "176099",
+      "url": "https://www.seg-social.es/descarga/es/176099",
+      "status": "ok",
+      "bytes": 289967,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Marzo_2013.pdf"
+    },
+    {
+      "year": 2013,
+      "month": "Abril",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Abril_2013.pdf",
+      "source_id": "176253",
+      "url": "https://www.seg-social.es/descarga/es/176253",
+      "status": "ok",
+      "bytes": 172613,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Abril_2013.pdf"
+    },
+    {
+      "year": 2013,
+      "month": "Mayo",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Mayo_2013.pdf",
+      "source_id": "176724",
+      "url": "https://www.seg-social.es/descarga/es/176724",
+      "status": "ok",
+      "bytes": 452687,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Mayo_2013.pdf"
+    },
+    {
+      "year": 2013,
+      "month": "Junio",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Junio_2013.pdf",
+      "source_id": "177291",
+      "url": "https://www.seg-social.es/descarga/es/177291",
+      "status": "ok",
+      "bytes": 342675,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Junio_2013.pdf"
+    },
+    {
+      "year": 2013,
+      "month": "Julio",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Julio_2013.pdf",
+      "source_id": "177464",
+      "url": "https://www.seg-social.es/descarga/es/177464",
+      "status": "ok",
+      "bytes": 342753,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Julio_2013.pdf"
+    },
+    {
+      "year": 2013,
+      "month": "Agosto",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Agosto_2013.pdf",
+      "source_id": "177658",
+      "url": "https://www.seg-social.es/descarga/es/177658",
+      "status": "ok",
+      "bytes": 342683,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Agosto_2013.pdf"
+    },
+    {
+      "year": 2013,
+      "month": "Septiembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Septiembre_2013.pdf",
+      "source_id": "177857",
+      "url": "https://www.seg-social.es/descarga/es/177857",
+      "status": "ok",
+      "bytes": 342775,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Septiembre_2013.pdf"
+    },
+    {
+      "year": 2013,
+      "month": "Octubre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Octubre_2013.pdf",
+      "source_id": "178190",
+      "url": "https://www.seg-social.es/descarga/es/178190",
+      "status": "ok",
+      "bytes": 342821,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Octubre_2013.pdf"
+    },
+    {
+      "year": 2013,
+      "month": "Noviembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Noviembre_2013.pdf",
+      "source_id": "178489",
+      "url": "https://www.seg-social.es/descarga/es/178489",
+      "status": "ok",
+      "bytes": 342974,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Noviembre_2013.pdf"
+    },
+    {
+      "year": 2013,
+      "month": "Diciembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Diciembre_2013.pdf",
+      "source_id": "194892",
+      "url": "https://www.seg-social.es/descarga/es/194892",
+      "status": "ok",
+      "bytes": 130605,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Diciembre_2013.pdf"
+    },
+    {
+      "year": 2014,
+      "month": "Enero",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Enero_2014.pdf",
+      "source_id": "183876",
+      "url": "https://www.seg-social.es/descarga/es/183876",
+      "status": "ok",
+      "bytes": 342615,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Enero_2014.pdf"
+    },
+    {
+      "year": 2014,
+      "month": "Febrero",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Febrero_2014.pdf",
+      "source_id": "187084",
+      "url": "https://www.seg-social.es/descarga/es/187084",
+      "status": "ok",
+      "bytes": 343011,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Febrero_2014.pdf"
+    },
+    {
+      "year": 2014,
+      "month": "Marzo",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Marzo_2014.pdf",
+      "source_id": "187948",
+      "url": "https://www.seg-social.es/descarga/es/187948",
+      "status": "ok",
+      "bytes": 343044,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Marzo_2014.pdf"
+    },
+    {
+      "year": 2014,
+      "month": "Abril",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Abril_2014.pdf",
+      "source_id": "189526",
+      "url": "https://www.seg-social.es/descarga/es/189526",
+      "status": "ok",
+      "bytes": 343103,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Abril_2014.pdf"
+    },
+    {
+      "year": 2014,
+      "month": "Mayo",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Mayo_2014.pdf",
+      "source_id": "190188",
+      "url": "https://www.seg-social.es/descarga/es/190188",
+      "status": "ok",
+      "bytes": 343184,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Mayo_2014.pdf"
+    },
+    {
+      "year": 2014,
+      "month": "Junio",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Junio_2014.pdf",
+      "source_id": "190654",
+      "url": "https://www.seg-social.es/descarga/es/190654",
+      "status": "ok",
+      "bytes": 343242,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Junio_2014.pdf"
+    },
+    {
+      "year": 2014,
+      "month": "Julio",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Julio_2014.pdf",
+      "source_id": "191474",
+      "url": "https://www.seg-social.es/descarga/es/191474",
+      "status": "ok",
+      "bytes": 343304,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Julio_2014.pdf"
+    },
+    {
+      "year": 2014,
+      "month": "Agosto",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Agosto_2014.pdf",
+      "source_id": "191878",
+      "url": "https://www.seg-social.es/descarga/es/191878",
+      "status": "ok",
+      "bytes": 343321,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Agosto_2014.pdf"
+    },
+    {
+      "year": 2014,
+      "month": "Septiembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Septiembre_2014.pdf",
+      "source_id": "193407",
+      "url": "https://www.seg-social.es/descarga/es/193407",
+      "status": "ok",
+      "bytes": 116080,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Septiembre_2014.pdf"
+    },
+    {
+      "year": 2014,
+      "month": "Octubre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Octubre_2014.pdf",
+      "source_id": "193954",
+      "url": "https://www.seg-social.es/descarga/es/193954",
+      "status": "ok",
+      "bytes": 116034,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Octubre_2014.pdf"
+    },
+    {
+      "year": 2014,
+      "month": "Noviembre",
+      "format": "pdf",
+      "dest_name": "ResSISTEMA_Noviembre_2014.pdf",
+      "source_id": "195408",
+      "url": "https://www.seg-social.es/descarga/es/195408",
+      "status": "ok",
+      "bytes": 116196,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema_pdf/ResSISTEMA_Noviembre_2014.pdf"
+    },
+    {
+      "year": 2014,
+      "month": "DiciembreDefinitivo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_DiciembreDefinitivo_2014.xlsx",
+      "source_id": "208944",
+      "url": "https://www.seg-social.es/descarga/es/208944",
+      "status": "skipped",
+      "bytes": 104800,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_DiciembreDefinitivo_2014.xlsx"
+    },
+    {
+      "year": 2015,
+      "month": "Enero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Enero_2015.xlsx",
+      "source_id": "208952",
+      "url": "https://www.seg-social.es/descarga/es/208952",
+      "status": "skipped",
+      "bytes": 104030,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Enero_2015.xlsx"
+    },
+    {
+      "year": 2015,
+      "month": "Febrero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Febrero_2015.xlsx",
+      "source_id": "208958",
+      "url": "https://www.seg-social.es/descarga/es/208958",
+      "status": "skipped",
+      "bytes": 104470,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Febrero_2015.xlsx"
+    },
+    {
+      "year": 2015,
+      "month": "Marzo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Marzo_2015.xlsx",
+      "source_id": "208964",
+      "url": "https://www.seg-social.es/descarga/es/208964",
+      "status": "skipped",
+      "bytes": 104520,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Marzo_2015.xlsx"
+    },
+    {
+      "year": 2015,
+      "month": "Abril",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Abril_2015.xlsx",
+      "source_id": "208970",
+      "url": "https://www.seg-social.es/descarga/es/208970",
+      "status": "skipped",
+      "bytes": 104688,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Abril_2015.xlsx"
+    },
+    {
+      "year": 2015,
+      "month": "Mayo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Mayo_2015.xlsx",
+      "source_id": "208976",
+      "url": "https://www.seg-social.es/descarga/es/208976",
+      "status": "skipped",
+      "bytes": 104741,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Mayo_2015.xlsx"
+    },
+    {
+      "year": 2015,
+      "month": "Junio",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Junio_2015.xlsx",
+      "source_id": "208982",
+      "url": "https://www.seg-social.es/descarga/es/208982",
+      "status": "skipped",
+      "bytes": 104736,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Junio_2015.xlsx"
+    },
+    {
+      "year": 2015,
+      "month": "Julio",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Julio_2015.xlsx",
+      "source_id": "208988",
+      "url": "https://www.seg-social.es/descarga/es/208988",
+      "status": "skipped",
+      "bytes": 104732,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Julio_2015.xlsx"
+    },
+    {
+      "year": 2015,
+      "month": "Agosto",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Agosto_2015.xlsx",
+      "source_id": "208994",
+      "url": "https://www.seg-social.es/descarga/es/208994",
+      "status": "skipped",
+      "bytes": 104832,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Agosto_2015.xlsx"
+    },
+    {
+      "year": 2015,
+      "month": "Septiembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Septiembre_2015.xlsx",
+      "source_id": "209000",
+      "url": "https://www.seg-social.es/descarga/es/209000",
+      "status": "skipped",
+      "bytes": 104817,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Septiembre_2015.xlsx"
+    },
+    {
+      "year": 2015,
+      "month": "Octubre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Octubre_2015.xlsx",
+      "source_id": "209006",
+      "url": "https://www.seg-social.es/descarga/es/209006",
+      "status": "skipped",
+      "bytes": 104921,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Octubre_2015.xlsx"
+    },
+    {
+      "year": 2015,
+      "month": "Noviembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Noviembre_2015.xlsx",
+      "source_id": "209731",
+      "url": "https://www.seg-social.es/descarga/es/209731",
+      "status": "skipped",
+      "bytes": 103255,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Noviembre_2015.xlsx"
+    },
+    {
+      "year": 2015,
+      "month": "DiciembreDefinitivo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_DiciembreDefinitivo_2015.xlsx",
+      "source_id": "219754",
+      "url": "https://www.seg-social.es/descarga/es/219754",
+      "status": "skipped",
+      "bytes": 104877,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_DiciembreDefinitivo_2015.xlsx"
+    },
+    {
+      "year": 2016,
+      "month": "Enero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Enero_2016.xlsx",
+      "source_id": "211944",
+      "url": "https://www.seg-social.es/descarga/es/211944",
+      "status": "skipped",
+      "bytes": 102594,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Enero_2016.xlsx"
+    },
+    {
+      "year": 2016,
+      "month": "Febrero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Febrero_2016.xlsx",
+      "source_id": "212369",
+      "url": "https://www.seg-social.es/descarga/es/212369",
+      "status": "skipped",
+      "bytes": 102823,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Febrero_2016.xlsx"
+    },
+    {
+      "year": 2016,
+      "month": "Marzo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Marzo_2016.xlsx",
+      "source_id": "213106",
+      "url": "https://www.seg-social.es/descarga/es/213106",
+      "status": "skipped",
+      "bytes": 103057,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Marzo_2016.xlsx"
+    },
+    {
+      "year": 2016,
+      "month": "Abril",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Abril_2016.xlsx",
+      "source_id": "214191",
+      "url": "https://www.seg-social.es/descarga/es/214191",
+      "status": "skipped",
+      "bytes": 103172,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Abril_2016.xlsx"
+    },
+    {
+      "year": 2016,
+      "month": "Mayo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Mayo_2016.xlsx",
+      "source_id": "215028",
+      "url": "https://www.seg-social.es/descarga/es/215028",
+      "status": "skipped",
+      "bytes": 103185,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Mayo_2016.xlsx"
+    },
+    {
+      "year": 2016,
+      "month": "Junio",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Junio_2016.xlsx",
+      "source_id": "216455",
+      "url": "https://www.seg-social.es/descarga/es/216455",
+      "status": "skipped",
+      "bytes": 104947,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Junio_2016.xlsx"
+    },
+    {
+      "year": 2016,
+      "month": "Julio",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Julio_2016.xlsx",
+      "source_id": "217916",
+      "url": "https://www.seg-social.es/descarga/es/217916",
+      "status": "ok",
+      "bytes": 104945,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Julio_2016.xlsx"
+    },
+    {
+      "year": 2016,
+      "month": "Agosto",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Agosto_2016.xlsx",
+      "source_id": "218302",
+      "url": "https://www.seg-social.es/descarga/es/218302",
+      "status": "skipped",
+      "bytes": 104932,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Agosto_2016.xlsx"
+    },
+    {
+      "year": 2016,
+      "month": "Septiembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Septiembre_2016.xlsx",
+      "source_id": "219040",
+      "url": "https://www.seg-social.es/descarga/es/219040",
+      "status": "skipped",
+      "bytes": 105042,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Septiembre_2016.xlsx"
+    },
+    {
+      "year": 2016,
+      "month": "Octubre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Octubre_2016.xlsx",
+      "source_id": "219867",
+      "url": "https://www.seg-social.es/descarga/es/219867",
+      "status": "skipped",
+      "bytes": 104926,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Octubre_2016.xlsx"
+    },
+    {
+      "year": 2016,
+      "month": "Noviembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Noviembre_2016.xlsx",
+      "source_id": "220656",
+      "url": "https://www.seg-social.es/descarga/es/220656",
+      "status": "skipped",
+      "bytes": 105560,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Noviembre_2016.xlsx"
+    },
+    {
+      "year": 2016,
+      "month": "Diciembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Diciembre_2016.xlsx",
+      "source_id": "229146",
+      "url": "https://www.seg-social.es/descarga/es/229146",
+      "status": "skipped",
+      "bytes": 105153,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Diciembre_2016.xlsx"
+    },
+    {
+      "year": 2017,
+      "month": "Enero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Enero_2017.xlsx",
+      "source_id": "222891",
+      "url": "https://www.seg-social.es/descarga/es/222891",
+      "status": "skipped",
+      "bytes": 104242,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Enero_2017.xlsx"
+    },
+    {
+      "year": 2017,
+      "month": "Febrero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Febrero_2017.xlsx",
+      "source_id": "223533",
+      "url": "https://www.seg-social.es/descarga/es/223533",
+      "status": "skipped",
+      "bytes": 104460,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Febrero_2017.xlsx"
+    },
+    {
+      "year": 2017,
+      "month": "Marzo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Marzo_2017.xlsx",
+      "source_id": "224883",
+      "url": "https://www.seg-social.es/descarga/es/224883",
+      "status": "skipped",
+      "bytes": 105189,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Marzo_2017.xlsx"
+    },
+    {
+      "year": 2017,
+      "month": "Abril",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Abril_2017.xlsx",
+      "source_id": "225763",
+      "url": "https://www.seg-social.es/descarga/es/225763",
+      "status": "skipped",
+      "bytes": 105343,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Abril_2017.xlsx"
+    },
+    {
+      "year": 2017,
+      "month": "Mayo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Mayo_2017.xlsx",
+      "source_id": "226765",
+      "url": "https://www.seg-social.es/descarga/es/226765",
+      "status": "skipped",
+      "bytes": 103614,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Mayo_2017.xlsx"
+    },
+    {
+      "year": 2017,
+      "month": "Junio",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Junio_2017.xlsx",
+      "source_id": "227415",
+      "url": "https://www.seg-social.es/descarga/es/227415",
+      "status": "skipped",
+      "bytes": 103709,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Junio_2017.xlsx"
+    },
+    {
+      "year": 2017,
+      "month": "Julio",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Julio_2017.xlsx",
+      "source_id": "228722",
+      "url": "https://www.seg-social.es/descarga/es/228722",
+      "status": "skipped",
+      "bytes": 103890,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Julio_2017.xlsx"
+    },
+    {
+      "year": 2017,
+      "month": "Agosto",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Agosto_2017.xlsx",
+      "source_id": "228919",
+      "url": "https://www.seg-social.es/descarga/es/228919",
+      "status": "skipped",
+      "bytes": 105424,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Agosto_2017.xlsx"
+    },
+    {
+      "year": 2017,
+      "month": "Septiembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Septiembre_2017.xlsx",
+      "source_id": "229212",
+      "url": "https://www.seg-social.es/descarga/es/229212",
+      "status": "skipped",
+      "bytes": 105725,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Septiembre_2017.xlsx"
+    },
+    {
+      "year": 2017,
+      "month": "Octubre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Octubre_2017.xlsx",
+      "source_id": "229415",
+      "url": "https://www.seg-social.es/descarga/es/229415",
+      "status": "skipped",
+      "bytes": 105700,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Octubre_2017.xlsx"
+    },
+    {
+      "year": 2017,
+      "month": "Noviembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Noviembre_2017.xlsx",
+      "source_id": "229625",
+      "url": "https://www.seg-social.es/descarga/es/229625",
+      "status": "skipped",
+      "bytes": 100500,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Noviembre_2017.xlsx"
+    },
+    {
+      "year": 2017,
+      "month": "Diciembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Diciembre_2017.xlsx",
+      "source_id": "230250",
+      "url": "https://www.seg-social.es/descarga/es/230250",
+      "status": "skipped",
+      "bytes": 204730,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Diciembre_2017.xlsx"
+    },
+    {
+      "year": 2018,
+      "month": "Enero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Enero_2018.xlsx",
+      "source_id": "230296",
+      "url": "https://www.seg-social.es/descarga/es/230296",
+      "status": "skipped",
+      "bytes": 104848,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Enero_2018.xlsx"
+    },
+    {
+      "year": 2018,
+      "month": "Febrero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Febrero_2018.xlsx",
+      "source_id": "230376",
+      "url": "https://www.seg-social.es/descarga/es/230376",
+      "status": "skipped",
+      "bytes": 104986,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Febrero_2018.xlsx"
+    },
+    {
+      "year": 2018,
+      "month": "Marzo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Marzo_2018.xlsx",
+      "source_id": "230616",
+      "url": "https://www.seg-social.es/descarga/es/230616",
+      "status": "skipped",
+      "bytes": 105210,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Marzo_2018.xlsx"
+    },
+    {
+      "year": 2018,
+      "month": "Abril",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Abril_2018.xlsx",
+      "source_id": "230823",
+      "url": "https://www.seg-social.es/descarga/es/230823",
+      "status": "skipped",
+      "bytes": 105387,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Abril_2018.xlsx"
+    },
+    {
+      "year": 2018,
+      "month": "Junio",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Junio_2018.xlsx",
+      "source_id": "4220618",
+      "url": "https://www.seg-social.es/descarga/es/4220618",
+      "status": "skipped",
+      "bytes": 204481,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Junio_2018.xlsx"
+    },
+    {
+      "year": 2018,
+      "month": "Mayo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Mayo_2018.xlsx",
+      "source_id": "42205188",
+      "url": "https://www.seg-social.es/descarga/es/42205188",
+      "status": "skipped",
+      "bytes": 204397,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Mayo_2018.xlsx"
+    },
+    {
+      "year": 2018,
+      "month": "Julio",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Julio_2018.xlsx",
+      "source_id": "4220718",
+      "url": "https://www.seg-social.es/descarga/es/4220718",
+      "status": "skipped",
+      "bytes": 204454,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Julio_2018.xlsx"
+    },
+    {
+      "year": 2018,
+      "month": "Septiembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Septiembre_2018.xlsx",
+      "source_id": "ResSISTEMA_Septiembre_2018.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Septiembre_2018.xlsx",
+      "status": "skipped",
+      "bytes": 204559,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Septiembre_2018.xlsx"
+    },
+    {
+      "year": 2018,
+      "month": "Diciembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Diciembre_2018.xlsx",
+      "source_id": "ResSISTEMA_Diciembre_2018.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Diciembre_2018.xlsx",
+      "status": "skipped",
+      "bytes": 204557,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Diciembre_2018.xlsx"
+    },
+    {
+      "year": 2018,
+      "month": "Octubre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Octubre_2018.xlsx",
+      "source_id": "ResSISTEMA_Octubre_2018.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Octubre_2018.xlsx",
+      "status": "skipped",
+      "bytes": 204616,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Octubre_2018.xlsx"
+    },
+    {
+      "year": 2018,
+      "month": "Agosto",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Agosto_2018.xlsx",
+      "source_id": "ResSISTEMA_Agosto_2018.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Agosto_2018.xlsx",
+      "status": "skipped",
+      "bytes": 204400,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Agosto_2018.xlsx"
+    },
+    {
+      "year": 2019,
+      "month": "Junio",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Junio_2019.xlsx",
+      "source_id": "ResSISTEMA_Junio_2019.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Junio_2019.xlsx",
+      "status": "skipped",
+      "bytes": 204427,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Junio_2019.xlsx"
+    },
+    {
+      "year": 2019,
+      "month": "Agosto",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Agosto_2019.xlsx",
+      "source_id": "ResSISTEMA_Agosto_2019.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Agosto_2019.xlsx",
+      "status": "skipped",
+      "bytes": 204616,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Agosto_2019.xlsx"
+    },
+    {
+      "year": 2019,
+      "month": "Marzo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Marzo_2019.xlsx",
+      "source_id": "ResSISTEMA_Marzo_2019.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Marzo_2019.xlsx",
+      "status": "skipped",
+      "bytes": 204423,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Marzo_2019.xlsx"
+    },
+    {
+      "year": 2019,
+      "month": "Noviembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Noviembre_2019.xlsx",
+      "source_id": "ResSISTEMA_Noviembre_2019.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Noviembre_2019.xlsx",
+      "status": "skipped",
+      "bytes": 204670,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Noviembre_2019.xlsx"
+    },
+    {
+      "year": 2019,
+      "month": "Diciembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_DiciembreDefinitivo_2019.xlsx",
+      "source_id": "ResSISTEMA_DiciembreDefinitivo_2019.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_DiciembreDefinitivo_2019.xlsx",
+      "status": "skipped",
+      "bytes": 275011,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_DiciembreDefinitivo_2019.xlsx"
+    },
+    {
+      "year": 2019,
+      "month": "Septiembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Septiembre_2019.xlsx",
+      "source_id": "ResSISTEMA_Septiembre_2019.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Septiembre_2019.xlsx",
+      "status": "skipped",
+      "bytes": 204582,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Septiembre_2019.xlsx"
+    },
+    {
+      "year": 2019,
+      "month": "Julio",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Julio_2019.xlsx",
+      "source_id": "ResSISTEMA_Julio_2019.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Julio_2019.xlsx",
+      "status": "skipped",
+      "bytes": 204585,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Julio_2019.xlsx"
+    },
+    {
+      "year": 2019,
+      "month": "Abril",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Abril_2019.xlsx",
+      "source_id": "ResSISTEMA_Abril_2019.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Abril_2019.xlsx",
+      "status": "skipped",
+      "bytes": 204454,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Abril_2019.xlsx"
+    },
+    {
+      "year": 2019,
+      "month": "Mayo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Mayo_2019.xlsx",
+      "source_id": "ResSISTEMA_Mayo_2019.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Mayo_2019.xlsx",
+      "status": "skipped",
+      "bytes": 204416,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Mayo_2019.xlsx"
+    },
+    {
+      "year": 2019,
+      "month": "Enero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Enero_2019.xlsx",
+      "source_id": "ResSISTEMA_Enero_2019.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Enero_2019.xlsx",
+      "status": "skipped",
+      "bytes": 203974,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Enero_2019.xlsx"
+    },
+    {
+      "year": 2019,
+      "month": "Febrero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Febrero_2019.xlsx",
+      "source_id": "ResSISTEMA_Febrero_2019.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Febrero_2019.xlsx",
+      "status": "skipped",
+      "bytes": 204251,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Febrero_2019.xlsx"
+    },
+    {
+      "year": 2019,
+      "month": "Octubre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Octubre_2019.xlsx",
+      "source_id": "ResSISTEMA_Octubre_2019.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Octubre_2019.xlsx",
+      "status": "skipped",
+      "bytes": 204693,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Octubre_2019.xlsx"
+    },
+    {
+      "year": 2020,
+      "month": "Mayo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Mayo_2020.xlsx",
+      "source_id": "ResSISTEMA_Mayo_2020.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Mayo_2020.xlsx",
+      "status": "skipped",
+      "bytes": 275342,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Mayo_2020.xlsx"
+    },
+    {
+      "year": 2020,
+      "month": "Octubre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Octubre_2020.xlsx",
+      "source_id": "ResSISTEMA_Octubre_2020.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Octubre_2020.xlsx",
+      "status": "skipped",
+      "bytes": 275949,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Octubre_2020.xlsx"
+    },
+    {
+      "year": 2020,
+      "month": "Agosto",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Agosto_2020.xlsx",
+      "source_id": "ResSISTEMA_Agosto_2020.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Agosto_2020.xlsx",
+      "status": "skipped",
+      "bytes": 275920,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Agosto_2020.xlsx"
+    },
+    {
+      "year": 2020,
+      "month": "Febrero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Febrero_2020.xlsx",
+      "source_id": "ResSISTEMA_Febrero_2020.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Febrero_2020.xlsx",
+      "status": "skipped",
+      "bytes": 232736,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Febrero_2020.xlsx"
+    },
+    {
+      "year": 2020,
+      "month": "Julio",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Julio_2020.xlsx",
+      "source_id": "ResSISTEMA_Julio_2020.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Julio_2020.xlsx",
+      "status": "skipped",
+      "bytes": 275854,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Julio_2020.xlsx"
+    },
+    {
+      "year": 2020,
+      "month": "Diciembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_DiciembreDefinitivo_2020.xlsx",
+      "source_id": "ResSISTEMA_DiciembreDefinitivo_2020.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_DiciembreDefinitivo_2020.xlsx",
+      "status": "skipped",
+      "bytes": 324698,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_DiciembreDefinitivo_2020.xlsx"
+    },
+    {
+      "year": 2020,
+      "month": "Noviembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Noviembre_2020.xlsx",
+      "source_id": "ResSISTEMA_Noviembre_2020.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Noviembre_2020.xlsx",
+      "status": "skipped",
+      "bytes": 275967,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Noviembre_2020.xlsx"
+    },
+    {
+      "year": 2020,
+      "month": "Marzo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Marzo_2020.xlsx",
+      "source_id": "ResSISTEMA_Marzo_2020.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Marzo_2020.xlsx",
+      "status": "skipped",
+      "bytes": 205466,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Marzo_2020.xlsx"
+    },
+    {
+      "year": 2020,
+      "month": "Abril",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Abril_2020.xlsx",
+      "source_id": "ResSISTEMA_Abril_2020.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Abril_2020.xlsx",
+      "status": "skipped",
+      "bytes": 275288,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Abril_2020.xlsx"
+    },
+    {
+      "year": 2020,
+      "month": "Enero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Enero_2020.xlsx",
+      "source_id": "ResSISTEMA_Enero_2020.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Enero_2020.xlsx",
+      "status": "skipped",
+      "bytes": 203894,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Enero_2020.xlsx"
+    },
+    {
+      "year": 2020,
+      "month": "Septiembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Septiembre_2020.xlsx",
+      "source_id": "ResSISTEMA_Septiembre_2020.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Septiembre_2020.xlsx",
+      "status": "skipped",
+      "bytes": 275980,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Septiembre_2020.xlsx"
+    },
+    {
+      "year": 2020,
+      "month": "Junio",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Junio_2020.xlsx",
+      "source_id": "ResSISTEMA_Junio_2020.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Junio_2020.xlsx",
+      "status": "skipped",
+      "bytes": 275694,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Junio_2020.xlsx"
+    },
+    {
+      "year": 2021,
+      "month": "Enero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Enero_2021.xlsx",
+      "source_id": "ResSISTEMA_Enero_2021.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Enero_2021.xlsx",
+      "status": "skipped",
+      "bytes": 325065,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Enero_2021.xlsx"
+    },
+    {
+      "year": 2021,
+      "month": "Febrero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Febrero_2021.xlsx",
+      "source_id": "ResSISTEMA_Febrero_2021.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Febrero_2021.xlsx",
+      "status": "skipped",
+      "bytes": 325298,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Febrero_2021.xlsx"
+    },
+    {
+      "year": 2021,
+      "month": "Abril",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Abril_2021.xlsx",
+      "source_id": "ResSISTEMA_Abril_2021.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Abril_2021.xlsx",
+      "status": "skipped",
+      "bytes": 324503,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Abril_2021.xlsx"
+    },
+    {
+      "year": 2021,
+      "month": "Marzo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Marzo_2021.xlsx",
+      "source_id": "ResSISTEMA_Marzo_2021.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Marzo_2021.xlsx",
+      "status": "skipped",
+      "bytes": 275647,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Marzo_2021.xlsx"
+    },
+    {
+      "year": 2021,
+      "month": "Diciembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_DiciembreDefinitivo_2021D.xlsx",
+      "source_id": "ResSISTEMA_DiciembreDefinitivo_2021D.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_DiciembreDefinitivo_2021D.xlsx",
+      "status": "skipped",
+      "bytes": 276051,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_DiciembreDefinitivo_2021D.xlsx"
+    },
+    {
+      "year": 2021,
+      "month": "Septiembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Septiembre_2021.xlsx",
+      "source_id": "ResSISTEMA_Septiembre_2021.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Septiembre_2021.xlsx",
+      "status": "skipped",
+      "bytes": 276085,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Septiembre_2021.xlsx"
+    },
+    {
+      "year": 2021,
+      "month": "Agosto",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Agosto_2021.xlsx",
+      "source_id": "ResSISTEMA_Agosto_2021 .xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Agosto_2021 .xlsx",
+      "status": "skipped",
+      "bytes": 324832,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Agosto_2021.xlsx"
+    },
+    {
+      "year": 2021,
+      "month": "Octubre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Octubre_2021.xlsx",
+      "source_id": "ResSISTEMA_Octubre_2021.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Octubre_2021.xlsx",
+      "status": "skipped",
+      "bytes": 276089,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Octubre_2021.xlsx"
+    },
+    {
+      "year": 2021,
+      "month": "Noviembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Noviembre_2021.xlsx",
+      "source_id": "ResSISTEMA_Noviembre_2021.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Noviembre_2021.xlsx",
+      "status": "skipped",
+      "bytes": 276155,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Noviembre_2021.xlsx"
+    },
+    {
+      "year": 2021,
+      "month": "Mayo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Mayo_2021.xlsx",
+      "source_id": "ResSISTEMA_Mayo_2021.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Mayo_2021.xlsx",
+      "status": "skipped",
+      "bytes": 275765,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Mayo_2021.xlsx"
+    },
+    {
+      "year": 2021,
+      "month": "Julio",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Julio_2021.xlsx",
+      "source_id": "ResSISTEMA_Julio_2021.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Julio_2021.xlsx",
+      "status": "skipped",
+      "bytes": 324817,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Julio_2021.xlsx"
+    },
+    {
+      "year": 2021,
+      "month": "Junio",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Junio_2021.xlsx",
+      "source_id": "ResSISTEMA_Junio_2021.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Junio_2021.xlsx",
+      "status": "skipped",
+      "bytes": 324749,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Junio_2021.xlsx"
+    },
+    {
+      "year": 2022,
+      "month": "Julio",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Julio_2022.xlsx",
+      "source_id": "ResSISTEMA_Julio_2022.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Julio_2022.xlsx",
+      "status": "skipped",
+      "bytes": 275899,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Julio_2022.xlsx"
+    },
+    {
+      "year": 2022,
+      "month": "Abril",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Abril_2022.xlsx",
+      "source_id": "ResSISTEMA_Abril_2022.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Abril_2022.xlsx",
+      "status": "skipped",
+      "bytes": 275725,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Abril_2022.xlsx"
+    },
+    {
+      "year": 2022,
+      "month": "Agosto",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Agosto_2022.xlsx",
+      "source_id": "ResSISTEMA_Agosto_2022.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Agosto_2022.xlsx",
+      "status": "skipped",
+      "bytes": 275919,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Agosto_2022.xlsx"
+    },
+    {
+      "year": 2022,
+      "month": "Diciembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_DiciembreDefinitivo_2022.xlsx",
+      "source_id": "ResSISTEMA_DiciembreDefinitivo_2022.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_DiciembreDefinitivo_2022.xlsx",
+      "status": "skipped",
+      "bytes": 276065,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_DiciembreDefinitivo_2022.xlsx"
+    },
+    {
+      "year": 2022,
+      "month": "Febrero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Febrero2022.xlsx",
+      "source_id": "ResSISTEMA_Febrero2022.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Febrero2022.xlsx",
+      "status": "skipped",
+      "bytes": 275602,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Febrero2022.xlsx"
+    },
+    {
+      "year": 2022,
+      "month": "Octubre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Octubre_2022.xlsx",
+      "source_id": "ResSISTEMA_Octubre_2022.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Octubre_2022.xlsx",
+      "status": "skipped",
+      "bytes": 276001,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Octubre_2022.xlsx"
+    },
+    {
+      "year": 2022,
+      "month": "Mayo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Mayo_2022.xlsx",
+      "source_id": "ResSISTEMA_Mayo_2022.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Mayo_2022.xlsx",
+      "status": "skipped",
+      "bytes": 275762,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Mayo_2022.xlsx"
+    },
+    {
+      "year": 2022,
+      "month": "Junio",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Junio_2022.xlsx",
+      "source_id": "ResSISTEMA_Junio_2022.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Junio_2022.xlsx",
+      "status": "skipped",
+      "bytes": 275846,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Junio_2022.xlsx"
+    },
+    {
+      "year": 2022,
+      "month": "Enero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Enero_2022.xlsx",
+      "source_id": "ResSISTEMA_Enero_2022.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Enero_2022.xlsx",
+      "status": "skipped",
+      "bytes": 275445,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Enero_2022.xlsx"
+    },
+    {
+      "year": 2022,
+      "month": "Septiembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Septiembre_2022.xlsx",
+      "source_id": "ResSISTEMA_Septiembre_2022.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Septiembre_2022.xlsx",
+      "status": "skipped",
+      "bytes": 324728,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Septiembre_2022.xlsx"
+    },
+    {
+      "year": 2022,
+      "month": "Marzo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Marzo_2022.xlsx",
+      "source_id": "ResSISTEMA_Marzo_2022.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Marzo_2022.xlsx",
+      "status": "skipped",
+      "bytes": 275706,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Marzo_2022.xlsx"
+    },
+    {
+      "year": 2022,
+      "month": "Noviembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Noviembre_2022.xlsx",
+      "source_id": "ResSISTEMA_Noviembre_2022.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Noviembre_2022.xlsx",
+      "status": "skipped",
+      "bytes": 276058,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Noviembre_2022.xlsx"
+    },
+    {
+      "year": 2023,
+      "month": "Abril",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Abril_2023.xlsx",
+      "source_id": "ResSISTEMA_Abril_2023.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Abril_2023.xlsx",
+      "status": "skipped",
+      "bytes": 275756,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Abril_2023.xlsx"
+    },
+    {
+      "year": 2023,
+      "month": "Febrero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Febrero_2023.xlsx",
+      "source_id": "ResSISTEMA_Febrero_2023.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Febrero_2023.xlsx",
+      "status": "skipped",
+      "bytes": 275576,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Febrero_2023.xlsx"
+    },
+    {
+      "year": 2023,
+      "month": "Diciembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_DiciembreDefinitivo_2023.xlsx",
+      "source_id": "ResSISTEMA_DiciembreDefinitivo_2023.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_DiciembreDefinitivo_2023.xlsx",
+      "status": "skipped",
+      "bytes": 275963,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_DiciembreDefinitivo_2023.xlsx"
+    },
+    {
+      "year": 2023,
+      "month": "Octubre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Octubre_2023.xlsx",
+      "source_id": "ResSISTEMA_Octubre_2023.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Octubre_2023.xlsx",
+      "status": "skipped",
+      "bytes": 276181,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Octubre_2023.xlsx"
+    },
+    {
+      "year": 2023,
+      "month": "Enero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Enero_2023.xlsx",
+      "source_id": "ResSISTEMA_Enero_2023.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Enero_2023.xlsx",
+      "status": "skipped",
+      "bytes": 275317,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Enero_2023.xlsx"
+    },
+    {
+      "year": 2023,
+      "month": "Mayo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Mayo_2023.xlsx",
+      "source_id": "ResSISTEMA_Mayo_2023.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Mayo_2023.xlsx",
+      "status": "skipped",
+      "bytes": 275766,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Mayo_2023.xlsx"
+    },
+    {
+      "year": 2023,
+      "month": "Noviembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Noviembre_2023.xlsx",
+      "source_id": "ResSISTEMA_Noviembre_2023.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Noviembre_2023.xlsx",
+      "status": "skipped",
+      "bytes": 276203,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Noviembre_2023.xlsx"
+    },
+    {
+      "year": 2023,
+      "month": "Septiembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Septiembre_2023.xlsx",
+      "source_id": "ResSISTEMA_Septiembre_2023.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Septiembre_2023.xlsx",
+      "status": "skipped",
+      "bytes": 276019,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Septiembre_2023.xlsx"
+    },
+    {
+      "year": 2023,
+      "month": "Marzo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Marzo_2023.xlsx",
+      "source_id": "ResSISTEMA_Marzo_2023.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Marzo_2023.xlsx",
+      "status": "skipped",
+      "bytes": 275654,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Marzo_2023.xlsx"
+    },
+    {
+      "year": 2023,
+      "month": "Agosto",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Agosto_2023.xlsx",
+      "source_id": "ResSISTEMA_Agosto_2023.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Agosto_2023.xlsx",
+      "status": "skipped",
+      "bytes": 275880,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Agosto_2023.xlsx"
+    },
+    {
+      "year": 2023,
+      "month": "Junio",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Junio_2023.xlsx",
+      "source_id": "ResSISTEMA_Junio_2023.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Junio_2023.xlsx",
+      "status": "skipped",
+      "bytes": 275750,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Junio_2023.xlsx"
+    },
+    {
+      "year": 2023,
+      "month": "Julio",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Julio_2023.xlsx",
+      "source_id": "ResSISTEMA_Julio_2023.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Julio_2023.xlsx",
+      "status": "skipped",
+      "bytes": 275850,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Julio_2023.xlsx"
+    },
+    {
+      "year": 2024,
+      "month": "Abril",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Abril_2024.xlsx",
+      "source_id": "ResSISTEMA_Abril_2024.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Abril_2024.xlsx",
+      "status": "skipped",
+      "bytes": 275788,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Abril_2024.xlsx"
+    },
+    {
+      "year": 2024,
+      "month": "Agosto",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Agosto_2024.xlsx",
+      "source_id": "ResSISTEMA_Agosto_2024.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Agosto_2024.xlsx",
+      "status": "skipped",
+      "bytes": 275979,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Agosto_2024.xlsx"
+    },
+    {
+      "year": 2024,
+      "month": "Enero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Enero_2024.xlsx",
+      "source_id": "ResSISTEMA_Enero_2024.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Enero_2024.xlsx",
+      "status": "skipped",
+      "bytes": 275261,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Enero_2024.xlsx"
+    },
+    {
+      "year": 2024,
+      "month": "Mayo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Mayo_2024.xlsx",
+      "source_id": "ResSISTEMA_Mayo_2024.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Mayo_2024.xlsx",
+      "status": "skipped",
+      "bytes": 275811,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Mayo_2024.xlsx"
+    },
+    {
+      "year": 2024,
+      "month": "Diciembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_DiciembreDefinitivo_2024.xlsx",
+      "source_id": "ResSISTEMA_DiciembreDefinitivo_2024.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_DiciembreDefinitivo_2024.xlsx",
+      "status": "skipped",
+      "bytes": 276195,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_DiciembreDefinitivo_2024.xlsx"
+    },
+    {
+      "year": 2024,
+      "month": "Junio",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Junio_2024.xlsx",
+      "source_id": "ResSISTEMA_Junio_2024.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Junio_2024.xlsx",
+      "status": "skipped",
+      "bytes": 275761,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Junio_2024.xlsx"
+    },
+    {
+      "year": 2024,
+      "month": "Julio",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Julio_2024.xlsx",
+      "source_id": "ResSISTEMA_Julio_2024.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Julio_2024.xlsx",
+      "status": "skipped",
+      "bytes": 275901,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Julio_2024.xlsx"
+    },
+    {
+      "year": 2024,
+      "month": "Octubre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Octubre_2024.xlsx",
+      "source_id": "ResSISTEMA_Octubre_2024.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Octubre_2024.xlsx",
+      "status": "skipped",
+      "bytes": 276155,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Octubre_2024.xlsx"
+    },
+    {
+      "year": 2024,
+      "month": "Marzo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Marzo_2024.xlsx",
+      "source_id": "ResSISTEMA_Marzo_2024.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Marzo_2024.xlsx",
+      "status": "skipped",
+      "bytes": 275692,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Marzo_2024.xlsx"
+    },
+    {
+      "year": 2024,
+      "month": "Febrero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Febrero_2024.xlsx",
+      "source_id": "ResSISTEMA_Febrero_2024.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Febrero_2024.xlsx",
+      "status": "skipped",
+      "bytes": 275615,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Febrero_2024.xlsx"
+    },
+    {
+      "year": 2024,
+      "month": "Noviembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Noviembre_2024.xlsx",
+      "source_id": "ResSISTEMA_Noviembre_2024.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Noviembre_2024.xlsx",
+      "status": "skipped",
+      "bytes": 276199,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Noviembre_2024.xlsx"
+    },
+    {
+      "year": 2024,
+      "month": "Septiembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Septiembre_2024.xlsx",
+      "source_id": "ResSISTEMA_Septiembre_2024.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Septiembre_2024.xlsx",
+      "status": "skipped",
+      "bytes": 276011,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Septiembre_2024.xlsx"
+    },
+    {
+      "year": 2025,
+      "month": "Septiembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Septiembre_2025.xlsx",
+      "source_id": "ResSISTEMA_Septiembre_2025.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Septiembre_2025.xlsx",
+      "status": "skipped",
+      "bytes": 276247,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Septiembre_2025.xlsx"
+    },
+    {
+      "year": 2025,
+      "month": "Febrero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Febrero_2025.xlsx",
+      "source_id": "ResSISTEMA_Febrero_2025.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Febrero_2025.xlsx",
+      "status": "skipped",
+      "bytes": 324804,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Febrero_2025.xlsx"
+    },
+    {
+      "year": 2025,
+      "month": "Abril",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Abril_2025.xlsx",
+      "source_id": "ResSISTEMA_Abril_2025.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Abril_2025.xlsx",
+      "status": "skipped",
+      "bytes": 276017,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Abril_2025.xlsx"
+    },
+    {
+      "year": 2025,
+      "month": "Agosto",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Agosto_2025.xlsx",
+      "source_id": "ResSISTEMA_Agosto_2025.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Agosto_2025.xlsx",
+      "status": "skipped",
+      "bytes": 276206,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Agosto_2025.xlsx"
+    },
+    {
+      "year": 2025,
+      "month": "Octubre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Octubre_2025.xlsx",
+      "source_id": "ResSISTEMA_Octubre_2025.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Octubre_2025.xlsx",
+      "status": "skipped",
+      "bytes": 276342,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Octubre_2025.xlsx"
+    },
+    {
+      "year": 2025,
+      "month": "Junio",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Junio_2025.xlsx",
+      "source_id": "ResSISTEMA_Junio_2025.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Junio_2025.xlsx",
+      "status": "skipped",
+      "bytes": 276108,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Junio_2025.xlsx"
+    },
+    {
+      "year": 2025,
+      "month": "Noviembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Noviembre_2025.xlsx",
+      "source_id": "ResSISTEMA_Noviembre_2025.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Noviembre_2025.xlsx",
+      "status": "skipped",
+      "bytes": 276458,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Noviembre_2025.xlsx"
+    },
+    {
+      "year": 2025,
+      "month": "Mayo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Mayo_2025.xlsx",
+      "source_id": "ResSISTEMA_Mayo_2025.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Mayo_2025.xlsx",
+      "status": "skipped",
+      "bytes": 276123,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Mayo_2025.xlsx"
+    },
+    {
+      "year": 2025,
+      "month": "Marzo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Marzo_2025.xlsx",
+      "source_id": "ResSISTEMA_Marzo_2025.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Marzo_2025.xlsx",
+      "status": "skipped",
+      "bytes": 275976,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Marzo_2025.xlsx"
+    },
+    {
+      "year": 2025,
+      "month": "Julio",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Julio_2025.xlsx",
+      "source_id": "ResSISTEMA_Julio_2025.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Julio_2025.xlsx",
+      "status": "skipped",
+      "bytes": 276207,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Julio_2025.xlsx"
+    },
+    {
+      "year": 2025,
+      "month": "Diciembre",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_DiciembreProvisional_2025.xlsx",
+      "source_id": "ResSISTEMA_DiciembreProvisional_2025.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_DiciembreProvisional_2025.xlsx",
+      "status": "skipped",
+      "bytes": 276309,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_DiciembreProvisional_2025.xlsx"
+    },
+    {
+      "year": 2025,
+      "month": "Enero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Enero_2025.xlsx",
+      "source_id": "ResSISTEMA_Enero_2025.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Enero_2025.xlsx",
+      "status": "skipped",
+      "bytes": 324473,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Enero_2025.xlsx"
+    },
+    {
+      "year": 2026,
+      "month": "Mayo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Mayo_2026.xlsx",
+      "source_id": "ResSISTEMA_Mayo_2026.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Mayo_2026.xlsx",
+      "status": "skipped",
+      "bytes": 276051,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Mayo_2026.xlsx"
+    },
+    {
+      "year": 2026,
+      "month": "Enero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Enero_2026.xlsx",
+      "source_id": "ResSISTEMA_Enero_2026.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Enero_2026.xlsx",
+      "status": "skipped",
+      "bytes": 275534,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Enero_2026.xlsx"
+    },
+    {
+      "year": 2026,
+      "month": "Abril",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Abril_2026.xlsx",
+      "source_id": "ResSISTEMA_Abril_2026.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Abril_2026.xlsx",
+      "status": "skipped",
+      "bytes": 275928,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Abril_2026.xlsx"
+    },
+    {
+      "year": 2026,
+      "month": "Marzo",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Marzo_2026.xlsx",
+      "source_id": "ResSISTEMA_Marzo_2026.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Marzo_2026.xlsx",
+      "status": "skipped",
+      "bytes": 275888,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Marzo_2026.xlsx"
+    },
+    {
+      "year": 2026,
+      "month": "Febrero",
+      "format": "xlsx",
+      "dest_name": "ResSISTEMA_Febrero_2026.xlsx",
+      "source_id": "ResSISTEMA_Febrero_2026.xlsx",
+      "url": "https://www.seg-social.es/descarga/es/ResSISTEMA_Febrero_2026.xlsx",
+      "status": "skipped",
+      "bytes": 275791,
+      "path": "/Users/gerbai/SeguridadSocial/data/raw/res_sistema/ResSISTEMA_Febrero_2026.xlsx"
+    }
+  ],
+  "notes": [
+    "2005-2013: solo PDF en seg-social.es",
+    "2015+: XLSX disponible (preferido para análisis)",
+    "Datos acumulados YTD hasta fin de mes"
+  ]
+}

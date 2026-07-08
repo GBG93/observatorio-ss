@@ -1,0 +1,20 @@
+# ResSISTEMA fuente (descargar en local; no versionar)
+data/raw/res_sistema/*.xlsx
+data/raw/res_sistema/*.pdf
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Salida local / informes
+output/
+export/
+observatorio/
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/

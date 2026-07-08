@@ -1,0 +1,134 @@
+[
+  {
+    "cotizaciones": 97763.1,
+    "transferencias": 15751.2,
+    "transferencias_estado": 13094.6,
+    "ingresos_totales": 130637.4,
+    "gastos": 133753.2,
+    "year": 2014,
+    "source_month": "DiciembreDefinitivo",
+    "deficit_cotizaciones": 35990.1,
+    "pct_estado_en_ingresos": 10.0
+  },
+  {
+    "cotizaciones": 99363.6,
+    "transferencias": 15956.9,
+    "transferencias_estado": 13086.3,
+    "ingresos_totales": 136338.2,
+    "gastos": 140353.7,
+    "year": 2015,
+    "source_month": "DiciembreDefinitivo",
+    "deficit_cotizaciones": 40990.1,
+    "pct_estado_en_ingresos": 9.6
+  },
+  {
+    "cotizaciones": 102599.7,
+    "transferencias": 16026.4,
+    "transferencias_estado": 12935.8,
+    "ingresos_totales": 141132.6,
+    "gastos": 141883.2,
+    "year": 2016,
+    "source_month": "Diciembre",
+    "deficit_cotizaciones": 39283.5,
+    "pct_estado_en_ingresos": 9.2
+  },
+  {
+    "cotizaciones": 108181.8,
+    "transferencias": 16260.7,
+    "transferencias_estado": 12902.7,
+    "ingresos_totales": 143537.3,
+    "gastos": 146353.8,
+    "year": 2017,
+    "source_month": "Diciembre",
+    "deficit_cotizaciones": 38172.0,
+    "pct_estado_en_ingresos": 9.0
+  },
+  {
+    "cotizaciones": 113851.8,
+    "transferencias": 18054.9,
+    "transferencias_estado": 14650.0,
+    "ingresos_totales": 150457.5,
+    "gastos": 151823.9,
+    "year": 2018,
+    "source_month": "Diciembre",
+    "deficit_cotizaciones": 37972.1,
+    "pct_estado_en_ingresos": 9.7
+  },
+  {
+    "cotizaciones": 122998.9,
+    "transferencias": 19582.4,
+    "transferencias_estado": 15645.2,
+    "ingresos_totales": 160847.9,
+    "gastos": 162028.1,
+    "year": 2019,
+    "source_month": "DiciembreDefinitivo",
+    "deficit_cotizaciones": 39029.2,
+    "pct_estado_en_ingresos": 9.7
+  },
+  {
+    "cotizaciones": 118728.9,
+    "transferencias": 45545.2,
+    "transferencias_estado": 35795.2,
+    "ingresos_totales": 198042.6,
+    "gastos": 181871.6,
+    "year": 2020,
+    "source_month": "DiciembreDefinitivo",
+    "deficit_cotizaciones": 63142.7,
+    "pct_estado_en_ingresos": 18.1
+  },
+  {
+    "cotizaciones": 130912.8,
+    "transferencias": 47978.5,
+    "transferencias_estado": 36112.4,
+    "ingresos_totales": 191469.8,
+    "gastos": 189850.6,
+    "year": 2021,
+    "source_month": "DiciembreDefinitivo",
+    "deficit_cotizaciones": 58937.8,
+    "pct_estado_en_ingresos": 18.9
+  },
+  {
+    "cotizaciones": 139209.6,
+    "transferencias": 42659.5,
+    "transferencias_estado": 36537.4,
+    "ingresos_totales": 192163.5,
+    "gastos": 193961.4,
+    "year": 2022,
+    "source_month": "DiciembreDefinitivo",
+    "deficit_cotizaciones": 54751.8,
+    "pct_estado_en_ingresos": 19.0
+  },
+  {
+    "cotizaciones": 153292.6,
+    "transferencias": 43896.6,
+    "transferencias_estado": 39298.5,
+    "ingresos_totales": 209850.0,
+    "gastos": 213227.0,
+    "year": 2023,
+    "source_month": "DiciembreDefinitivo",
+    "deficit_cotizaciones": 59934.4,
+    "pct_estado_en_ingresos": 18.7
+  },
+  {
+    "cotizaciones": 164438.0,
+    "transferencias": 48014.6,
+    "transferencias_estado": 43084.3,
+    "ingresos_totales": 226742.0,
+    "gastos": 231690.2,
+    "year": 2024,
+    "source_month": "DiciembreDefinitivo",
+    "deficit_cotizaciones": 67252.2,
+    "pct_estado_en_ingresos": 19.0
+  },
+  {
+    "cotizaciones": 175676.5,
+    "transferencias": 52937.5,
+    "transferencias_estado": 47815.4,
+    "ingresos_totales": 241124.3,
+    "gastos": 244780.4,
+    "year": 2025,
+    "source_month": "DiciembreProvisional",
+    "deficit_cotizaciones": 69103.9,
+    "pct_estado_en_ingresos": 19.8
+  }
+]
