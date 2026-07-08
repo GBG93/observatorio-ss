@@ -1,30 +1,60 @@
-## Resumen
+## Qué cambia
 
-<!-- Qué cambia y por qué (1–3 frases) -->
+<!-- 1–3 frases: qué hace esta PR y por qué -->
 
-## Tipo de cambio
+## Tipo
 
-- [ ] Datos ResSISTEMA (JSON + `docs/index.html`)
-- [ ] Código / gráficos / textos del observatorio
-- [ ] Documentación
-- [ ] Otro
+- [ ] **Datos** — nuevo mes o revisión ResSISTEMA
+- [ ] **Código / UI** — gráficos, textos o lógica del observatorio
+- [ ] **Documentación**
+- [ ] **Otro** — describe abajo
 
-## Fuente de datos (si aplica)
+---
 
-- Mes/año ResSISTEMA:
-- Enlace o fichero local usado:
+## Datos ResSISTEMA *(marca solo si aplica)*
 
-## Checklist
+| Campo | Valor |
+|-------|-------|
+| Mes / año | |
+| Enlace o fichero fuente | |
+| ¿Revisión de mes ya publicado? | Sí / No |
 
-- [ ] He ejecutado `python3 scripts/extract_breakdown.py` (solo si hay datos nuevos)
-- [ ] He ejecutado `python3 scripts/build_observatorio.py` y commiteo `docs/index.html`
-- [ ] No incluyo `.xlsx`, `.pdf` ni secretos
-- [ ] He revisado que las cifras principales cuadran con la fuente
+**Checklist datos**
+
+- [ ] `python3 scripts/extract_breakdown.py` ejecutado sin errores
+- [ ] JSON actualizados en `data/processed/` (anual, mensual, manifest)
+- [ ] Totales ingresos / gastos / transferencias revisados contra la fuente
+- [ ] `docs/index.html` regenerado con `build_observatorio.py`
+
+---
+
+## Código / UI *(marca solo si aplica)*
+
+**Checklist código**
+
+- [ ] `python3 scripts/build_observatorio.py` ejecutado
+- [ ] `docs/index.html` incluido en el commit
+- [ ] Probado en local (`docs/index.html` o `python3 -m http.server --directory docs`)
+
+**Pestañas o gráficos tocados:**
+
+<!-- p. ej. Panorama, Histórico, Transferencias -->
+
+---
+
+## General
+
+- [ ] No incluyo `.xlsx`, `.pdf`, `.env` ni secretos
+- [ ] El diff es acotado a lo necesario para este cambio
 
 ## Cómo probar
 
-<!-- p. ej. abrir docs/index.html localmente o describir qué pestaña revisar -->
+<!-- Pasos concretos para quien revise la PR -->
 
-## Capturas (opcional)
+## Capturas *(opcional, recomendado si cambia la UI)*
 
-<!-- Si cambia la UI, adjunta captura del gráfico o pestaña -->
+<!-- Arrastra imágenes aquí -->
+
+## Issue relacionado
+
+<!-- Closes #123 — o "N/A" -->

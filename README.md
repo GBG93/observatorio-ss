@@ -44,9 +44,13 @@ git push
 
 Publicado desde `main` → `/docs`. Tras cada `git push`, el sitio se actualiza en unos minutos.
 
+## Contribuir
+
+Pull requests bienvenidas. Guía completa en **[CONTRIBUTING.md](CONTRIBUTING.md)**.
+
+Resumen: **fork** → rama (`datos/…` o `feat/…`) → `extract_breakdown.py` + `build_observatorio.py` → commit JSON + `docs/index.html` → **PR** hacia `main`.
+
 ## Licencia
 
 Código: [MIT](LICENSE).  
 Datos agregados: informes públicos de la Tesorería General de la Seguridad Social / Seguridad Social.
-
-¿Quieres contribuir? Lee [CONTRIBUTING.md](CONTRIBUTING.md).
