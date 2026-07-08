@@ -1,14 +1,15 @@
 # Observatorio Seguridad Social
 
-Visualización interactiva de ingresos, gastos y transferencias del sistema de la Seguridad Social española, a partir de los informes **ResSISTEMA** ([fuente oficial](https://www.seg-social.es/wps/portal/wss/internet/InformacionEconomicoFinanciera/393/394)).
+Visualización interactiva de ingresos, gastos y transferencias del sistema de la Seguridad Social española, basada en los informes oficiales **ResSISTEMA** ([fuente](https://www.seg-social.es/wps/portal/wss/internet/InformacionEconomicoFinanciera/393/394)).
 
 ## Sitio web
 
 **https://gbg93.github.io/observatorio-ss/**
 
-El HTML se genera en [`docs/index.html`](docs/index.html) y GitHub Pages lo publica desde la carpeta `/docs`.
+El HTML final se genera en [`docs/index.html`](docs/index.html).  
+GitHub Pages publica el sitio desde la carpeta `/docs`.
 
-## Datos en el repositorio
+## Datos incluidos en el repositorio
 
 | Ruta | Contenido |
 |------|-----------|
@@ -17,7 +18,8 @@ El HTML se genera en [`docs/index.html`](docs/index.html) y GitHub Pages lo publ
 | `data/processed/monthly/manifest.json` | Índice y último mes disponible por año |
 | `data/raw/res_sistema/manifest.json` | Catálogo de descargas (sin Excel en git) |
 
-Los ficheros `.xlsx` **no se suben** al repo; se procesan en local y se commitean solo los JSON.
+Los ficheros `.xlsx` del ResSISTEMA **no se suben** al repositorio.  
+Se procesan en local y solo se versionan los JSON generados.
 
 ## Actualizar datos y publicar
 
@@ -27,7 +29,7 @@ pip install -r requirements.txt
 # 1. (Opcional) Descargar nuevos ResSISTEMA
 python3 scripts/download_res_sistema.py
 
-# 2. Extraer JSON anual + mensual desde xlsx locales
+# 2. Extraer JSON anual + mensual desde los xlsx locales
 python3 scripts/extract_breakdown.py
 
 # 3. Generar el observatorio
@@ -42,13 +44,18 @@ git push
 
 ## GitHub Pages
 
-Publicado desde `main` → `/docs`. Tras cada `git push`, el sitio se actualiza en unos minutos.
+El sitio se publica desde `main` → `/docs`.  
+Tras cada push, GitHub Pages actualiza la web en unos minutos.
 
 ## Contribuir
 
-Pull requests bienvenidas. Guía completa en **[CONTRIBUTING.md](CONTRIBUTING.md)**.
+Las pull requests son bienvenidas. Guía completa en **[CONTRIBUTING.md](CONTRIBUTING.md)**.
 
-Resumen: **fork** → rama (`datos/…` o `feat/…`) → `extract_breakdown.py` + `build_observatorio.py` → commit JSON + `docs/index.html` → **PR** hacia `main`.
+Resumen del flujo:
+
+**fork** → rama (`datos/…` o `feat/…`) → `extract_breakdown.py` + `build_observatorio.py` → commit JSON + `docs/index.html` → **PR** hacia `main`
+
+(Si solo cambias código o textos del observatorio, basta con `build_observatorio.py`.)
 
 ## Licencia
 
