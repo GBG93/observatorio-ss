@@ -1,6 +1,8 @@
 # Contribuir al Observatorio SS
 
-Gracias por ayudar a mantener actualizado el [observatorio-ss](https://github.com/GBG93/observatorio-ss). El código está bajo [MIT](LICENSE); los datos agregados provienen de informes públicos del ResSISTEMA.
+Gracias por ayudar a mantener actualizado [observatorio-ss](https://github.com/GBG93/observatorio-ss).
+
+El código está bajo licencia [MIT](LICENSE) y los datos agregados provienen de los informes públicos ResSISTEMA de la Seguridad Social.
 
 **Sitio publicado:** https://gbg93.github.io/observatorio-ss/
 
@@ -14,7 +16,8 @@ Gracias por ayudar a mantener actualizado el [observatorio-ss](https://github.co
 | **Cambiar gráficos o textos** | `build_observatorio.py` | `scripts/` + `docs/index.html` |
 | **Solo documentación** | — | `.md` u otros docs |
 
-Los ficheros `.xlsx` y `.pdf` del ResSISTEMA **no van al repo** (están en `.gitignore`). Solo se versionan los JSON procesados.
+Los ficheros `.xlsx` y `.pdf` del ResSISTEMA **no se suben al repo** (están en `.gitignore`).  
+Solo se versionan los JSON procesados.
 
 ---
 
@@ -22,23 +25,33 @@ Los ficheros `.xlsx` y `.pdf` del ResSISTEMA **no van al repo** (están en `.git
 
 1. Haz **fork** de [GBG93/observatorio-ss](https://github.com/GBG93/observatorio-ss).
 2. Clona tu fork:
+
    ```bash
    git clone https://github.com/TU_USUARIO/observatorio-ss.git
    cd observatorio-ss
    ```
+
 3. Añade el remoto upstream (recomendado):
+
    ```bash
    git remote add upstream https://github.com/GBG93/observatorio-ss.git
    ```
+
 4. Crea una rama desde `main` actualizado:
+
    ```bash
    git fetch upstream
    git checkout main
    git merge upstream/main
-   git checkout -b datos/res-sistema-2025-05   # o feat/nombre-descriptivo
+   git checkout -b datos/res-sistema-2025-05   # o feat/... fix/... docs/...
    ```
 
-**Convención de ramas:** `datos/…` para actualizaciones ResSISTEMA, `feat/…` para funcionalidad, `fix/…` para correcciones, `docs/…` para documentación.
+**Convención de ramas:**
+
+- `datos/...` → actualizaciones del ResSISTEMA
+- `feat/...` → nuevas funciones
+- `fix/...` → correcciones
+- `docs/...` → documentación
 
 ---
 
@@ -59,7 +72,7 @@ Fuente oficial: [Información económico-financiera — Seguridad Social](https:
 Coloca los Excel en `data/raw/res_sistema/` (local, no se suben a git).
 
 ```bash
-# Opcional: descargar informes nuevos
+# (Opcional) Descargar informes nuevos
 python3 scripts/download_res_sistema.py
 
 # Extraer JSON anual + mensual
@@ -79,23 +92,23 @@ python3 scripts/build_observatorio.py
 
 **Comprueba antes de abrir la PR:**
 
-- Totales de ingresos y gastos coinciden con el ResSISTEMA del mes indicado.
+- Totales de ingresos y gastos coinciden con el ResSISTEMA del mes.
 - Cotizaciones, prestaciones y transferencias del Estado son coherentes.
-- El selector de mes en el observatorio muestra el periodo esperado.
+- El selector de mes muestra el periodo esperado.
 
 ---
 
 ## 4. Cambios de código o UI
 
-Si solo tocas `scripts/build_observatorio.py` (gráficos, textos, pestañas):
+Si modificas gráficos, textos o pestañas:
 
 ```bash
 python3 scripts/build_observatorio.py
 ```
 
-Incluye siempre `docs/index.html` regenerado: es lo que sirve GitHub Pages.
+Incluye siempre `docs/index.html` regenerado: es lo que publica GitHub Pages.
 
-Para probar en local, abre `docs/index.html` en el navegador o usa un servidor estático:
+Para probar en local:
 
 ```bash
 python3 -m http.server --directory docs 8080
@@ -112,9 +125,10 @@ git commit -m "datos: ResSISTEMA mayo 2025"
 git push origin HEAD
 ```
 
-Abre la PR hacia `main` en [GBG93/observatorio-ss](https://github.com/GBG93/observatorio-ss). GitHub rellenará la plantilla con el checklist; complétala.
+Abre la PR hacia `main` en [GBG93/observatorio-ss](https://github.com/GBG93/observatorio-ss).  
+GitHub rellenará la plantilla con el checklist; complétala.
 
-**Ejemplos de título:**
+**Ejemplos de títulos:**
 
 - `datos: ResSISTEMA abril 2025`
 - `feat: leyenda unificada en histórico YoY`
@@ -124,9 +138,9 @@ Abre la PR hacia `main` en [GBG93/observatorio-ss](https://github.com/GBG93/obse
 
 ## 6. Revisión y publicación
 
-- El mantenedor puede pedir cambios o hacer squash al mergear.
-- Tras merge en `main`, GitHub Pages actualiza el sitio en unos minutos.
-- No hace falta tocar la configuración de Pages (`main` → `/docs`).
+- El mantenedor puede pedir cambios o hacer squash merge.
+- Tras el merge, GitHub Pages actualiza el sitio en unos minutos.
+- No hace falta tocar la configuración (`main` → `/docs`).
 
 ---
 
@@ -135,7 +149,7 @@ Abre la PR hacia `main` en [GBG93/observatorio-ss](https://github.com/GBG93/obse
 Abre un [Issue](https://github.com/GBG93/observatorio-ss/issues) si planeas:
 
 - una nueva fuente de datos distinta del ResSISTEMA,
-- pestañas o métricas nuevas,
+- nuevas pestañas o métricas,
 - un rediseño amplio de la UI.
 
 ---
@@ -143,4 +157,4 @@ Abre un [Issue](https://github.com/GBG93/observatorio-ss/issues) si planeas:
 ## Notas
 
 - Este proyecto es informativo; no sustituye asesoramiento financiero ni legal.
-- Sé respetuoso en issues y PRs.
+- Por favor, mantén un tono respetuoso en issues y PRs.
