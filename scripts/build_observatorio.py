@@ -201,6 +201,9 @@ def main() -> None:
   .tone-muted {{ color: var(--muted); font-weight: 500; }}
   .tr-pct-stat {{ background: #f8fafc; border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }}
   .tr-pct-stat .stat-v {{ font-size: 24px; }}
+  .hist-tcac-stat {{ text-align: center; }}
+  .hist-tcac-stat .stat-v {{ font-size: 28px; }}
+  .hist-tcac-unit {{ font-size: 15px; font-weight: 500; color: var(--text); }}
   @media (max-width: 800px) {{
     .grid-3, .grid-4 {{ grid-template-columns: 1fr; }}
     .grid-2 {{ grid-template-columns: 1fr; }}
@@ -338,11 +341,29 @@ def main() -> None:
 
   <!-- HISTÓRICO -->
   <section id="panel-historico" class="panel">
+    <div class="grid-3" id="hist-tcac-kpi"></div>
+    <p class="caption" id="hist-tcac-note" style="margin:-8px 0 4px"></p>
     <div class="card">
       <div class="card-h">Ingresos vs gastos — cierres anuales</div>
       <div class="card-b">
         <p class="caption">Eje Y: mil M€ · Misma segmentación que Panorama: ingresos por color (mayor abajo), gastos en gris. Cierres 2014–2025; barra 2026 provisional si hay ResSISTEMA mensual.</p>
         <div class="chart-box tall"><canvas id="chart-hist-cot-gast"></canvas></div>
+      </div>
+    </div>
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-h">Transferencias del Estado (PGE) — acumulado histórico</div>
+        <div class="card-b">
+          <p class="caption">Suma de transferencias del PGE desde 2014 · mil M€.</p>
+          <div class="chart-box mid"><canvas id="chart-hist-transf-est"></canvas></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-h">Déficit sin PGE — acumulado histórico</div>
+        <div class="card-b">
+          <p class="caption">Suma del déficit sin PGE desde 2014 · mil M€.</p>
+          <div class="chart-box mid"><canvas id="chart-hist-deficit-sin-pge"></canvas></div>
+        </div>
       </div>
     </div>
     <div class="card">
@@ -872,6 +893,89 @@ function deficitSinEstLineDataset(data) {{
   }};
 }}
 
+function tcacPct(first, last, yearsSpan) {{
+  if (first == null || last == null || first <= 0 || yearsSpan <= 0) return null;
+  return Math.round((Math.pow(last / first, 1 / yearsSpan) - 1) * 1000) / 10;
+}}
+
+function deficitSinPgeRaw(d) {{
+  return ingresoSinPge(d) - (d.gastos_totales || 0);
+}}
+
+function runningCumulativeMil(rows, rawFn) {{
+  let acc = 0;
+  return rows.map(d => {{
+    acc += rawFn(d);
+    return mil(acc);
+  }});
+}}
+
+function histCumulativeLineSeries(rawFn) {{
+  const rows = [...DATA];
+  const labels = years.map(String);
+  const data = runningCumulativeMil(rows, rawFn);
+  const hasProv = Boolean(YTD?.cotizaciones);
+  if (hasProv) {{
+    labels.push('2026 (prov.)');
+    data.push(...runningCumulativeMil([...rows, YTD], rawFn).slice(-1));
+  }}
+  return {{ labels, data, hasProv, lastIdx: data.length - 1 }};
+}}
+
+function histCumulativeTransfDataset(data) {{
+  return {{
+    ...transfEstLineDataset(data),
+    label: 'Transferencias Estado acumuladas (desde 2014)',
+  }};
+}}
+
+function histCumulativeDeficitDataset(data) {{
+  return {{
+    ...deficitSinEstLineDataset(data),
+    label: 'Déficit estructural acumulado (sin PGE)',
+  }};
+}}
+
+function withProvisionalDash(ds, hasProv, lastIdx) {{
+  const baseSegment = ds.segment || {{}};
+  return {{
+    ...ds,
+    segment: {{
+      borderColor: ctx => {{
+        if (hasProv && ctx.p1DataIndex === lastIdx) return baseSegment.borderColor?.(ctx) ?? ds.borderColor;
+        return baseSegment.borderColor?.(ctx) ?? ds.borderColor;
+      }},
+      backgroundColor: ctx => baseSegment.backgroundColor?.(ctx) ?? ds.backgroundColor,
+      borderDash: ctx => (hasProv && ctx.p1DataIndex === lastIdx ? [6, 4] : undefined),
+    }},
+  }};
+}}
+
+function renderHistTcac() {{
+  const el = document.getElementById('hist-tcac-kpi');
+  const note = document.getElementById('hist-tcac-note');
+  if (!el) return;
+  const first = DATA[0];
+  const lastAnnual = DATA[DATA.length - 1];
+  const span = lastAnnual.year - first.year;
+  const fmtTcac = v => {{
+    if (v == null) return '—';
+    const sign = v > 0 ? '+' : '';
+    return `${{sign}}${{v.toLocaleString('es-ES', {{ minimumFractionDigits: 1, maximumFractionDigits: 1 }})}}`;
+  }};
+  const items = [
+    ['cotizaciones', 'Cotizaciones', 'tone-info'],
+    ['gastos_totales', 'Gastos totales', ''],
+    ['transf_estado', 'Transferencias Estado', 'tone-estado'],
+  ];
+  el.innerHTML = items.map(([key, label, tone]) => `
+    <div class="stat tr-pct-stat hist-tcac-stat">
+      <div class="stat-v ${{tone}}">${{fmtTcac(tcacPct(first[key], lastAnnual[key], span))}}<span class="hist-tcac-unit"> %/año</span></div>
+      <div class="stat-l">${{label}}</div>
+    </div>`).join('');
+  if (note) note.textContent = `Crecimiento medio anual compuesto (TCAC) · cierres ${{first.year}}–${{lastAnnual.year}}`;
+}}
+
 function renderPanorama() {{
   const src = (YTD && YTD.cotizaciones) ? YTD : last;
   const period = (YTD && YTD.period) ? YTD.period : String(last.year);
@@ -997,6 +1101,7 @@ function renderTrPctEstCot() {{
 }}
 
 function renderHistorico() {{
+  renderHistTcac();
   const histLabels = years.map(String);
   const histRows = [...DATA];
   if (YTD?.cotizaciones) {{
@@ -1004,6 +1109,14 @@ function renderHistorico() {{
     histRows.push(YTD);
   }}
   makeIngVsGast('chart-hist-cot-gast', histLabels, histRows);
+  const transfSeries = histCumulativeLineSeries(d => d.transf_estado || 0);
+  makeLine('chart-hist-transf-est', transfSeries.labels, [
+    withProvisionalDash(histCumulativeTransfDataset(transfSeries.data), transfSeries.hasProv, transfSeries.lastIdx),
+  ], {{ plugins: {{ legend: {{ display: false }} }} }});
+  const deficitSeries = histCumulativeLineSeries(deficitSinPgeRaw);
+  makeLine('chart-hist-deficit-sin-pge', deficitSeries.labels, [
+    withProvisionalDash(histCumulativeDeficitDataset(deficitSeries.data), deficitSeries.hasProv, deficitSeries.lastIdx),
+  ], {{ plugins: {{ legend: {{ display: false }} }} }});
   makeLineProvisional('chart-hist-cobertura', {{
     labels: years.map(String),
     values: DATA.map(d => d.cobertura_cotizaciones_pct),
