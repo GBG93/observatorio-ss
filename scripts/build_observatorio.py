@@ -237,7 +237,7 @@ def main() -> None:
     <div class="card">
       <div class="card-h" id="pan-main-title">Ingresos vs gastos — desglose de ingresos</div>
       <div class="card-b">
-        <p class="caption" id="pan-main-caption">Ingresos: paleta Datawrapper ordenada por peso (base oscura = mayor segmento, arriba claro = menor). Gastos en gris-azulado neutro.</p>
+        <p class="caption" id="pan-main-caption">mil M€.</p>
         <div class="chart-box tall"><canvas id="chart-pan-ing-vs-gast"></canvas></div>
       </div>
     </div>
@@ -1014,10 +1014,10 @@ function renderPanorama() {{
       EXERCISE.months.map(deficitSinPge)
     )], {{ plugins: {{ legend: {{ display: false }} }} }});
     const titleEl = document.getElementById('pan-main-title');
-    if (titleEl) titleEl.textContent = `Ingresos vs gastos — ejercicio ${{EXERCISE.year}} (flujo mensual)`;
+    if (titleEl) titleEl.textContent = `Ingresos vs gastos — ejercicio ${{EXERCISE.year}}`;
     const capEl = document.getElementById('pan-main-caption');
     if (capEl) {{
-      capEl.textContent = 'Flujo de cada mes (no acumulado) · mil M€. Ingresos: paleta Datawrapper por peso (base oscura = mayor). Gastos en gris-azulado neutro.';
+      capEl.textContent = 'mil M€.';
     }}
   }} else {{
     makeIngVsGastSnapshot('chart-pan-ing-vs-gast', src);
