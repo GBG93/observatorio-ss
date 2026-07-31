@@ -113,7 +113,7 @@
     <div class="card">
       <div class="card-h" id="pan-main-title">Ingresos vs gastos — desglose de ingresos</div>
       <div class="card-b">
-        <p class="caption">Ingresos: paleta Datawrapper ordenada por peso (base oscura = mayor segmento, arriba claro = menor). Gastos en gris-azulado neutro.</p>
+        <p class="caption" id="pan-main-caption">Ingresos: paleta Datawrapper ordenada por peso (base oscura = mayor segmento, arriba claro = menor). Gastos en gris-azulado neutro.</p>
         <div class="chart-box tall"><canvas id="chart-pan-ing-vs-gast"></canvas></div>
       </div>
     </div>
@@ -405,6 +405,29 @@ function ingresoSinPge(d) {
 
 function deficitSinPge(d) {
   return mil(ingresoSinPge(d) - (d.gastos_totales || 0));
+}
+
+/** ResSISTEMA es YTD: convierte a flujo del mes (mes − mes anterior; enero = YTD). */
+function monthlyFlowsFromYtd(rows) {
+  const keys = [
+    'cotizaciones', 'transf_estado', 'transf_ss_internas', 'transf_ccaa',
+    'transf_privados', 'tasas_otros', 'ingresos_patrimoniales',
+    'ingresos_totales', 'gastos_totales', 'transferencias_corrientes',
+  ];
+  return rows.map((cur, i) => {
+    const prev = i === 0 ? null : rows[i - 1];
+    const out = { ...cur };
+    keys.forEach(key => {
+      const a = cur[key];
+      if (a == null) {
+        out[key] = a;
+        return;
+      }
+      const b = prev && prev[key] != null ? prev[key] : 0;
+      out[key] = Math.round((a - b) * 10) / 10;
+    });
+    return out;
+  });
 }
 
 function plainMoney(v) {
@@ -858,7 +881,8 @@ function renderPanorama() {
 
   if (EXERCISE.months && EXERCISE.months.length) {
     const labels = EXERCISE.months.map(m => m.month_short);
-    makeIngVsGast('chart-pan-ing-vs-gast', labels, EXERCISE.months);
+    const monthly = monthlyFlowsFromYtd(EXERCISE.months);
+    makeIngVsGast('chart-pan-ing-vs-gast', labels, monthly);
     makeLine('chart-pan-transf-est', labels, [transfEstLineDataset(
       EXERCISE.months.map(m => mil(m.transf_estado))
     )], { plugins: { legend: { display: false } } });
@@ -866,7 +890,11 @@ function renderPanorama() {
       EXERCISE.months.map(deficitSinPge)
     )], { plugins: { legend: { display: false } } });
     const titleEl = document.getElementById('pan-main-title');
-    if (titleEl) titleEl.textContent = `Ingresos vs gastos — ejercicio ${EXERCISE.year} (acumulado mensual)`;
+    if (titleEl) titleEl.textContent = `Ingresos vs gastos — ejercicio ${EXERCISE.year} (flujo mensual)`;
+    const capEl = document.getElementById('pan-main-caption');
+    if (capEl) {
+      capEl.textContent = 'Flujo de cada mes (no acumulado) · mil M€. Ingresos: paleta Datawrapper por peso (base oscura = mayor). Gastos en gris-azulado neutro.';
+    }
   } else {
     makeIngVsGastSnapshot('chart-pan-ing-vs-gast', src);
     makeLine('chart-pan-transf-est', [period], [transfEstLineDataset([mil(src.transf_estado)])],
