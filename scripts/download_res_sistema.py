@@ -59,6 +59,18 @@ MONTH_ALIASES = {
     "diciembre (cierre provisional)": "DiciembreProvisional",
     "diciembre provisional": "DiciembreProvisional",
     "diciembre definitivo": "DiciembreDefinitivo",
+    "january": "Enero",
+    "february": "Febrero",
+    "march": "Marzo",
+    "april": "Abril",
+    "may": "Mayo",
+    "june": "Junio",
+    "july": "Julio",
+    "august": "Agosto",
+    "september": "Septiembre",
+    "october": "Octubre",
+    "november": "Noviembre",
+    "december": "Diciembre",
 }
 
 
@@ -166,6 +178,12 @@ def discover_year(year: int, year_url: str, ctx: ssl.SSLContext, delay: float) -
                 (file_id, url) for file_id, url in extract_numeric_ressistema_pdf(month_html)
             ]
             file_format = "pdf"
+
+        # Página creada sin tabla de descargas: probar URL directa ResSISTEMA_{Mes}_{año}.xlsx
+        if not candidates and month not in ("", "Ejercicio"):
+            dest_name = f"ResSISTEMA_{month}_{year}.xlsx"
+            candidates = [(dest_name, f"{BASE}/descarga/es/{dest_name}")]
+            file_format = "xlsx"
 
         for source_id, url in candidates:
             if url in seen_urls:
