@@ -12,11 +12,12 @@ El código está bajo licencia [MIT](LICENSE) y los datos agregados provienen de
 
 | Quieres… | Comandos clave | Qué commitear |
 |----------|----------------|---------------|
-| **Actualizar datos** | `extract_breakdown.py` → `build_observatorio.py` | JSON en `data/processed/` + `docs/index.html` |
+| **Actualizar datos ResSISTEMA** | `extract_breakdown.py` → `build_observatorio.py` | JSON en `data/processed/` + `docs/index.html` |
+| **Actualizar altas/bajas pensiones** | `download_altas_bajas.py` → `extract_altas_bajas.py` → `build_observatorio.py` | `data/processed/altas_bajas/` + `docs/index.html` |
 | **Cambiar gráficos o textos** | `build_observatorio.py` | `scripts/` + `docs/index.html` |
 | **Solo documentación** | — | `.md` u otros docs |
 
-Los ficheros `.xlsx` y `.pdf` del ResSISTEMA **no se suben al repo** (están en `.gitignore`).  
+Los ficheros `.xlsx` y `.pdf` del ResSISTEMA y de altas/bajas **no se suben al repo** (están en `.gitignore`).  
 Solo se versionan los JSON procesados.
 
 ---
@@ -98,6 +99,26 @@ python3 scripts/build_observatorio.py
 
 ---
 
+## 3b. Actualizar altas/bajas de pensiones
+
+Fuente: [Histórico estadísticas pensiones — EST23/2575](https://www.seg-social.es/wps/portal/wss/internet/EstadisticasPresupuestosEstudios/Estadisticas/EST23/2575).
+
+```bash
+python3 scripts/download_altas_bajas.py
+python3 scripts/extract_altas_bajas.py
+python3 scripts/build_observatorio.py
+```
+
+**Archivos que suelen cambiar:**
+
+- `data/processed/altas_bajas/monthly.json`
+- `data/raw/altas_bajas/manifest.json` (opcional)
+- `docs/index.html`
+
+Formatos: `AB_total` (2024+), hoja `AB1` (2021–2023), pares `AB2`/`AB3` (≈2016–2020, bajas sin desglose de causa).
+
+---
+
 ## 4. Cambios de código o UI
 
 Si modificas gráficos, textos o pestañas:
@@ -156,5 +177,5 @@ Abre un [Issue](https://github.com/GBG93/observatorio-ss/issues) si planeas:
 
 ## Notas
 
-- Este proyecto visualiza los informes públicos **ResSISTEMA** de la Seguridad Social española: una lectura gráfica de los datos que publica la administración.
+- Este proyecto visualiza informes públicos de la Seguridad Social española (ResSISTEMA y estadísticas de pensiones EST23/2575).
 - Por favor, mantén un tono respetuoso en issues y PRs.
