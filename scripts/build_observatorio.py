@@ -9,6 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_PATH = ROOT / "data" / "processed" / "annual_breakdown.json"
+ALTAS_BAJAS_PATH = ROOT / "data" / "processed" / "altas_bajas" / "monthly.json"
 OUT_DIR = ROOT / "docs"
 OUT_FILE = OUT_DIR / "index.html"
 
@@ -111,13 +112,22 @@ def load_data() -> list[dict]:
         return json.load(f)
 
 
+def load_altas_bajas() -> dict:
+    if not ALTAS_BAJAS_PATH.exists():
+        return {"months": [], "class_labels": {}, "meta": {}}
+    with open(ALTAS_BAJAS_PATH, encoding="utf-8") as f:
+        return json.load(f)
+
+
 def main() -> None:
     data = load_data()
     ytd = load_ytd()
     exercise = load_exercise_monthly(2026)
+    altas_bajas = load_altas_bajas()
     payload = json.dumps(data, ensure_ascii=False)
     ytd_payload = json.dumps(ytd, ensure_ascii=False)
     exercise_payload = json.dumps(exercise, ensure_ascii=False)
+    altas_bajas_payload = json.dumps(altas_bajas, ensure_ascii=False)
     updated = date.today().isoformat()
     last_closed = data[-1]
     closed_label = f"{last_closed['year']} ({last_closed.get('source_month', 'cierre')})"
@@ -204,6 +214,12 @@ def main() -> None:
   .hist-tcac-stat {{ text-align: center; }}
   .hist-tcac-stat .stat-v {{ font-size: 28px; }}
   .hist-tcac-unit {{ font-size: 15px; font-weight: 500; color: var(--text); }}
+  .ab-toolbar {{ display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-bottom: 4px; }}
+  .ab-toolbar label {{ font-size: 13px; color: var(--muted); font-weight: 500; }}
+  .ab-toolbar select {{
+    padding: 7px 10px; border: 1px solid var(--border); border-radius: 8px;
+    font-size: 13px; background: var(--card); color: var(--text);
+  }}
   @media (max-width: 800px) {{
     .grid-3, .grid-4 {{ grid-template-columns: 1fr; }}
     .grid-2 {{ grid-template-columns: 1fr; }}
@@ -223,6 +239,7 @@ def main() -> None:
     <button class="tab-btn" data-tab="ingresos">Ingresos</button>
     <button class="tab-btn" data-tab="gastos">Gastos</button>
     <button class="tab-btn" data-tab="transferencias">Transferencias</button>
+    <button class="tab-btn" data-tab="altas-bajas">Altas / Bajas</button>
     <button class="tab-btn" data-tab="historico">Histórico</button>
   </nav>
 
@@ -339,6 +356,60 @@ def main() -> None:
     </div>
   </section>
 
+  <!-- ALTAS / BAJAS -->
+  <section id="panel-altas-bajas" class="panel">
+    <div class="callout lectura-pan">
+      <div class="callout-t">Quién entra y quién sale del stock de pensiones</div>
+      <p>Cada mes hay altas (nuevas pensiones) y bajas. La comparación más limpia es <strong>altas iniciales vs bajas por fallecimiento</strong>: suele haber un hueco de pensión media (entran pensiones más altas que las que salen), lo que empuja el coste del sistema aunque el número neto sea pequeño.</p>
+      <p class="lectura-hint">Serie 2016–hoy · EST23/2575. Hasta ~2020 las bajas no vienen desglosadas por causa (solo «definitivas»). Desde 2024 el informe incluye rehabilitaciones, traslados y suspensiones.</p>
+    </div>
+    <div class="ab-toolbar">
+      <label for="ab-class">Clase de pensión</label>
+      <select id="ab-class"></select>
+      <span class="meta" id="ab-period-note"></span>
+    </div>
+    <div class="grid-4" id="kpi-altas-bajas"></div>
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-h">Composición de altas (último mes)</div>
+        <div class="card-b">
+          <div class="chart-box mid"><canvas id="chart-ab-comp-altas"></canvas></div>
+          <p class="caption">Peso % por tipo de alta · tipos no publicados en el mes aparecen vacíos.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-h">Composición de bajas (último mes)</div>
+        <div class="card-b">
+          <div class="chart-box mid"><canvas id="chart-ab-comp-bajas"></canvas></div>
+          <p class="caption">Peso % por tipo de baja · en legacy AB2/AB3 solo hay bajas definitivas agregadas.</p>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-h">Pensión media: iniciales vs fallecimiento</div>
+      <div class="card-b">
+        <div class="chart-box tall"><canvas id="chart-ab-pmedia"></canvas></div>
+        <p class="caption">€/mes · En 2016–2020 la serie de salida usa bajas definitivas (sin desglose de causa).</p>
+      </div>
+    </div>
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-h">Variación neta (nº)</div>
+        <div class="card-b">
+          <div class="chart-box mid"><canvas id="chart-ab-neto"></canvas></div>
+          <p class="caption">2024+: neto oficial del informe. Antes: iniciales − fallecimiento (o − bajas definitivas).</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-h">Delta importe: iniciales − fallecimiento</div>
+        <div class="card-b">
+          <div class="chart-box mid"><canvas id="chart-ab-delta"></canvas></div>
+          <p class="caption">€/mes · Diferencia de masa de pensión entre altas iniciales y bajas por fallecimiento (o definitivas en legacy).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- HISTÓRICO -->
   <section id="panel-historico" class="panel">
     <div class="grid-3" id="hist-tcac-kpi"></div>
@@ -394,6 +465,7 @@ def main() -> None:
 const DATA = {payload};
 const YTD = {ytd_payload};
 const EXERCISE = {exercise_payload};
+const ALTAS_BAJAS = {altas_bajas_payload};
 // Paleta Panorama (Datawrapper por peso, base oscura) · gastos gris-azulado neutro
 const PAN_ING_PALETTE = ['#ffa600', '#ff6b59', '#dd4d88', '#954e9b', '#464c89', '#003f5c'];
 const PAN_BAR = {{ gastos: '#8fa0b3', gastosHover: '#758799' }};
@@ -1186,6 +1258,209 @@ function renderHistorico() {{
   }});
 }}
 
+// ——— Altas / Bajas ———
+const AB_ALTA_LABELS = {{
+  iniciales: 'Iniciales',
+  rehabilitacion: 'Rehabilitación',
+  traslados_revisiones: 'Traslados / revisiones',
+}};
+const AB_BAJA_LABELS = {{
+  fallecimiento: 'Fallecimiento',
+  edad_plazo: 'Edad o plazo',
+  otras: 'Otras causas',
+  suspensiones: 'Suspensiones',
+  traslados_revisiones: 'Traslados / revisiones',
+  bajas_definitivas: 'Definitivas (sin desglose)',
+}};
+const AB_COLORS = {{
+  iniciales: '#003f5c',
+  rehabilitacion: '#3685bf',
+  traslados_revisiones: '#7c5cbf',
+  fallecimiento: '#cf2d56',
+  edad_plazo: '#c08532',
+  otras: '#94a3b8',
+  suspensiones: '#1a9e8f',
+  bajas_definitivas: '#758799',
+}};
+
+function abClassBlock(month, classKey) {{
+  return (month && month.by_class && month.by_class[classKey]) || null;
+}}
+
+function abExitMetric(cls) {{
+  if (!cls) return null;
+  const fal = cls.bajas && cls.bajas.fallecimiento;
+  if (fal && fal.n != null) return fal;
+  return cls.bajas_definitivas || null;
+}}
+
+function abExitLabel(cls) {{
+  if (!cls) return 'Salida';
+  if (cls.bajas && cls.bajas.fallecimiento && cls.bajas.fallecimiento.n != null) return 'Fallecimiento';
+  if (cls.bajas_definitivas && cls.bajas_definitivas.n != null) return 'Bajas definitivas';
+  return 'Salida';
+}}
+
+function abMonthLabel(m) {{
+  const names = ['','ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
+  return names[m.month] + ' ' + String(m.year).slice(2);
+}}
+
+function destroyChart(id) {{
+  if (charts[id]) {{ charts[id].destroy(); delete charts[id]; }}
+}}
+
+function renderAltasBajas() {{
+  const months = ALTAS_BAJAS.months || [];
+  const labels = ALTAS_BAJAS.class_labels || {{}};
+  const sel = document.getElementById('ab-class');
+  if (!sel) return;
+  if (!sel.options.length) {{
+    (ALTAS_BAJAS.class_keys || Object.keys(labels)).forEach(k => {{
+      const opt = document.createElement('option');
+      opt.value = k;
+      opt.textContent = labels[k] || k;
+      sel.appendChild(opt);
+    }});
+    sel.value = 'total';
+    sel.addEventListener('change', renderAltasBajas);
+  }}
+  if (!months.length) {{
+    document.getElementById('kpi-altas-bajas').innerHTML = '<p class="caption">Sin datos de altas/bajas. Ejecuta extract_altas_bajas.py.</p>';
+    return;
+  }}
+  const classKey = sel.value || 'total';
+  const last = months[months.length - 1];
+  const cls = abClassBlock(last, classKey);
+  const ini = cls && cls.altas ? cls.altas.iniciales : null;
+  const exit = abExitMetric(cls);
+  const exitLab = abExitLabel(cls);
+  document.getElementById('ab-period-note').textContent =
+    `Último mes: ${{abMonthLabel(last)}} · formato ${{last.format}} · ${{months.length}} meses`;
+
+  const fmtN = v => v == null ? '—' : Math.round(v).toLocaleString('es-ES');
+  const fmtE = v => v == null ? '—' : Math.round(v).toLocaleString('es-ES') + ' €';
+  const fmtP = v => v == null ? '—' : Math.round(v).toLocaleString('es-ES', {{maximumFractionDigits:0}}) + ' €';
+  const gap = cls ? cls.gap_p_media_iniciales_vs_fallecimiento : null;
+  document.getElementById('kpi-altas-bajas').innerHTML = `
+    <div class="stat"><span class="stat-v tone-info">${{fmtN(ini && ini.n)}}</span><span class="stat-l">Altas iniciales · nº</span></div>
+    <div class="stat"><span class="stat-v tone-danger">${{fmtN(exit && exit.n)}}</span><span class="stat-l">${{exitLab}} · nº</span></div>
+    <div class="stat"><span class="stat-v">${{fmtN(cls && cls.neto_n)}}</span><span class="stat-l">Variación neta · nº</span></div>
+    <div class="stat"><span class="stat-v tone-warn">${{fmtP(gap)}}</span><span class="stat-l">Gap p. media iniciales − salida</span></div>
+  `;
+
+  // Composition bars (last month)
+  const altaKeys = ['iniciales','rehabilitacion','traslados_revisiones'];
+  const bajaKeys = ['fallecimiento','edad_plazo','otras','suspensiones','traslados_revisiones'];
+  const altaVals = altaKeys.map(k => (cls && cls.altas && cls.altas[k] && cls.altas[k].n) || 0);
+  const bajaVals = bajaKeys.map(k => (cls && cls.bajas && cls.bajas[k] && cls.bajas[k].n) || 0);
+  const bdN = cls && cls.bajas_definitivas && cls.bajas_definitivas.n;
+  const bajaLabels = bajaKeys.map(k => AB_BAJA_LABELS[k]);
+  const bajaColors = bajaKeys.map(k => AB_COLORS[k]);
+  if (bdN != null && bajaVals.every(v => !v)) {{
+    bajaLabels.length = 0; bajaVals.length = 0; bajaColors.length = 0;
+    bajaLabels.push(AB_BAJA_LABELS.bajas_definitivas);
+    bajaVals.push(bdN);
+    bajaColors.push(AB_COLORS.bajas_definitivas);
+  }}
+  const mkBar = (canvasId, labs, vals, colors) => {{
+    destroyChart(canvasId);
+    const total = vals.reduce((s,v) => s+v, 0) || 1;
+    charts[canvasId] = new Chart(document.getElementById(canvasId), {{
+      type: 'bar',
+      data: {{
+        labels: labs,
+        datasets: [{{
+          data: vals.map(v => Math.round(v/total*1000)/10),
+          backgroundColor: colors,
+          borderRadius: 4,
+        }}],
+      }},
+      options: chartOpts({{
+        indexAxis: 'y',
+        plugins: {{ legend: {{ display: false }}, tooltip: {{
+          callbacks: {{ label: ctx => `${{ctx.raw}}% (${{fmtN(vals[ctx.dataIndex])}})` }}
+        }} }},
+        scales: {{
+          x: {{ ticks: {{ callback: v => v + '%' }}, max: 100 }},
+          y: {{ grid: {{ display: false }} }},
+        }},
+      }}),
+    }});
+  }};
+  mkBar('chart-ab-comp-altas', altaKeys.map(k => AB_ALTA_LABELS[k]), altaVals, altaKeys.map(k => AB_COLORS[k]));
+  mkBar('chart-ab-comp-bajas', bajaLabels, bajaVals, bajaColors);
+
+  // Time series
+  const labelsT = months.map(abMonthLabel);
+  const pIni = months.map(m => {{
+    const c = abClassBlock(m, classKey);
+    return c && c.altas && c.altas.iniciales ? c.altas.iniciales.p_media : null;
+  }});
+  const pExit = months.map(m => {{
+    const c = abClassBlock(m, classKey);
+    const e = abExitMetric(c);
+    return e ? e.p_media : null;
+  }});
+  destroyChart('chart-ab-pmedia');
+  charts['chart-ab-pmedia'] = new Chart(document.getElementById('chart-ab-pmedia'), {{
+    type: 'line',
+    data: {{
+      labels: labelsT,
+      datasets: [
+        {{ label: 'P. media altas iniciales', data: pIni, borderColor: AB_COLORS.iniciales, backgroundColor: 'transparent', tension: 0.2, pointRadius: 0, borderWidth: 2 }},
+        {{ label: 'P. media bajas (fallec. / definitivas)', data: pExit, borderColor: AB_COLORS.fallecimiento, backgroundColor: 'transparent', tension: 0.2, pointRadius: 0, borderWidth: 2 }},
+      ],
+    }},
+    options: chartOpts({{
+      scales: {{ y: {{ ticks: {{ callback: v => v.toLocaleString('es-ES') + ' €' }} }} }},
+    }}),
+  }});
+
+  const neto = months.map(m => {{
+    const c = abClassBlock(m, classKey);
+    return c ? c.neto_n : null;
+  }});
+  destroyChart('chart-ab-neto');
+  charts['chart-ab-neto'] = new Chart(document.getElementById('chart-ab-neto'), {{
+    type: 'bar',
+    data: {{
+      labels: labelsT,
+      datasets: [{{
+        label: 'Neto nº',
+        data: neto,
+        backgroundColor: neto.map(v => v == null ? AB_COLORS.otras : (v >= 0 ? 'rgba(54,133,191,.75)' : 'rgba(207,45,86,.75)')),
+      }}],
+    }},
+    options: chartOpts({{ plugins: {{ legend: {{ display: false }} }} }}),
+  }});
+
+  const delta = months.map(m => {{
+    const c = abClassBlock(m, classKey);
+    return c ? c.delta_importe_iniciales_vs_fallecimiento : null;
+  }});
+  destroyChart('chart-ab-delta');
+  charts['chart-ab-delta'] = new Chart(document.getElementById('chart-ab-delta'), {{
+    type: 'line',
+    data: {{
+      labels: labelsT,
+      datasets: [{{
+        label: 'Delta importe €/mes',
+        data: delta,
+        borderColor: '#c08532',
+        backgroundColor: 'rgba(192,133,50,.12)',
+        fill: true,
+        tension: 0.2,
+        pointRadius: 0,
+        borderWidth: 2,
+      }}],
+    }},
+    options: chartOpts({{
+      scales: {{ y: {{ ticks: {{ callback: v => (v/1e6).toLocaleString('es-ES', {{maximumFractionDigits:1}}) + ' M€' }} }} }},
+    }}),
+  }});
+}}
+
 // Tabs
 document.querySelectorAll('.tab-btn').forEach(btn => {{
   btn.addEventListener('click', () => {{
@@ -1202,6 +1477,7 @@ renderPanorama();
 renderIngresos();
 renderGastos();
 renderTransferencias();
+renderAltasBajas();
 renderHistorico();
 </script>
 </body>

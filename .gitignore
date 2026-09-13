@@ -2,6 +2,11 @@
 data/raw/res_sistema/*.xlsx
 data/raw/res_sistema/*.pdf
 
+# Altas/bajas pensiones (XLSX locales; solo JSON procesado en git)
+data/raw/altas_bajas/*.xlsx
+data/raw/altas_bajas/*.xls
+data/raw/altas_bajas/*.pdf
+
 # Python
 __pycache__/
 *.py[cod]
