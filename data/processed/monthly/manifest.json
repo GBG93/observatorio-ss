@@ -1,7 +1,7 @@
 {
   "source": "ResSISTEMA xlsx → JSON (extract_breakdown.py)",
-  "updated_at": "2026-09-11T15:57:38Z",
-  "count": 144,
+  "updated_at": "2026-09-30T15:31:01Z",
+  "count": 145,
   "latest_by_year": {
     "2015": "DiciembreDefinitivo",
     "2016": "Diciembre",
@@ -14,7 +14,7 @@
     "2023": "DiciembreDefinitivo",
     "2024": "DiciembreDefinitivo",
     "2025": "DiciembreProvisional",
-    "2026": "Julio",
+    "2026": "Agosto",
     "2014": "DiciembreDefinitivo"
   },
   "entries": [
@@ -132,6 +132,11 @@
       "year": 2025,
       "month": "Agosto",
       "file": "2025/Agosto.json"
+    },
+    {
+      "year": 2026,
+      "month": "Agosto",
+      "file": "2026/Agosto.json"
     },
     {
       "year": 2014,
